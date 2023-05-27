@@ -13,17 +13,19 @@ import React from 'react'
   </div>
 </div>
 <br/>
+
 <div className="card ">
-  <div >
-    <ul className="listed">
-      <li className='card-items top-listed'>All</li>
+  <div className='listed'>
+  
+    
+      <li  className='card-items  top-listed' >All</li>
       <li className='card-items faintbg'>UI</li>
       <li className='card-items faintbg'>UX</li>
       <li className='card-items faintbg'>Enhancement</li>
       <li className='card-items faintbg'>Bug</li>
       <li className='card-items faintbg'>Feature</li>
       
-    </ul>
+    
   </div>
 </div>
 <br/>
@@ -33,7 +35,6 @@ import React from 'react'
     <p>Architect & Engineer</p> 
   </div>
   <br/>
-
 </div>
  </div>
    
