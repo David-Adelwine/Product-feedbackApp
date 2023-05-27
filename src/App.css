@@ -23,6 +23,12 @@
   margin-top: 25px;
 }
 
+.homebtn:hover{
+  background-color: #AD1FEA;
+  border: none;
+
+}
+
 .homeImg{
   height: 170px;
   width:170px;
@@ -149,10 +155,19 @@ font-family: 'jost';
       flex-wrap: wrap;
       justify-content: space-between;
   
-    
-   
   }
  
-
-
-
+  .Move--Links{
+    position: absolute;
+    left: 230px;
+    bottom: 70px;
+    color: #fff;
+  }
+.Nav--Postion{
+  position: absolute;
+  right: 50px;
+  bottom: 680px;
+  border-radius: 15px;
+  color: #fff;
+  background-color: #373F68;
+}
