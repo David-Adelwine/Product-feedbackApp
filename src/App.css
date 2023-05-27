@@ -1,0 +1,158 @@
+*{
+  box-sizing: border-box;
+}
+.homepage {
+  margin-top: 40px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.homebtn{
+  font-family: 'Jost' Tahoma, sans-serif;
+  font-weight: 600;
+  background-color: #AD1FEA;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 13px;
+  margin-top: 25px;
+}
+
+.homeImg{
+  height: 170px;
+  width:170px;
+  margin-bottom: 20px;
+  
+}
+.homeheader{
+  font-weight: 700;
+  letter-spacing: -0.333333px ;
+  font-size: 24px;
+  font-style: normal;
+  font-family: 'Jost';
+  margin-top: 70px;
+  color:#3A4374
+ 
+}
+
+.hometext{
+  font-family: 'jost' sans-serif ;
+  font-size: 16px;
+  font-weight: 400px;
+  line-height: 23px;
+  color:#647196;
+}
+.grid--header{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-left: 20px;
+  padding: 20px;
+  justify-content: space-between;
+
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 255px;
+  height: 137px;
+  border-radius: 12px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  cursor: pointer;
+}
+
+.container {
+  padding: 2px 16px;
+}
+.top-card{
+  background-image:url(../src/Assets/suggestions/desktop/background-header.png);
+  &p{
+    position: absolute;
+    bottom: 200px;
+  }
+}
+ .toptext{
+  position: absolute;
+  letter-spacing: -0.25 px;
+  top: 60px;
+  color: #fff;
+  font-family: 'jost';
+font-Weight:700;
+font-Size:20px;
+line-height: 28.9px
+
+
+  
+ }
+
+ .bottomtext{
+  position: absolute; 
+   top:90px ;
+font-family: 'Jost';
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 22px;
+color: #fff;
+ }
+
+ .card-items{
+  font-size: 10px;
+  padding: 5px;
+  list-style: none;
+  text-decoration: none;
+ }
+
+ .listed{
+  display:grid;
+  grid-gap: 10px;
+  grid-template-columns: 30% 30% 40%;
+  margin: auto;
+  margin-top: 20px;
+  max-width: 960px;
+ }
+ .top-listed{
+  color: #fff;
+  background: #4661E6;
+  width: 48px;
+  height: 30px;
+  border-radius: 12px;
+  text-align: center;
+  font-weight: 700;
+  font-family: 'jost';
+ }
+
+ .faintbg{
+  background: linear-gradient(90deg, #FFC0CB 50%, #00FFFF 50%);
+  width: 48px;
+height: 30px;
+border-radius: 12px;
+text-align: center;
+font-weight: 700;
+font-family: 'jost';
+
+ }
+
+ 
+
+  .grid--header{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+  
+    
+   
+  }
+ 
+
+
+
