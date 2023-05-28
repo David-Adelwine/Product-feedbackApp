@@ -12,6 +12,8 @@ import './App.css';
 
 
 function App() {
+
+  
   return (
     <div className="App">
     <BrowserRouter>
@@ -19,13 +21,11 @@ function App() {
     <Link  to="/" className='card-items  top-listed' >All</Link>     
     </nav> */}
     <Routes>
-    <Route path='/' element={<> <Header/> <Hompage/></>}/>
-    <Route path='/Home' element={<Hompage/>}/>
+ <Route path='/' element={<> <Header/> <Hompage/></>}/>
+   {/* <Route path='/Home' element={<Hompage/>}/> */}
     <Route path='/Feedbackdetails' element={<Feedbackdatails/>}/>
     <Route path='/Feedbackedit' element={<Feedbackedit/>}/>
     <Route path='/Roadmap' element={ <Roadmap/>}/>
-   
-
     </Routes>
     </BrowserRouter>
     </div>

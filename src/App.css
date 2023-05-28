@@ -1,11 +1,32 @@
 *{
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html{
+  scroll-behavior: auto;
 }
 .homepage {
   margin-top: 40px;
   text-align: center;
   border-radius: 10px;
+  position: absolute;
+  width: 1057px;
+  height: 600px;
+  left: 330px;
+  top: 120px;
+  background-color: #fff;
+
+
 }
+
+.home--content{
+align-content: center;
+position: relative;
+top: 80px;
+}
+
+
 
 .homebtn{
   font-family: 'Jost' Tahoma, sans-serif;
@@ -21,6 +42,8 @@
   cursor: pointer;
   border-radius: 13px;
   margin-top: 25px;
+  position: relative;
+bottom: 12px;
 }
 
 .homebtn:hover{
@@ -55,24 +78,26 @@
 }
 .grid--header{
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  flex-direction: column; 
+ flex-wrap: wrap;  
   margin-left: 20px;
   padding: 20px;
-  justify-content: space-between;
+ justify-content: space-between;
 
 }
 
 .card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
+  /* box-shadow: 0 4px 4px 0 rgba(0,0,0,0.2);
+  transition: 0.3s; */
   width: 255px;
   height: 137px;
   border-radius: 12px;
+  display: flex;
+  flex-direction: column;
 }
 
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); */
   cursor: pointer;
 }
 
@@ -81,11 +106,9 @@
 }
 .top-card{
   background-image:url(../src/Assets/suggestions/desktop/background-header.png);
-  &p{
-    position: absolute;
-    bottom: 200px;
+  
   }
-}
+
  .toptext{
   position: absolute;
   letter-spacing: -0.25 px;
@@ -156,6 +179,7 @@ font-family: 'jost';
       justify-content: space-between;
   
   }
+  /* navigation */
  
   .Move--Links{
     position: absolute;
@@ -165,9 +189,80 @@ font-family: 'jost';
   }
 .Nav--Postion{
   position: absolute;
-  right: 50px;
+  width: 1050px;
+   right: 50px;
   bottom: 680px;
   border-radius: 15px;
   color: #fff;
   background-color: #373F68;
+
 }
+
+
+
+
+
+/* all Media Queries */
+ /*@media  (min-device-width: 768px) {
+  .grid--header{  
+    display: flex;
+    flex-direction: row; 
+   flex-wrap: wrap;  
+    margin-left: 20px;
+    padding: 20px;
+   justify-content: space-between;
+  }
+
+
+/*
+
+.top-card{
+  background-image:url(../src/Assets/suggestions/tablet/background-header.png);
+  }
+.card {
+  display: flex; 
+  justify-content: space-between; 
+  width: 180px;
+  height: 150px;
+ 
+}
+
+.homepage {
+  position: absolute;
+  width: 689px;
+  height: 600px;
+  left: 39px;
+  top: 270px
+}
+.Nav--Postion{
+  position: absolute;
+  width: 989px;
+  height: 72px;
+  left: 39px;
+  top: 184px;
+}
+
+}    */
+
+
+/*
+@media  (max-width: 321px){
+
+
+  .grid--header{  
+    
+  }
+
+.card {
+
+  display: flex; 
+  justify-content: space-between; 
+  position: absolute;
+  width: 327px;
+  height: 460px;
+  left: 24px;
+  top: 160px;
+ 
+  
+}
+} */
