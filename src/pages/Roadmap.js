@@ -6,19 +6,44 @@ import data from "../data"
 import Cards from "../Components/Cards"
 
 export default function Roadmap(){
-  const cardElements = data.productRequests.map(cards=>{
-    return <Cards  title={cards.title}
+  // this maped though the array and returned the entire array 
+  // const cardElements = data.productRequests.map(cards=>{
+  //   return <Cards  title={cards.title}
+  //     description={cards.description}
+  //    category={cards.category} 
+  //    upvotes={cards.upvotes}
+  //    />
+  // })
+   // Calculate the number of elements to be returned
+  const cardLength = Math.ceil(data.productRequests.length/2);
+ 
+  // Use Array.prototype.slice() to create a new array with half the elements
+  const cardElements = data.productRequests.slice(0,cardLength);
+
+
+    // Map through the CardElements array and render the each card
+
+  const renderedElements = cardElements.map((cards, index)=>{
+    return(
+      < Cards 
+      key={index} 
+      title={cards.title}
       description={cards.description}
      category={cards.category} 
      upvotes={cards.upvotes}
-     />
+
+      />
+    )
   })
+
+  //console.log(renderedElements); checking if the exact number can retrieved on the dom
+
 
   return(
     <div>
       <Header/>
       <Navigation/>
-      {cardElements}
+      {renderedElements}
     </div>
   )
 }

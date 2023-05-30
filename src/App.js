@@ -7,13 +7,12 @@ import Roadmap from './pages/Roadmap';
 import Hompage from './pages/Hompage';
 import './App.css';
 // import Navigation from './Components/Navigation';
-import data from './data';
+// import data from './data';
 
 
 
 
 function App() {
-console.log(data)
   
   return (
     <div className="App">
