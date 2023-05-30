@@ -1,18 +1,19 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route,  } from 'react-router-dom';
 import  Header  from './Components/Header';
-import Feedbackdatails from './Components/Feedbackdatails';
-import Feedbackedit from './Components/Feedbackedit';
-import Roadmap from './Components/Roadmap';
-import Hompage from './Components/Hompage';
+import Feedbackdatails from './pages/Feedbackdatails';
+import Feedbackedit from './pages/Feedbackedit';
+import Roadmap from './pages/Roadmap';
+import Hompage from './pages/Hompage';
 import './App.css';
 // import Navigation from './Components/Navigation';
+import data from './data';
 
 
 
 
 function App() {
-
+console.log(data)
   
   return (
     <div className="App">

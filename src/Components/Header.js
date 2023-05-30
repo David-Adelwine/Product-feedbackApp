@@ -21,11 +21,11 @@ import '../App.css'
           <div className="card ">
             <div className='listed'>
             <Link  to="/Roadmap" className='card-items  top-listed' >All</Link>     
-                <li className='card-items faintbg'>UI</li>
-                <li className='card-items faintbg'>UX</li>
-                <li className='card-items faintbg'>Enhancement</li>
-                <li className='card-items faintbg'>Bug</li>
-                <li className='card-items faintbg'>Feature</li>
+                <san className='card-items faintbg'>UI</san>
+                <span className='card-items faintbg'>UX</span>
+                <span className='card-items faintbg'>Enhancement</span>
+                <span className='card-items faintbg'>Bug</span>
+                <span className='card-items faintbg feature'>Feature</span>
             </div>
           </div>
           <br/>

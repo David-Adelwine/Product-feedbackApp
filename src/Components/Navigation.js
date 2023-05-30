@@ -44,7 +44,7 @@ const Navigation = () => {
             </NavDropdown>
           </Nav>
           <Form className="d-flex">
-            <Button  className='homebtn'>+ Add FeedBack</Button>
+            <Button  className='homebtn'>+ Add Feedback</Button>
           </Form>
       </Container>
     </Navbar> 

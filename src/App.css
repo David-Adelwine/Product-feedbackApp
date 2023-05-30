@@ -161,6 +161,7 @@ color: #fff;
 
  .faintbg{
   background: #F2F4FF;
+  background-size: cover;
   width: 48px;
 height: 30px;
 border-radius: 10px;
@@ -276,3 +277,14 @@ letter-spacing: -0.25px;
   
 }
 } */
+
+
+.Card--elements{
+  background: #fff;
+  width: 1040px;
+  position: relative;
+  left: 350px;
+  bottom: 350px;
+  border-radius: 13px;
+  
+}
