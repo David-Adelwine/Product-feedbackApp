@@ -10,7 +10,7 @@ const Cards = (props) => {
       <p className='card--description'>{props.description}</p>
       <span className='faintbg--header'>{props.category}</span>
       <div className='card--votes faintbg'>
-        <img src={arrowUp}/>
+        <img src={arrowUp} alt='^'/>
       <span >{props.upvotes}</span>
       </div>
       </section>
