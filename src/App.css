@@ -286,5 +286,56 @@ letter-spacing: -0.25px;
   left: 350px;
   bottom: 350px;
   border-radius: 13px;
+  height:150px;
+  margin: 20px;
+  align-content: center;
+  justify-content: space-around;
   
+}
+
+.card--header{
+
+  position: absolute;
+height: 26px;
+left: 10.51%;
+right: 65.83%;
+font-family: 'Jost';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 26px;
+/* identical to box height */
+
+letter-spacing: -0.25px;
+
+color: #3A4374;
+
+
+}
+
+
+.card--description{
+  position: relative;
+height: 45px;
+left: 10.51%;
+right: 40.34%;
+top: 30px;
+font-family: 'Jost';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 23px;
+
+color: #647196;
+}
+
+.faintbg--header{
+
+  position: relative;
+left: 10.51%;
+top: 68.42%;
+bottom: 0%; 
+background: #F2F4FF;
+border-radius: 10px;
+color: #4661E6;
 }
