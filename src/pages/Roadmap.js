@@ -31,13 +31,14 @@ export default function Roadmap(){
       description={cards.description}
      category={cards.category} 
      upvotes={cards.upvotes}
-
       />
     )
   })
 
+   
   //console.log(renderedElements); checking if the exact number can retrieved on the dom
-
+  
+  
 
   return(
     <div>

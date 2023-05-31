@@ -9,11 +9,12 @@ const Cards = (props) => {
       <h3 className='card--header'>{props.title}</h3>
       <p className='card--description'>{props.description}</p>
       <span className='faintbg--header'>{props.category}</span>
-      <div className='card--votes faintbg'>
-        <img src={arrowUp} alt='^'/>
-      <span >{props.upvotes}</span>
-      </div>
       </section>
+      <div className='card--votes '>
+      <img className='Upvotesbtn' src={arrowUp} alt='^'/>
+      <span className='upvotes'>{props.upvotes}</span>
+      </div>
+     
     </div>
   )
 }
