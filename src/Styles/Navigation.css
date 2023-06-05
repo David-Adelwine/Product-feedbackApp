@@ -1,0 +1,107 @@
+
+
+.homebtn{
+  font-family: 'Jost' Tahoma, sans-serif;
+  font-weight: 600;
+  background-color: #AD1FEA;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 13px;
+  margin-top: 25px;
+  position: relative;
+bottom: 12px;
+}
+
+
+.homebtn:hover{
+  background-color: #AD1FEA;
+  border: none;
+
+}
+
+.Move--Links{
+  position: absolute;
+  left: 230px;
+  bottom: 70px;
+  color: #fff;
+}
+.Nav--Postion{
+position: absolute;
+width: 1050px;
+ right: 50px;
+bottom: 680px;
+border-radius: 15px;
+color: #fff;
+background-color: #373F68;
+
+}
+.Navigation--text{
+font-family: 'Jost';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 26px;
+
+letter-spacing: -0.25px;
+}
+
+
+/* Responsive CSS for tablet */
+@media (max-width: 768px) {
+  .Move--Links {
+    left: 20px;
+    bottom: 20px;
+  }
+
+  .Nav--Postion {
+    width: 90%;
+    right: unset;
+    bottom: 40px;
+  }
+}
+
+/* Responsive CSS for mobile devices */
+@media (max-width: 480px) {
+  .Move--Links {
+    position: absolute;
+    left: 60px;
+    bottom: 80px;
+    
+  }
+
+  .Nav--Postion {
+    position: relative;
+    bottom: 60px;
+    width: 100%;
+    right: unset;
+    bottom: 52px;
+    padding: 0px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+  }
+
+  .Navigation--text {
+    display: none;
+  }
+  .homebtn{
+  position: relative;
+bottom: 130;
+left: 170px;
+padding: 12px 12px;
+font-size: 10px;
+font-weight: 200;
+}
+.Navigation--text2{
+  position: relative;
+  top: 34px;
+  right: 45px;
+}
+}
+

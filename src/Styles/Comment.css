@@ -1,7 +1,12 @@
+
+body{
+  background-color: red;
+}
+
 .commentbtn{
   position: absolute;
   left: 220px;
-  top: 30px;
+  
 }
 
 .homebtn{
@@ -50,10 +55,11 @@ font-family: 'jost' sans-serif;
 .comment--box{
 position: absolute;
 bottom: 85px;
+left: 70px;
 }
 .comment--direction{
   position: relative;
-  top: 30px;
+  top: 70px;
   right: 230px;
   margin-top: 12px;
   font-family: 'jost' sans-serif;

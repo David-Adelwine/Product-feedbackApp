@@ -47,7 +47,7 @@ import "../App.css";
 import arrowUp from '../Assets/shared/icon-arrow-up.svg';
 import CommentsImg from '../Assets/shared/icon-comments.svg';
 // import data from '../data';
-
+import '../Styles/Card.css'
 const Cards = (props) => {
 
 //   const Requests = data.productRequests;

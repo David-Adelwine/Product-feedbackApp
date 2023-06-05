@@ -1,0 +1,190 @@
+
+
+
+.Card--elements{
+  background: #fff;
+  width: 1040px;
+  position: relative;
+  left: 330px;
+  bottom: 350px;
+  border-radius: 13px;
+  height:150px;
+  margin: 20px;
+  align-content: center;
+  justify-content: space-around;
+  
+}
+
+.inner--card {
+  padding: 10px; 
+  position: absolute;
+  left: 100px;
+  font-family: 'jost';
+}
+
+.card--header {
+  margin-bottom: 10px; 
+  font-family: 'Jost';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 26px;
+
+letter-spacing: -0.25px;
+
+color: #3A4374;
+
+
+}
+
+.card--description {
+  margin-bottom: 10px; 
+  font-weight: 400;
+  font-size: 16px;
+line-height: 23px;
+color: #647196;
+
+}
+
+.faintbg--header {
+  display: inline-block;
+  padding: 5px 10px; 
+  margin-left: 5px; 
+  font-family: 'Jost';
+font-style: normal;
+font-weight: 600;
+font-size: 13px;
+line-height: 19px;
+color: #4661E6;
+background: #F2F4FF;
+border-radius: 12px;
+text-decoration: none;
+
+}
+.card--votes {
+  position: absolute;
+  left: 25px;
+  bottom: 50px;
+}
+
+.Upvotesbtn {
+  position: relative;
+  z-index: 1;
+Width:30px;
+Height:30px;
+left: 3px
+}
+.Upvotesbtn:hover{
+  cursor: pointer;
+}
+.upvotes {
+  position: relative;
+  z-index: 0;
+}
+
+
+.card--votes,
+.Upvotesbtn,
+.upvotes {
+  background-color: #F2F4FF; /* replace with your desired background color */
+  color: #4661E6; /* replace with your desired text color */
+  padding: 7px; /* replace with your desired padding value */
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.upvoted{
+  background: #4661E6;
+}
+
+
+.Comments--icon{
+  position: absolute;
+left: 94.22%;
+right: 0%;
+top: 37.89%;
+bottom: 37.89%;
+& img,span{
+padding: 3px;
+}
+}
+
+
+/* all cards media queries  */
+
+
+/* Responsive CSS for tablet */
+@media (max-width: 768px) {
+  .Card--elements {
+    width: 90%;
+    left: 5%;
+    bottom: 78px;
+    margin: 10px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+  }
+
+  .inner--card {
+    left: 50px;
+  }
+
+  .card--header {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .card--description {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .faintbg--header {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .Comments--icon {
+    left: 90%;
+    top: 30%;
+    bottom: 30%;
+  }
+}
+
+/* Responsive CSS for mobile devices */
+@media (max-width: 480px) {
+  .Card--elements {
+    position: rlative;
+    top: 40px;
+    width: 90%;
+    left: 5%;
+    bottom: 150px;
+    margin: 5px;
+  }
+
+  .inner--card {
+    left: 20px;
+  }
+
+  .card--header {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .card--description {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .faintbg--header {
+    font-size: 10px;
+    line-height: 14px;
+  }
+
+  .Comments--icon {
+    left: 85%;
+    top: 25%;
+    bottom: 25%;
+  }
+}

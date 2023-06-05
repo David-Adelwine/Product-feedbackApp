@@ -1,0 +1,122 @@
+/* My soloution */
+.homepage {
+  margin-top: 40px;
+  text-align: center;
+  border-radius: 10px;
+  position: absolute;
+  width: 1057px;
+  height: 600px;
+  left: 330px;
+  top: 120px;
+  background-color: #fff;
+
+
+}
+
+.home--content{
+align-content: center;
+position: relative;
+top: 80px;
+}
+
+
+
+.homebtn{
+  font-family: 'Jost' Tahoma, sans-serif;
+  font-weight: 600;
+  background-color: #AD1FEA;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 13px;
+  margin-top: 25px;
+  position: relative;
+bottom: 12px;
+}
+
+.homebtn:hover{
+  background-color: #AD1FEA;
+  border: none;
+
+}
+
+.homeImg{
+  height: 170px;
+  width:170px;
+  margin-bottom: 20px;
+  
+}
+.homeheader{
+  font-weight: 700;
+  letter-spacing: -0.333333px ;
+  font-size: 24px;
+  font-style: normal;
+  font-family: 'Jost';
+  margin-top: 70px;
+  color:#3A4374
+ 
+}
+
+.hometext{
+  font-family: 'jost' sans-serif ;
+  font-size: 16px;
+  font-weight: 400px;
+  line-height: 23px;
+  color:#647196;
+}
+
+/* All media queries for home section */
+
+
+/* Responsive CSS for tablet */
+@media (max-width: 768px) {
+  .homepage {
+    width: 90%;
+    left: 5%;
+    top: 100px;
+  }
+
+  .home--content {
+    top: 40px;
+  }
+
+  .homeheader {
+    margin-top: 50px;
+    font-size: 20px;
+  }
+
+  .hometext {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+/* Responsive CSS for mobile devices */
+@media (max-width: 480px) {
+  .homepage {
+    width: 90%;
+    left: 5%;
+    top: 80px;
+    margin-top: 140px;
+  }
+
+  .home--content {
+    top: 20px;
+  }
+
+  .homeheader {
+    margin-top: 40px;
+    font-size: 18px;
+  }
+
+  .hometext {
+    font-size: 12px;
+    line-height: 17px;
+  }
+  
+}

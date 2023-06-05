@@ -5,10 +5,11 @@ import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import '../App.css'
+// import '../App.css'
 import { Link } from 'react-router-dom';
 import suggestion from '../Assets/suggestions/icon-suggestions.svg'
 import { useState } from 'react';
+import '../Styles/Navigation.css'
 
 
 
@@ -31,9 +32,7 @@ const Navigation = () => {
         <Nav 
            className="me-auto my-2 my-lg-0 d-flex Move--Links "
           style={{ maxHeight: '1px' }} >
-           <Nav.Link href="#action2" className='text-white Navigation--text' >Sortby:</Nav.Link>
-
-
+           <Nav.Link href="#action2" className='text-white Navigation--text2' >Sortby:</Nav.Link>
       <NavDropdown className='Nav--card' title={selectedSortOption} id="navbarScrollingDropdown">
         <Link to='/Roamap'>
           <NavDropdown.Item onClick={() => handleSortOptionClick('Most Upvotes')}>
@@ -56,7 +55,7 @@ const Navigation = () => {
 
       </Nav>
        <Form className="d-flex">
-                   <Button  className='homebtn'>+ Add Feedback</Button>
+         <Button  className='homebtn'>+ Add Feedback</Button>
           </Form>
       </Container>
    </Navbar> 

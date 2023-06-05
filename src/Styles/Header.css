@@ -1,0 +1,272 @@
+
+
+.grid--header{
+  display: flex;
+  flex-direction: column; 
+ flex-wrap: wrap;  
+  margin-left: 20px;
+  padding: 20px;
+ justify-content: space-between;
+
+}
+
+.card {
+  /* box-shadow: 0 4px 4px 0 rgba(0,0,0,0.2);
+  transition: 0.3s; */
+  width: 255px;
+  height: 137px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); */
+  cursor: pointer;
+}
+
+.container {
+  padding: 2px 16px;
+}
+.top-card{
+  background-image:url(../Assets/suggestions/desktop/background-header.png);
+  
+  }
+
+ .toptext{
+  position: absolute;
+  letter-spacing: -0.25 px;
+  top: 60px;
+  color: #fff;
+  font-family: 'jost';
+font-Weight:700;
+font-Size:20px;
+line-height: 28.9px
+
+
+  
+ }
+
+ .bottomtext{
+  position: absolute; 
+   top:90px ;
+font-family: 'Jost';
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 22px;
+color: #fff;
+ }
+
+ .card-items{
+  font-size: 10px;
+  padding: 5px;
+  list-style: none;
+  text-decoration: none;
+ }
+
+ .listed{
+  display:grid;
+  grid-gap: 20px;
+  grid-template-columns: 30% 30% 40%;
+  margin: auto;
+  max-width: 960px;
+ }
+ .top-listed{
+  color: #fff;
+  background: #4661E6;
+  width: 48px;
+  height: 30px;
+  border-radius: 12px;
+  text-align: center;
+  font-weight: 700;
+  font-family: 'jost';
+ }
+ .top-listed:hover{
+  color: #fff;
+ cursor: pointer;
+ }
+
+ .faintbg{
+  background: #F2F4FF;
+  background-size: cover;
+  width: 48px;
+height: 30px;
+border-radius: 10px;
+text-align: center;
+font-weight: 700;
+font-family: 'jost';
+color: #4661E6;
+
+ }
+
+ .faintbg:hover{
+  background:#CFD7FF ;
+  color: #4661E6;
+  text-decoration: none;
+ }
+
+
+ 
+
+  .grid--header{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+  
+  }
+
+.Card--elements{
+  background: #fff;
+  width: 1040px;
+  position: relative;
+  left: 330px;
+  bottom: 350px;
+  border-radius: 13px;
+  height:150px;
+  margin: 20px;
+  align-content: center;
+  justify-content: space-around;
+  
+}
+
+.inner--card {
+  padding: 10px; 
+  position: absolute;
+  left: 100px;
+  font-family: 'jost';
+}
+
+.card--header {
+  margin-bottom: 10px; 
+  font-family: 'Jost';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 26px;
+
+letter-spacing: -0.25px;
+
+color: #3A4374;
+
+
+}
+
+.card--description {
+  margin-bottom: 10px; 
+  font-weight: 400;
+  font-size: 16px;
+line-height: 23px;
+color: #647196;
+
+}
+
+.faintbg--header {
+  display: inline-block;
+  padding: 5px 10px; 
+  margin-left: 5px; 
+  font-family: 'Jost';
+font-style: normal;
+font-weight: 600;
+font-size: 13px;
+line-height: 19px;
+color: #4661E6;
+background: #F2F4FF;
+border-radius: 12px;
+text-decoration: none;
+
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+}
+
+.header {
+  margin: 20px;
+  & h2{
+    font-size: 20px;
+   
+  }
+}
+
+.bullet-list {
+  padding: 0;
+}
+
+.bullet {
+  margin-bottom: 5px;
+}
+
+.red {
+  color: red;
+}
+
+.blue {
+  color: blue;
+}
+
+.green {
+  color: green;
+}
+
+
+
+.number-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* All media queries */
+
+/* Responsive CSS for tablet */
+@media (max-width: 768px) {
+  .grid--header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-left: 10px;
+    padding: 10px;
+  }
+
+  .card {
+    height: 100px;
+    margin-bottom: 10px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    }
+  .top-card{
+    background: url(../Assets/suggestions/tablet/background-header.png)no-repeat;
+
+  }
+
+}
+
+/* Responsive CSS for mobile devices */
+@media (max-width: 480px) {
+  .grid--header {
+    flex-direction: column;
+    margin-left: 5px;
+    padding: 5px;
+  }
+
+  .card {
+    width: 100%;
+    height: 80px;
+    margin-bottom: 5px;
+  }
+  .top-card{
+    background: url(../Assets/suggestions/mobile/background-header.png)no-repeat;
+    background-size: cover;
+    width: 100%;
+  }
+
+  .inner--cards{
+    display: none;
+  }
+  .toptext,.bottomtext{
+    display: none;
+  }
+}

@@ -1,7 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Navigation from './Navigation'
-import '../App.css'
+// import '../App.css'
+import '../Styles/Header.css'
 
 
 
@@ -17,6 +18,8 @@ import '../App.css'
             </div>
       </div>
       <br/>
+      <div className='inner--cards'>
+
           <div className="card ">
             <div className='listed'>
             <Link  to="/Roadmap" className='card-items  top-listed' >All</Link>     
@@ -49,6 +52,8 @@ import '../App.css'
         </ol>
       </div>
     </div>
+          </div>
+
           </div>
           </section>
           <Navigation/>

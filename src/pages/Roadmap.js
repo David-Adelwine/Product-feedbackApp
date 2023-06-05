@@ -1,9 +1,10 @@
 import React from "react"
 import Header from '../Components/Header'
-import Navigation from "../Components/Navigation"
-import '../App.css'
+// import Navigation from "../Components/Navigation"
+// import '../App.css'
 import data from "../data"
 import Cards from "../Components/Cards"
+// import '../Styles/Roadmap.css'
 
 export default function Roadmap(){
    // Calculate the number of elements to be returned
@@ -30,7 +31,7 @@ export default function Roadmap(){
   return(
     <div>
       <Header/>
-      <Navigation/>
+      {/* <Navigation/> */}
       {renderedElements}
     </div>
   )
