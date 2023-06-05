@@ -1,0 +1,60 @@
+.commentbtn{
+  position: absolute;
+  left: 220px;
+  top: 30px;
+}
+
+.homebtn{
+  font-family: 'Jost' Tahoma, sans-serif;
+  font-weight: 600;
+  background-color: #AD1FEA;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 13px;
+  margin-top: 25px;
+  position: relative;
+bottom: 12px;
+}
+
+.homebtn:hover{
+  background-color: #AD1FEA;
+  border: none;
+
+}
+
+.Form--elements{
+  background-color: #fff;
+  color: #333;
+  font-family: 'jost';
+  width: 60%;
+  display: flex;
+ justify-content: center;
+  align-items: center;
+height: 30vh;
+padding-top: 55px;
+position: absolute;
+left: 230px;
+top: 20px;
+border-radius: 15px;
+font-family: 'jost' sans-serif;
+
+ 
+}
+
+.comment--box{
+position: absolute;
+bottom: 85px;
+}
+.comment--direction{
+  position: relative;
+  top: 30px;
+  right: 230px;
+  margin-top: 12px;
+  font-family: 'jost' sans-serif;
+}

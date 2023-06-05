@@ -1,10 +1,10 @@
 import React from 'react'
-
+import Comments from '../Components/Comments'
 const Feedbackedit = () => {
   return (
     <div>
-      <p>welcome to feedbackedit Page</p>
-    </div>
+<Comments/>    
+ </div>
   )
 }
 
