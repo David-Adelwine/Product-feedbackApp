@@ -76,9 +76,10 @@ bottom: 12px;
 /* Responsive CSS for tablet */
 @media (max-width: 768px) {
   .homepage {
-    width: 90%;
-    left: 5%;
-    top: 100px;
+    width: 100%;
+    left: 2%;
+    top: 310px;
+
   }
 
   .home--content {
@@ -99,14 +100,14 @@ bottom: 12px;
 /* Responsive CSS for mobile devices */
 @media (max-width: 480px) {
   .homepage {
-    width: 90%;
+    width: 100%;
     left: 5%;
     top: 80px;
-    margin-top: 140px;
+    margin-top: 110px;
   }
 
   .home--content {
-    top: 20px;
+    top: 40px;
   }
 
   .homeheader {

@@ -1,6 +1,6 @@
 
 
-.homebtn{
+.navbtn{
   font-family: 'Jost' Tahoma, sans-serif;
   font-weight: 600;
   background-color: #AD1FEA;
@@ -19,7 +19,7 @@ bottom: 12px;
 }
 
 
-.homebtn:hover{
+.navbtn:hover{
   background-color: #AD1FEA;
   border: none;
 
@@ -55,15 +55,30 @@ letter-spacing: -0.25px;
 /* Responsive CSS for tablet */
 @media (max-width: 768px) {
   .Move--Links {
-    left: 20px;
-    bottom: 20px;
+    left: 200px;
+    bottom: 55px;
+
+
   }
 
   .Nav--Postion {
-    width: 90%;
+    width: 95%;
+    left: 15px;
     right: unset;
-    bottom: 40px;
+    bottom: 690px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
   }
+.navbtn{
+  font-size: 13px;
+font-family: 'Jost';
+font-weight: 700;
+color: #fff;
+line-height: 19px;
+height: 44px;
+}
+ 
 }
 
 /* Responsive CSS for mobile devices */
@@ -90,13 +105,22 @@ letter-spacing: -0.25px;
   .Navigation--text {
     display: none;
   }
-  .homebtn{
-  position: relative;
+  .navbtn{
+position: relative;
 bottom: 130;
-left: 170px;
+left: 235px;
 padding: 12px 12px;
-font-size: 10px;
-font-weight: 200;
+font-size: 13px;
+font-family: 'Jost';
+font-weight: 700;
+color: #fff;
+line-height: 19px;
+
+}
+.navbtn:hover{
+  background-color: #AD1FEA;
+  border: none;
+
 }
 .Navigation--text2{
   position: relative;

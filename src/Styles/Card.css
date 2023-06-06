@@ -86,9 +86,9 @@ left: 3px
 .card--votes,
 .Upvotesbtn,
 .upvotes {
-  background-color: #F2F4FF; /* replace with your desired background color */
-  color: #4661E6; /* replace with your desired text color */
-  padding: 7px; /* replace with your desired padding value */
+  background-color: #F2F4FF; 
+  color: #4661E6; 
+  padding: 7px; 
   border-radius: 15px;
   display: flex;
   flex-direction: column;
@@ -117,7 +117,8 @@ padding: 3px;
 /* Responsive CSS for tablet */
 @media (max-width: 768px) {
   .Card--elements {
-    width: 90%;
+    width: 689px;
+    height: 151px;   
     left: 5%;
     bottom: 78px;
     margin: 10px;
@@ -127,7 +128,8 @@ padding: 3px;
   }
 
   .inner--card {
-    left: 50px;
+    left: 90px;
+    bottom: 20px;
   }
 
   .card--header {
@@ -147,24 +149,27 @@ padding: 3px;
 
   .Comments--icon {
     left: 90%;
-    top: 30%;
+    top: 40%;
     bottom: 30%;
   }
+ 
 }
 
 /* Responsive CSS for mobile devices */
 @media (max-width: 480px) {
   .Card--elements {
     position: rlative;
-    top: 40px;
-    width: 90%;
+    width: 327px;
+    height: 200px;
     left: 5%;
-    bottom: 150px;
-    margin: 5px;
+    bottom: 30px;
+    margin: 15px;
+    border-radius: 13px;
   }
 
   .inner--card {
-    left: 20px;
+    left: 40px;
+    bottom: 50px;
   }
 
   .card--header {
@@ -184,7 +189,29 @@ padding: 3px;
 
   .Comments--icon {
     left: 85%;
-    top: 25%;
+    top: 75%;
     bottom: 25%;
+
+  }
+  .card--votes{
+    bottom: 20px;
+    width: 69px;
+    height: 32px;
+   display: flex;
+   flex-direction: row;
+  }
+  .Upvotesbtn{
+    position: relative;
+    left: 0%;
+right: 80%;
+bottom: 5px;
+  }
+
+  .upvotes{
+    position: absolute;
+height: 19px;
+left: 45%;
+bottom: 15px;
+background: none;
   }
 }

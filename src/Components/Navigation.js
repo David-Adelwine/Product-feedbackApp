@@ -55,7 +55,7 @@ const Navigation = () => {
 
       </Nav>
        <Form className="d-flex">
-         <Button  className='homebtn'>+ Add Feedback</Button>
+         <Button  className='navbtn'>+ Add Feedback</Button>
           </Form>
       </Container>
    </Navbar> 

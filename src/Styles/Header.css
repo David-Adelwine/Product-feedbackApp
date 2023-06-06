@@ -231,15 +231,39 @@ text-decoration: none;
   }
 
   .card {
-    height: 100px;
+    width: 223px;
+    height: 178px;    
     margin-bottom: 10px;
+    margin-left: 13px;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     border-radius: 0;
     }
   .top-card{
     background: url(../Assets/suggestions/tablet/background-header.png)no-repeat;
+    background-position: cover;
+   
 
+  }
+
+  .lastcard-notresponsive{
+    position: relative;
+    left: 235px;
+    bottom: 210px;
+  }
+  .toptext{
+    position: absolute;
+    left: 45px;
+    bottom: 20px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 29px;
+    letter-spacing: -0.25px;
+  }
+  .bottomtext{
+    position: absolute;
+    bottom: 75px;
+    left: 35px;
   }
 
 }
@@ -261,12 +285,24 @@ text-decoration: none;
     background: url(../Assets/suggestions/mobile/background-header.png)no-repeat;
     background-size: cover;
     width: 100%;
+    width: 375px;
+    height: 72px;
+    position: relative;
+    right: 8px;
   }
 
   .inner--cards{
     display: none;
   }
-  .toptext,.bottomtext{
-    display: none;
+  .toptext{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+  }
+
+  .bottomtext{
+    position: absolute;
+    top: 45px;
+
   }
 }
