@@ -1,0 +1,22 @@
+.Gobackbtn{
+  font-family: 'Jost' Tahoma, sans-serif;
+  font-weight: 600;
+  background: #4661e6;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 13px;
+  margin-top: 25px;
+  position: relative;
+bottom: 12px;
+}
+
+.Gobacknav{
+
+  background: none;
+}

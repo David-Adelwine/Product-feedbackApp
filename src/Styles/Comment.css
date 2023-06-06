@@ -1,8 +1,4 @@
 
-body{
-  background-color: red;
-}
-
 .commentbtn{
   position: absolute;
   left: 220px;
@@ -45,7 +41,7 @@ height: 30vh;
 padding-top: 55px;
 position: absolute;
 left: 230px;
-top: 20px;
+top: 170px;
 border-radius: 15px;
 font-family: 'jost' sans-serif;
 
