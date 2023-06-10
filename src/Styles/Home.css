@@ -4,10 +4,10 @@
   text-align: center;
   border-radius: 10px;
   position: absolute;
-  width: 1057px;
+  width: 825px;
   height: 600px;
-  left: 330px;
-  top: 120px;
+  left: 470px;
+  top: 100px;
   background-color: #fff;
 
 
@@ -102,7 +102,7 @@ bottom: 12px;
   .homepage {
     width: 100%;
     left: 5%;
-    top: 80px;
+    top: 60px;
     margin-top: 110px;
   }
 

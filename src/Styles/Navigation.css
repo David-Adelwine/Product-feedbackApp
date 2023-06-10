@@ -28,14 +28,15 @@ bottom: 12px;
 .Move--Links{
   position: absolute;
   left: 230px;
-  bottom: 70px;
+  bottom: 50px;
   color: #fff;
 }
 .Nav--Postion{
 position: absolute;
-width: 1050px;
- right: 50px;
-bottom: 680px;
+width: 825px;
+height: 72px;
+right: 140px;
+bottom: 710px;
 border-radius: 15px;
 color: #fff;
 background-color: #373F68;
@@ -92,10 +93,12 @@ height: 44px;
 
   .Nav--Postion {
     position: relative;
+    width: 375px;
+    height: 56px; 
     bottom: 60px;
     width: 100%;
     right: unset;
-    bottom: 52px;
+    bottom: 115px;
     padding: 0px;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
@@ -107,8 +110,10 @@ height: 44px;
   }
   .navbtn{
 position: relative;
+width: 134px;
+height: 40px;
 bottom: 130;
-left: 235px;
+left: 217px;
 padding: 12px 12px;
 font-size: 13px;
 font-family: 'Jost';

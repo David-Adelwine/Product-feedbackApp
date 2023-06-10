@@ -44,9 +44,9 @@ import '../Styles/Header.css'
                     <div className="header">
                             <h2>Views</h2>
                           <ol className="number-list">
-                            <li>1</li>
-                            <li>2</li>
-                            <li>3</li>
+                            <li>0</li>
+                            <li>0</li>
+                            <li>0</li>
                           </ol>
                     </div>
                </div>

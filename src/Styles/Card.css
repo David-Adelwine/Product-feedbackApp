@@ -3,12 +3,12 @@
 
 .Card--elements{
   background: #fff;
-  width: 1040px;
+  width: 825px;
   position: relative;
-  left: 330px;
-  bottom: 350px;
+  left: 450px;
+  bottom: 390px;
   border-radius: 13px;
-  height:150px;
+  height:151px;
   margin: 20px;
   align-content: center;
   justify-content: space-around;
@@ -120,11 +120,13 @@ padding: 3px;
     width: 689px;
     height: 151px;   
     left: 5%;
-    bottom: 78px;
+    top: 100px;
+    bottom: 79px;
     margin: 10px;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     border-radius: 0;
+ 
   }
 
   .inner--card {
@@ -158,10 +160,11 @@ padding: 3px;
 /* Responsive CSS for mobile devices */
 @media (max-width: 480px) {
   .Card--elements {
-    position: rlative;
+    position: relative;
     width: 327px;
     height: 200px;
     left: 5%;
+    top: 5px;
     bottom: 30px;
     margin: 15px;
     border-radius: 13px;

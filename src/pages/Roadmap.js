@@ -12,7 +12,7 @@ export default function Roadmap(){
  
   // Use Array.prototype.slice() to create a new array with half the elements
   const cardElements = data.productRequests.slice(0,cardLength);
-
+console.log(cardLength)
     // Map through the CardElements array and render the each card
 
   const renderedElements = cardElements.map((cards, index)=>{
