@@ -20,7 +20,6 @@ function App() {
     </nav> */}
     <Routes>
  <Route path='/' element={<> <Header/> <Hompage/></>}/>
-   {/* <Route path='/Home' element={<Hompage/>}/> */}
     <Route path='/Feedbackdetails' element={<Feedbackdatails/>}/>
     <Route path='/Feedbackedit' element={<Feedbackedit/>}/>
     <Route path='/Roadmap' element={ <Roadmap/>}/>

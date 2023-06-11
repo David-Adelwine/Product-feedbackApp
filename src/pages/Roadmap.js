@@ -4,7 +4,7 @@ import Header from '../Components/Header'
 // import '../App.css'
 import data from "../data"
 import Cards from "../Components/Cards"
-// import '../Styles/Roadmap.css'
+// import '../Styles/Roadmap.css' 
 
 export default function Roadmap(){
    // Calculate the number of elements to be returned
@@ -12,7 +12,7 @@ export default function Roadmap(){
  
   // Use Array.prototype.slice() to create a new array with half the elements
   const cardElements = data.productRequests.slice(0,cardLength);
-console.log(cardLength)
+// console.log(cardLength)
     // Map through the CardElements array and render the each card
 
   const renderedElements = cardElements.map((cards, index)=>{
