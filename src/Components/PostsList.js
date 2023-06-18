@@ -16,7 +16,7 @@ const PostsList = () => {
           <h5 className='name'>{comment.user.name}</h5>
           <h5 className='userName'>@{comment.user.username}</h5>
           </div>
-          <Link>Reply</Link>
+          <Link className='commentLink'>Reply</Link>
           <p className='post--content'>{comment.content}</p>
           <hr/>
         </article>

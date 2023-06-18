@@ -25,7 +25,7 @@ padding: 20px ;
 
 }
 
-a{
+.commentLink{
   position: relative;
   left: 630px;
 
@@ -34,8 +34,6 @@ font-style: normal;
 font-weight: 600;
 font-size: 13px;
 line-height: 19px;
-/* identical to box height */
-
 text-decoration-line: underline;
 
 color: #4661E6;
