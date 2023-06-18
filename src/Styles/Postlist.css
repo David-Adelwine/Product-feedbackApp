@@ -4,7 +4,8 @@
   position: relative;
   left: 450px;
   border-radius: 13px;
-  padding: 50px;
+  padding-top: 50px;
+  margin-top: 20px;
 }
 
 .user--image{
@@ -15,7 +16,7 @@
 }
 .user--info{
   position: absolute;
-  left: 150px;
+  left: 100px;
   font-family: 'jost' Arial, Helvetica, sans-serif;
   font-size: 5px;
 }
@@ -65,11 +66,29 @@ color: #647196;
 }
 
 .post--content{
+  margin-left: 10.8%;
   font-family: 'Jost';
 font-style: normal;
 font-weight: 400;
 font-size: 15px;
 line-height: 22px;
-
 color: #647196;
+}
+
+.Replies-comment{
+  position: relative;
+  left: 30px;
+}
+
+.Num--comment{
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: -0.25px;
+  color: #3A4374;
+  margin-left: 30px;
+  margin-bottom: 50px;
+
 }

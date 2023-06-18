@@ -45,3 +45,33 @@ export default Comment
 
 
 
+// const posts = useSelector(selectAllPosts);
+// const commentElements = posts.data.productRequests.flatMap((productRequest) => {
+//   if (productRequest.comments) {
+//     return productRequest.comments.map((comment) => (
+//       <article key={comment.id}>
+//         <img src={comment.user.image} alt='Person' />
+//         <h3>{comment.user.name}</h3>
+//         <h5>{comment.user.username}</h5>
+//         <p>{comment.content}</p>
+//       </article>
+//     ));
+//   }
+//   return [];
+// });
+
+{/* <div>{commentElements}</div>; */}
+
+
+
+
+
+
+
+// const posts = useSelector( selectAllPosts)
+// const renderfeedback = posts.data.productRequests.map(post =>(
+// <article  key = {post.id} >
+// <p>{ post.content}
+// </p>
+// </article> 
+// ));
