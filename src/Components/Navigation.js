@@ -11,11 +11,6 @@ import suggestion from '../Assets/suggestions/icon-suggestions.svg'
 import { useState } from 'react';
 import '../Styles/Navigation.css'
 
-
-
-
-
-
 const Navigation = () => {
   const [selectedSortOption, setSelectedSortOption] = useState('Most Upvotes');
 
@@ -35,7 +30,7 @@ const Navigation = () => {
            <Nav.Link href="#action2" className='text-white Navigation--text2' >Sortby:</Nav.Link>
       <NavDropdown className='Nav--card' title={selectedSortOption} id="navbarScrollingDropdown">
         <Link to='/Roamap'>
-          <NavDropdown.Item onClick={() => handleSortOptionClick('Most Upvotes')}>
+          <NavDropdown.Item onClick={() => handleSortOptionClick('Most Upvotes')} >
             Most Upvotes
           </NavDropdown.Item>
         </Link>

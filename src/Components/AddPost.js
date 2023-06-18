@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import '../Styles/AddPost.css'
 import { useDispatch } from 'react-redux';
-import { postAdded } from './Post/PostSlice';
+ import { postAdded } from './Post/PostSlice';
  
 
 const AddPost = () => {
@@ -12,9 +12,7 @@ const AddPost = () => {
     const onSavepostClicked=()=>{
       if(content){
         dispatch(
-          postAdded(
-            content
-          )
+          postAdded(content)
         )
         setcontent('')
 

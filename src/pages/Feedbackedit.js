@@ -1,12 +1,11 @@
 import React from 'react'
 import AddPost from '../Components/AddPost'
-// import { useSelector } from 'react-redux';
 import Goback from '../Components/Goback';
 import PostsList from '../Components/PostsList';
 
 
-const Feedbackedit = () => {
 
+const Feedbackedit = () => {
 
   return (
     <div>

@@ -1,0 +1,77 @@
+.userData{
+  background: #fff;
+  width: 825px;
+  position: relative;
+  left: 450px;
+  border-radius: 13px;
+  padding: 50px;
+}
+
+.user--image{
+  position: relative;
+  width: 60px;
+  border-radius: 50%;
+  bottom: 30px;
+}
+.user--info{
+  position: absolute;
+  left: 150px;
+  font-family: 'jost' Arial, Helvetica, sans-serif;
+  font-size: 5px;
+}
+
+.commentData{
+padding: 20px ;
+
+}
+
+a{
+  position: relative;
+  left: 630px;
+
+font-family: 'Jost';
+font-style: normal;
+font-weight: 600;
+font-size: 13px;
+line-height: 19px;
+/* identical to box height */
+
+text-decoration-line: underline;
+
+color: #4661E6;
+}
+h5{
+  position: relative;
+  font-size: 15px;
+  bottom: 70px;
+}
+
+.name{
+  font-family: 'Jost';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 20px;
+letter-spacing: -0.194444px;
+ color: #3A4374;
+  
+}
+
+.userName{
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+color: #647196;
+}
+
+.post--content{
+  font-family: 'Jost';
+font-style: normal;
+font-weight: 400;
+font-size: 15px;
+line-height: 22px;
+
+color: #647196;
+}

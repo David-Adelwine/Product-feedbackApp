@@ -7,10 +7,10 @@ import '../Styles/Header.css'
 
 
  const Header = () => {
-
   return (
       <div >
-        <section className="grid--header">
+
+ <section className="grid--header">
             <div className="card top-card">
                   <div className="container">
                     <h4 className='toptext' >Frontend Mentor</h4> 
@@ -21,9 +21,9 @@ import '../Styles/Header.css'
             <div className='inner--cards'>
                 <div className="card ">
                   <div className='listed'>
-                  <Link  to="/Roadmap" className='card-items  top-listed' >All</Link>     
+                  <Link  to="/FeedbackDetail" className='card-items  top-listed' >All</Link>     
                     <Link to="/" className ='card-items faintbg'>UI</Link> 
-                      <Link to="/Feedbackedit" className='card-items faintbg'>UX</Link>
+                      <Link to="/" className='card-items faintbg'>UX</Link>
                       <span className='card-items faintbg'>Enhancement</span>
                       <span className='card-items faintbg'>Bug</span>
                       <span className='card-items faintbg feature'>Feature</span>
@@ -42,7 +42,7 @@ import '../Styles/Header.css'
                         </ul>
                     </div>
                     <div className="header">
-                            <h2>Views</h2>
+                            <Link to='/Roadmap'><h2 classname='Go-Roadmap'>Views</h2></Link>
                           <ol className="number-list">
                             <li>0</li>
                             <li>0</li>
@@ -53,10 +53,15 @@ import '../Styles/Header.css'
              </div>
          </div>
        </section>
-                <Navigation/>
-              
+       <Navigation/> 
       </div>
 
   )
 }
 export default Header
+
+
+
+
+
+

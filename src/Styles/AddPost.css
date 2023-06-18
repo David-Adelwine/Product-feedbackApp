@@ -30,33 +30,20 @@ bottom: 12px;
 }
 
 .Form--elements{
+  position: absolute;
   background-color: #fff;
   color: #333;
   font-family: 'jost';
-  width: 60%;
+  width: 830px;
   display: flex;
  justify-content: center;
   align-items: center;
-height: 30vh;
-padding-top: 55px;
-position: absolute;
-left: 230px;
-top: 170px;
-border-radius: 15px;
-font-family: 'jost' sans-serif;
+  height: 246px;
+  left: 455px;
+ padding-top: 55px;
+ border-radius: 15px;
+ font-family: 'jost' sans-serif;
 
  
 }
 
-.comment--box{
-position: absolute;
-bottom: 85px;
-left: 70px;
-}
-.comment--direction{
-  position: relative;
-  top: 70px;
-  right: 230px;
-  margin-top: 12px;
-  font-family: 'jost' sans-serif;
-}
