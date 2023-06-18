@@ -22,7 +22,7 @@ const AddPost = () => {
   return (
     <div className='Form--elements' >
       <form>
-        <label htmlFor='postContent'>Add Comments </label>
+        <label htmlFor='postContent' className='comment--Label'>Add Comments </label>
           <textarea className='comment--box'
            name="postContent" 
            rows={3} cols={89}
@@ -37,7 +37,7 @@ const AddPost = () => {
         <button
          onClick={onSavepostClicked} 
          type="button"  
-         className=' commentbtn homebtn'
+         className=' commentbtn '
          >Post Comment</button>
         </form>
       

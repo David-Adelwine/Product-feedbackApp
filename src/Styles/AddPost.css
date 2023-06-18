@@ -1,11 +1,6 @@
 
-.commentbtn{
-  position: absolute;
-  left: 220px;
-  
-}
 
-.homebtn{
+.commentbtn{
   font-family: 'Jost' Tahoma, sans-serif;
   font-weight: 600;
   background-color: #AD1FEA;
@@ -19,11 +14,13 @@
   cursor: pointer;
   border-radius: 13px;
   margin-top: 25px;
-  position: relative;
-bottom: 12px;
+  position: absolute;
+  bottom: 20px;
+  left: 570px;
+
 }
 
-.homebtn:hover{
+.commentbtn:hover{
   background-color: #AD1FEA;
   border: none;
 
@@ -47,3 +44,42 @@ bottom: 12px;
  
 }
 
+.comment--Label{
+  position: absolute;
+  bottom: 185px;
+  left:56px;
+  font-family: 'Jost';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 26px;
+letter-spacing: -0.25px;
+color: #3A4374;
+}
+
+.comment--box{
+  position: absolute;
+left: 4.66%;
+right: 4.38%;
+top: 30.08%;
+bottom: 37.4%;
+}
+
+.comment--direction{
+  position: absolute;
+  height: 22px;
+  left: 4.66%;
+  right: 79.18%;
+  top: calc(50% - 22px/2 + 69px);
+  
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 22px;
+  
+  
+  color: #647196;
+
+
+}

@@ -19,6 +19,7 @@
   left: 100px;
   font-family: 'jost' Arial, Helvetica, sans-serif;
   font-size: 5px;
+  line-height: 2px;
 }
 
 .commentData{
@@ -78,6 +79,7 @@ color: #647196;
 .Replies-comment{
   position: relative;
   left: 30px;
+  top: 20px;
 }
 
 .Num--comment{
@@ -91,4 +93,46 @@ color: #647196;
   margin-left: 30px;
   margin-bottom: 50px;
 
+}
+
+.ReplyingTo{
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  color: #AD1FEA;
+}
+
+.new--comment{
+  background: #fff;
+  width: 825px;
+  position: relative;
+  left: 450px;
+  border-radius: 13px;
+  padding-top: 50px;
+  margin-top: 20px;
+}
+
+
+
+
+
+/* All media queries for Postlist section */
+
+
+/* Responsive CSS for tablet */
+@media (max-width: 768px) {
+  .userData{
+  width: 100%;
+  left: 0px;
+  }
+
+  
+}
+
+/* Responsive CSS for mobile devices */
+@media (max-width: 480px) {
+  .userData{
+ width: 100%;
+  }
 }

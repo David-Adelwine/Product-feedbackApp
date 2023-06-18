@@ -2,18 +2,7 @@
 import { createSlice, nanoid } from "@reduxjs/toolkit";
 import data from "../../data";
 
-// const initialState = [
-//   {
-//     id: '1',
-//     title: 'implementing redux toolkit',
-//     content: 'redux toolkit implementation experiment'
-//   },
-//   {
-//     id: '2',
-//     title: 'implementing redux toolkit',
-//     content: 'redux toolkit implementation experiment'
-//   }
-// ];
+
 const initialState = {
   data:data
 };
