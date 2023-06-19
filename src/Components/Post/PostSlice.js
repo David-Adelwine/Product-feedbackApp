@@ -8,26 +8,6 @@ const initialState = {
 };
 
 
-// const postSlice = createSlice({
-//   name: 'posts',
-//   initialState,
-//   reducers: {
-//     postAdded: {
-//       reducer(state, action) {
-//         state.push(action.payload);
-//       },
-//       prepare(  content ) {
-//         return {
-//           payload: {
-//             id: nanoid(),
-//            content
-//           }
-//         };
-//       }
-//     }
-//   }
-// });
-
 const postSlice = createSlice({
   name: 'posts',
   initialState,
@@ -44,6 +24,31 @@ const postSlice = createSlice({
           }
         };
       }
+    },
+     commentAdded: {
+      reducer(state, action) {
+        const { postId, comment } = action.payload;
+        const productRequest = state.data.productRequests.find(
+          (request) => request.id === postId
+        );
+        if (productRequest) {
+          if (!productRequest.comments) {
+            productRequest.comments = [];
+          }
+          productRequest.comments.push(comment);
+        }
+      },
+      prepare(postId, content) {
+        return {
+          payload: {
+            postId,
+            comment: {
+              id: nanoid(),
+              content,
+            },
+          },
+        };
+      },
     },
     
   }

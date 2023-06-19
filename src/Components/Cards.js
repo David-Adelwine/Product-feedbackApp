@@ -2,23 +2,12 @@ import React, { useState } from 'react';
 import "../App.css";
 import arrowUp from '../Assets/shared/icon-arrow-up.svg';
 import CommentsImg from '../Assets/shared/icon-comments.svg';
-// import data from '../data';
 import '../Styles/Card.css'
 
 
 
 const Cards = (props) => {
-
-  // const Requests = data.productRequests;
-
  const [upvotes, setUpvotes] = useState(props.upvotes);
-  
-// let commentsLength;
-//   const Comments = Requests.map(request => {
-//     commentsLength = request.comments ? request.comments.length : 0;
-//     // console.log(`${commentsLength}`);
-//     return commentsLength;
-//   });
   const handleUpvote = () => {
     setUpvotes(upvotes + 1);
   };
@@ -42,7 +31,7 @@ const Cards = (props) => {
       </div>
       <div className='Comments--icon'>
         <img src={CommentsImg} alt='comments'/>
-        <span>{4}</span>
+        <span>{props.comments}</span>
       </div>
     </div>
   );

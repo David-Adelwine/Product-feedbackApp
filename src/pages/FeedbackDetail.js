@@ -4,6 +4,8 @@ import data from "../data"
 import Cards from "../Components/Cards"
 // import '../Styles/Roadmap.css' 
 export default function FeedbackDetail(){
+
+    
    // Calculate the number of elements to be returned
   const cardLength = Math.ceil(data.productRequests.length/2);
 
@@ -14,6 +16,11 @@ export default function FeedbackDetail(){
     // Map through the CardElements array and render the each card
 
   const renderedElements = cardElements.map((cards, index)=>{
+    //determing the number of comments under each productRequest
+    const commentsLength = cards.comments ? cards.comments.length : 0;
+    const repliesLength = cards.comments ? cards.comments.reduce((count, comment) => count + (comment.replies ? comment.replies.length : 0), 0) : 0;
+    const totalComments = commentsLength + repliesLength;
+
     return(
       < Cards 
       key={index} 
@@ -21,14 +28,18 @@ export default function FeedbackDetail(){
       description={cards.description}
      category={cards.category} 
      upvotes={cards.upvotes}
+     comments={totalComments}
      />
     )
   })
 
+
+  
+
   //console.log(renderedElements); checking if the exact number can retrieved on the dom
   return(
     <div>
-      <Header />
+      <Header  />
       {/* <Navigation/> */}
       {renderedElements}
     </div>

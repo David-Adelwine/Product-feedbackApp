@@ -2,8 +2,6 @@ import React, { useState } from 'react'
 import '../Styles/AddPost.css'
 import { useDispatch } from 'react-redux';
  import { postAdded } from './Post/PostSlice';
- 
-
 const AddPost = () => {
     const dispatch= useDispatch();
     const [content,setcontent]=useState('')
@@ -19,17 +17,20 @@ const AddPost = () => {
       }
     }
 
+   
+
   return (
     <div className='Form--elements' >
       <form>
         <label htmlFor='postContent' className='comment--Label'>Add Comments </label>
           <textarea className='comment--box'
            name="postContent" 
-           rows={3} cols={89}
+           rows={3} 
+           cols={89}
            placeholder='Type your comments here' 
            value={content}
            id="postContent"
-           onChange={onContentChanged}s
+           onChange={onContentChanged}
           />
         <br/>
         <p className='comment--direction'>250 characters left</p>

@@ -9,11 +9,11 @@ import { Link } from 'react-router-dom';
 
 const Goback = () => {
   return (
-    <Navbar bg='light ' expand="lg" className='Gobacknav'>
+    <Navbar  expand="lg" className='Gobacknav'>
     <Container>
       <Navbar.Brand href="#home" className='Goback'> <Link to="../../Roadmap"><img src={Arrowleft} alt='<' className='Goback--icon'/> Go Back </Link></Navbar.Brand>  
         <Nav className="me-auto">
-          {/* <button className='Gobackbtn'>Edit Feedback</button> */}
+          <button className='Gobackbtn'>Edit Feedback</button>
         </Nav>
     </Container>
   </Navbar>
