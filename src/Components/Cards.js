@@ -21,7 +21,7 @@ const Cards = (props) => {
         <span className='faintbg--header'>{props.category}</span>
       </section>
       <div className='card--votes'>
-        <img
+        <img   
           className='Upvotesbtn'
           src={arrowUp}
           alt='^'

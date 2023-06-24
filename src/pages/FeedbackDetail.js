@@ -2,7 +2,6 @@ import React from "react"
 import Header from '../Components/Header'
 import data from "../data"
 import Cards from "../Components/Cards"
-// import '../Styles/Roadmap.css' 
 export default function FeedbackDetail(){
 
     
@@ -13,10 +12,11 @@ export default function FeedbackDetail(){
   // Use Array.prototype.slice() to create a new array with half the elements
   const cardElements = data.productRequests.slice(0,cardLength);
 // console.log(cardLength)
-    // Map through the CardElements array and render the each card
+    // Map through the CardElements array and render each card
 
   const renderedElements = cardElements.map((cards, index)=>{
-    //determing the number of comments under each productRequest
+    // determing the number of comments under each productRequest including the replies array
+    
     const commentsLength = cards.comments ? cards.comments.length : 0;
     const repliesLength = cards.comments ? cards.comments.reduce((count, comment) => count + (comment.replies ? comment.replies.length : 0), 0) : 0;
     const totalComments = commentsLength + repliesLength;
@@ -33,15 +33,14 @@ export default function FeedbackDetail(){
     )
   })
 
-
-  
-
-  //console.log(renderedElements); checking if the exact number can retrieved on the dom
+  //console.log(renderedElements); checking if the exact number can be retrieved on the dom
   return(
     <div>
       <Header  />
-      {/* <Navigation/> */}
       {renderedElements}
     </div>
   )
 }
+
+
+

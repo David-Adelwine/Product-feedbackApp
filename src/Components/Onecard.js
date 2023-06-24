@@ -1,36 +1,68 @@
-import React,{useState} from 'react'
-import arrowUp from '../Assets/shared/icon-arrow-up.svg'
- import CommentsImg from '../Assets/shared/icon-comments.svg'
-const Onecard = (props) => {
+import React, { useState } from 'react';
+import arrowUp from '../Assets/shared/icon-arrow-up.svg';
+import CommentsImg from '../Assets/shared/icon-comments.svg';
+import '../Styles/SingleCard.css';
+import data from '../data';
 
-  const [upvotes, setUpvotes] = useState(props.upvotes);
+const Onecard = (props) => {
+  const { title, description, category, upvotes, totalComments } = props;
+
+  const [cardUpvotes, setCardUpvotes] = useState(upvotes);
 
   const handleUpvote = () => {
-    setUpvotes(upvotes + 1);
+    setCardUpvotes(cardUpvotes + 1);
   };
 
   return (
-    <div className='Card--elements'>
-    <section className='inner--card'>
-      <h3 className='card--header'>{props.title}</h3>
-      <p className='card--description'>{props.description}</p>
-      <span className='faintbg--header'>{props.category}</span>
-    </section>
-    <div className='card--votes'>
-      <img
-        className='Upvotesbtn'
-        src={arrowUp}
-        alt='^'
-        onClick={handleUpvote}
-      />
-      <span className='upvotes'>{upvotes}</span>
+    <div className='SingleCard--elements'>
+      <section className='inner--card'>
+        <h3 className='card--header'>{title}</h3>
+        <p className='card--description'>{description}</p>
+        <span className='faintbg--header'>{category}</span>
+      </section>
+      <div className='card--votes'>
+        <img
+          className='Upvotesbtn'
+          src={arrowUp}
+          alt='^'
+          onClick={handleUpvote}
+        />
+        <span className='upvotes'>{cardUpvotes}</span>
+      </div>
+      <div className='Comments--icon'>
+        <img src={CommentsImg} alt='comments' />
+        <span>{totalComments}</span>
+      </div>
     </div>
-    <div className='Comments--icon'>
-      <img src={CommentsImg} alt='comments'/>
-      <span>{4}</span>
-    </div>
-  </div>
-  )
-}
+  );
+};
 
-export default Onecard
+const SingleCard = () => {
+  const newData = data.productRequests[1];
+  const totalComments = newData.comments.length + getTotalReplyCount(newData.comments);
+
+  // Recursive function to calculate the total number of replies
+  function getTotalReplyCount(comments) {
+    let count = 0;
+    comments.forEach(comment => {
+      if (comment.replies) {
+        count += comment.replies.length;
+        count += getTotalReplyCount(comment.replies); // Recursively calculate replies of replies
+      }
+    });
+    return count;
+  }
+
+  return (
+    <Onecard
+      key={newData.id}
+      title={newData.title}
+      description={newData.description}
+      category={newData.category}
+      upvotes={newData.upvotes}
+      totalComments={totalComments} // Pass totalComments as a prop
+    />
+  );
+};
+
+export default SingleCard;

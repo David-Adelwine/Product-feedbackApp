@@ -1,12 +1,12 @@
 
 
 
-.Card--elements{
+.SingleCard--elements{
   background: #fff;
   width: 825px;
   position: relative;
-  left: 450px;
-  bottom: 300px;
+  left: 430px;
+  bottom: 10px;
   border-radius: 13px;
   height:151px;
   margin: 20px;
@@ -122,7 +122,7 @@ padding: 3px;
 
 /* Responsive CSS for tablet */
 @media (max-width: 768px) {
-  .Card--elements {
+  .SingleCard--elements {
     width: 689px;
     height: 151px;   
     left: 5%;
@@ -165,7 +165,7 @@ padding: 3px;
 
 /* Responsive CSS for mobile devices */
 @media (max-width: 480px) {
-  .Card--elements {
+  .SingleCard--elements {
     position: relative;
     width: 327px;
     height: 200px;

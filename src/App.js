@@ -3,17 +3,12 @@ import { BrowserRouter, Routes, Route,  } from 'react-router-dom';
 import  Header  from './Components/Header';
 import Feedbackdatails from './pages/Feedbackdatails';
 import Feedbackedit from './pages/Feedbackedit';
-// import Roadmap from './pages/Roadmap';
 import Hompage from './pages/Hompage';
 import './App.css';
-// import Navigation from './Components/Navigation';
-// import data from './data';
 import FeedbackDetail from './pages/FeedbackDetail';
 
 
 function App() {
-
-
   return (
     <div className="App">
     <BrowserRouter>

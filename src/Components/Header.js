@@ -1,12 +1,23 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Navigation from './Navigation'
-// import '../App.css'
 import '../Styles/Header.css'
+import data from '../data'
 
 
 
  const Header = () => {
+
+   // Filter the productRequests array based on the status property
+   const plannedItems = data.productRequests.filter(
+    (item) => item.status === 'planned'
+  );
+  const inProgressItems = data.productRequests.filter(
+    (item) => item.status === 'in-progress'
+  );
+  const liveItems = data.productRequests.filter(
+    (item) => item.status === 'live'
+  );
   return (
       <div >
 
@@ -44,9 +55,9 @@ import '../Styles/Header.css'
                     <div className="header">
                             <Link to='/Roadmap'><h2 classname='Go-Roadmap'>Views</h2></Link>
                           <ol className="number-list">
-                            <li>0</li>
-                            <li>0</li>
-                            <li>0</li>
+                            <li>{plannedItems.length}</li>
+                            <li>{inProgressItems.length}</li>
+                            <li>{liveItems.length}</li>
                           </ol>
                     </div>
                </div>

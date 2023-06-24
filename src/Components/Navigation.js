@@ -5,7 +5,6 @@ import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-// import '../App.css'
 import { Link } from 'react-router-dom';
 import suggestion from '../Assets/suggestions/icon-suggestions.svg'
 import { useState } from 'react';
@@ -49,12 +48,10 @@ const Navigation = () => {
       </ NavDropdown>
       </Nav>
        <Form className="d-flex">
-         <Button  className='navbtn'>+ Add Feedback</Button>
+        <Link to={'../Feedbackedit'}> <Button  className='navbtn'>+ Add Feedback</Button></Link> 
           </Form>
     </Container>
    </Navbar> 
-
-
     </div>
   );
 }
