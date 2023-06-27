@@ -2,10 +2,11 @@ import React, { useState } from 'react'
 import '../Styles/AddPost.css'
 import { useDispatch } from 'react-redux';
  import { postAdded } from './Post/PostSlice';
+
 const AddPost = () => {
     const dispatch= useDispatch();
     const [content,setcontent]=useState('')
-    const onContentChanged=e=>setcontent(e.target.value)
+    const onContentChanged = e =>setcontent(e.target.value)
 
     const onSavepostClicked=()=>{
       if(content){
@@ -47,6 +48,5 @@ const AddPost = () => {
 };
 
 export default AddPost
-
 
 

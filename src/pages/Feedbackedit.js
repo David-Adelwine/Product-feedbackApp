@@ -1,6 +1,6 @@
 import React from 'react'
 import AddPost from '../Components/AddPost'
-import Goback from '../Components/Goback';
+import Gobackbtn from '../Components/Gobackbtn';
 import PostsList from '../Components/PostsList';
 import Onecard from '../Components/Onecard';
 
@@ -10,7 +10,7 @@ const Feedbackedit = () => {
 
   return (
     <div>
-      <Goback/>
+      <Gobackbtn/>
       <Onecard/>
       <PostsList/>
       <AddPost/>  

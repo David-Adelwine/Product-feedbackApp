@@ -2,9 +2,8 @@ import React from "react"
 import Header from '../Components/Header'
 import data from "../data"
 import Cards from "../Components/Cards"
-export default function FeedbackDetail(){
 
-    
+export default function FeedbackDetail(){
    // Calculate the number of elements to be returned
   const cardLength = Math.ceil(data.productRequests.length/2);
 
@@ -41,6 +40,8 @@ export default function FeedbackDetail(){
     </div>
   )
 }
+
+
 
 
 

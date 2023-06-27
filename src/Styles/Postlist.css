@@ -113,8 +113,15 @@ color: #647196;
   margin-top: 20px;
 }
 
-
-
+.new-post-content{
+  background: #fff;
+  width: 825px;
+  position: absolute;
+  left: 450px;
+  border-radius: 13px;
+  padding-top: 50px;
+  margin-top: 20px;
+}
 
 
 /* All media queries for Postlist section */
@@ -133,6 +140,72 @@ color: #647196;
 /* Responsive CSS for mobile devices */
 @media (max-width: 480px) {
   .userData{
- width: 100%;
+ width: 90%;
+ margin-left: 23px;
+  }
+
+  .post--content{
+    position: relative;
+    display: flex;
+  width: 280px;
+flex-direction: column;
+flex-shrink: 0;
+color: #647196;
+font-size: 13px;
+font-family: Jost;
+right: 30px;
+
+  }
+
+  .user--info{
+ margin: 0;
+ padding: 0;
+ margin-right: 30px;
+
+  }
+  .user--image{
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 40px;
+
+  }
+  .name{
+    color: #3A4374;
+font-size: 13px;
+font-family: Jost;
+font-weight: 700;
+letter-spacing: -0.181px;
+  }
+  .userName{
+    color: #647196;
+font-size: 13px;
+font-family: Jost;
+
+  }
+
+  .Replies-comment{
+    display: flex;
+width: 256px;
+flex-direction: column;
+flex-shrink: 0;
+
+color: #AD1FEA;
+font-size: 13px;
+font-family: Jost;
+font-weight: 700;
+
+  }
+
+  .commentLink{
+    position: absolute;
+    left: 230px;
+  }
+
+
+  .new-post-content{
+    width: 90%;
+    position: absolute;
+    left: 20px;
   }
 }

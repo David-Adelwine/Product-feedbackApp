@@ -27,7 +27,7 @@
 }
 
 .Form--elements{
-  position: absolute;
+  position: relative;
   background-color: #fff;
   color: #333;
   font-family: 'jost';
@@ -37,11 +37,10 @@
   align-items: center;
   height: 246px;
   left: 455px;
+  top: 80px;
  padding-top: 55px;
  border-radius: 15px;
  font-family: 'jost' sans-serif;
-
- 
 }
 
 .comment--Label{
@@ -84,3 +83,53 @@ bottom: 37.4%;
 
 }
 
+@media (max-width: 480px) {
+  .Form--elements{
+    position: relative;
+    left: 20px;
+    top: 100px;
+    width: 327px;
+    height: 234px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #FFF;
+  }
+  .commentbtn{
+    position: absolute;
+    left: 190px;
+    color: #F2F4FE;
+font-size: 13px;
+font-family: Jost;
+font-weight: 700;
+padding: 8px 15px;
+
+  }
+
+  .comment--direction{
+     width: 100%;
+color: #647196;
+font-size: 13px;
+font-family: 'Jost';
+white-space: nowrap;
+overflow-x: auto;
+display: flex;
+flex-wrap: nowrap;
+  }
+
+  .comment--box{
+    width: 279px;
+height: 80px;
+flex-shrink: 0;
+border-radius: 5px;
+background: #F7F8FD;
+  }
+
+  .comment--Label{
+    color: #3A4374;
+    font-size: 18px;
+    font-family: Jost;
+    font-weight: 700;
+    letter-spacing: -0.25px;
+
+  }
+}

@@ -19,4 +19,20 @@
  .Goback{
   position: relative;
   left: 270px;
+  color: 647196;
+  
  }
+ 
+
+
+
+ /* Responsive CSS for mobile devices */
+@media (max-width: 480px) {
+ .Goback{
+  position: relative;
+  left: 30px;
+  color: 647196;
+ }
+
+
+}

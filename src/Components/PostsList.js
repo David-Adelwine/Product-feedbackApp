@@ -62,16 +62,13 @@ const renderFeedback = posts.data.productRequests.map(post =>(
 </article> 
 ));
 
-
-
-
   return (
     <div>
       <div className='userData'>
       <p className='Num--comment'> 4 comments </p>
         {commentElements}
         </div>
-    <div>{renderFeedback}</div>     
+    <div >{renderFeedback}</div>     
     </div>
   )
 }
@@ -81,4 +78,8 @@ export default PostsList
 
 
 
- 
+
+
+
+
+

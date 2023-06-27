@@ -22,7 +22,7 @@ import data from '../data'
       <div >
 
  <section className="grid--header">
-            <div className="card top-card">
+            <div className="card top-card ">
                   <div className="container">
                     <h4 className='toptext' >Frontend Mentor</h4> 
                     <p className='bottomtext'>Feedback Board</p> 
@@ -70,8 +70,6 @@ import data from '../data'
   )
 }
 export default Header
-
-
 
 
 

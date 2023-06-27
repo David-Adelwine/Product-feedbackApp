@@ -71,6 +71,7 @@ text-decoration: none;
 
 .card--votes:hover{
   background: #4661E6;
+  cursor: pointer;
 }
 
 .Upvotesbtn {
