@@ -12,17 +12,33 @@
   cursor: pointer;
   border-radius: 13px;
   margin-top: 25px;
-  position: relative;
-  bottom: 12px;
+  margin-right: 95px;
+  
 }
 
  .Goback{
   position: relative;
   left: 270px;
-  color: 647196;
+  color: #647196;
+font-size: 14px;
+font-family: 'Jost';
+font-weight: 700;
   
+
  }
+ a{
+  color: #647196;
+
+}
  
+ .Goback--icon{
+  color: #647196;
+font-size: 14px;
+font-family: Jost;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+ }
 
 
 
@@ -31,8 +47,37 @@
  .Goback{
   position: relative;
   left: 30px;
-  color: 647196;
+  color: #647196;
  }
 
+ .Gobackbtn{
+margin-right: 20px;
+padding: 8px 15px;
+font-family: 'Jost' Tahoma, sans-serif;
+  font-weight: 600;
+
+ }
+
+}
+
+
+/* responsive designs for tablets  */
+
+@media(max-width:768px){
+  .Goback{
+    position: relative;
+    left: 70px;
+    color: #647196;
+    top: 20px;
+   }
+  
+   .Gobackbtn{
+  margin-right: 30px;
+  padding: 12px 20px;
+  font-family: 'Jost' Tahoma, sans-serif;
+ font-weight: 600;
+  
+   }
+  
 
 }

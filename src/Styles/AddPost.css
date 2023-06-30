@@ -16,7 +16,7 @@
   margin-top: 25px;
   position: absolute;
   bottom: 20px;
-  left: 570px;
+  left: 530px;
 
 }
 
@@ -31,16 +31,16 @@
   background-color: #fff;
   color: #333;
   font-family: 'jost';
-  width: 830px;
+  width: 730px;
   display: flex;
- justify-content: center;
+  justify-content: center;
   align-items: center;
   height: 246px;
   left: 455px;
   top: 80px;
- padding-top: 55px;
- border-radius: 15px;
- font-family: 'jost' sans-serif;
+  padding-top: 55px;
+  border-radius: 15px;
+  font-family: 'jost' sans-serif;
 }
 
 .comment--Label{
@@ -66,70 +66,118 @@ bottom: 37.4%;
 
 .comment--direction{
   position: absolute;
+  width: 100%;
   height: 22px;
   left: 4.66%;
   right: 79.18%;
   top: calc(50% - 22px/2 + 69px);
-  
   font-family: 'Jost';
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
   line-height: 22px;
-  
-  
   color: #647196;
 
 
 }
 
+/* all my responsive designs */
+
+/* responsiveness for mobile */
+
 @media (max-width: 480px) {
   .Form--elements{
-    position: relative;
-    left: 20px;
-    top: 100px;
     width: 327px;
     height: 234px;
-    flex-shrink: 0;
     border-radius: 10px;
     background: #FFF;
+
   }
   .commentbtn{
-    position: absolute;
-    left: 190px;
     color: #F2F4FE;
-font-size: 13px;
-font-family: Jost;
-font-weight: 700;
-padding: 8px 15px;
+    font-size: 13px;
+    font-family: Jost;
+    font-weight: 700;
 
   }
 
   .comment--direction{
      width: 100%;
-color: #647196;
-font-size: 13px;
-font-family: 'Jost';
-white-space: nowrap;
-overflow-x: auto;
-display: flex;
-flex-wrap: nowrap;
+    color: #647196;
+    font-size: 13px;
+    font-family: 'Jost';
+    white-space: nowrap;
+    overflow-x: auto;
+    display: flex;
+    flex-wrap: nowrap;
   }
 
-  .comment--box{
-    width: 279px;
-height: 80px;
-flex-shrink: 0;
-border-radius: 5px;
-background: #F7F8FD;
+.comment--box{
+  width: 279px;
+  height: 80px;
+  border-radius: 5px;
+  background: #F7F8FD;
   }
 
   .comment--Label{
     color: #3A4374;
     font-size: 18px;
-    font-family: Jost;
+    font-family: 'Jost';
     font-weight: 700;
     letter-spacing: -0.25px;
 
   }
 }
+
+/* design for tablets  */
+
+@media (max-width: 768px){
+  .Form--elements{
+    position: relative;
+    width: 720px;
+    height: 246px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #FFF;
+    left: 25px;
+  }
+
+  .commentbtn{
+    position: absolute;
+    left: 500px;
+    color: #F2F4FE;
+font-size: 13px;
+font-family: 'Jost';
+font-weight: 700;
+padding: 15px 25px;
+
+  }
+
+  .comment--direction{
+    width: 100%;
+color: #647196;
+font-size: 20px;
+font-family: 'Jost';
+white-space: nowrap;
+overflow-x: auto;
+display: flex;
+flex-wrap: nowrap;
+ }
+
+ .comment--box{
+  width: 623px;
+  height: 80px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  background: #F7F8FD;
+}
+
+.comment--Label{
+  color: #3A4374;
+font-size: 18px;
+font-family: 'Jost';
+font-weight: 700;
+letter-spacing: -0.25px;
+
+}
+} 
