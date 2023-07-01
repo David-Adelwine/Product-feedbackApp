@@ -18,6 +18,8 @@ margin-top: 65px;
   width: 25%;
   padding: 0 10px;
 }
+
+
 .Card--live{
   width: 350px;
   height: 272px;
@@ -77,6 +79,7 @@ margin-left: 30px;
   
 }
 
+
 .card--title{
   color: #3A4374;
 font-size: 18px;
@@ -85,20 +88,27 @@ font-style: normal;
 font-weight: 700;
 line-height: normal;
 letter-spacing: -0.25px;
+margin-left: 43px;
+position: relative;
+top: 30px;
 }
 
-.card--description{
 
-  display: flex;
+.cards--description{
+ display: flex;
 width: 286px;
 flex-direction: column;
 color: #647196;
 font-size: 16px;
-font-family: Jost;
+font-family: 'Jost' Arial, Helvetica, sans-serif;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
+margin-left: 43px;
+position: relative;
+top: 35px;
 }
+
 
 .categories{
   display: inline-block;
@@ -113,11 +123,56 @@ color: #4661E6;
 background: #F2F4FF;
 border-radius: 12px;
 text-decoration: none;
-}
-.Numb--upvotes{
-  background: #F2F4FF;
-  border-radius: 20px;
-  padding: 5px;
-  margin: 50px;
+position: relative;
+top: 50px;
+left:27px
 }
 
+
+.Numb--upvotes{
+  background: #F2F4FF;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 50px;
+  width: 69px;
+  height: 40px;
+ flex-shrink: 0;
+ margin-left: 43px;
+position: relative;
+top:65px;
+}
+
+.card--category{
+  margin-left: 34px;
+  font-family: 'jost' Arial, Helvetica, sans-serif;
+  color: #647196;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: list-item;
+  list-style-type: disc;
+  position: relative;
+  top: 22px;
+}
+
+.Roadmapcard--comments{
+
+  width: 18px;
+height: 16px;
+flex-shrink: 0;
+margin-left: 290px;
+margin-top: 42px;
+}
+
+
+
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}

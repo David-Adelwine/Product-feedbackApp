@@ -6,6 +6,7 @@ import '../Styles/Roadmap.css'
 import ArrowUp from '../Assets/shared/icon-arrow-up.svg'
 
 const RoadmapData = () => {
+
   const RoadmapData = useSelector(selectAllPosts);
 
   const countByStatus = RoadmapData.data.productRequests.reduce((counts, request) => {
@@ -13,18 +14,19 @@ const RoadmapData = () => {
     return counts;
   }, {});
 
-
   const plannedRequests = RoadmapData.data.productRequests
   .filter(request => request.status === 'planned')
   .map(request => (
     <div key={request.id} className='Card--planned'>
+      <p className='card--category'>Planned </p>
       <h3 className='card--title'>{request.title}</h3>
-      <p className='card--description'>{request.description}</p>
+      <p className='cards--description'>{request.description}</p>
       <span className='categories'>{request.category}</span>
       <br/>
       <span className='Numb--upvotes'> <img src={ArrowUp}  alt='^' className='upvotes--icon'/> {request.upvotes}</span>
-      <div className=''>
-        <img src={CommentsImg} alt='comments'/>
+      <div className=' Roadmapcard--comments'>
+        <img src={CommentsImg} alt='comments'/> 
+
       </div>
 
       {/* Render additional information about the planned request */}
@@ -35,12 +37,13 @@ const liveRequests = RoadmapData.data.productRequests
   .filter(request => request.status === 'live')
   .map(request => (
     <div key={request.id} className='Card--live'>
+      <p className='card--category'>Live</p>
       <h3 className='card--title'>{request.title}</h3>
-      <p className='card--description'>{request.description}</p>
+      <p className='cards--description'>{request.description}</p>
       <span className='categories'>{request.category}</span>
       <br/>
       <span className='Numb--upvotes'> <img src={ArrowUp}  alt='^' className='upvotes--icon'/>  {request.upvotes}</span>
-      <div className=''>
+      <div className=' Roadmapcard--comments'>
       <img src={CommentsImg} alt='comments'/>
       </div>
 
@@ -52,12 +55,13 @@ const inProgressRequests = RoadmapData.data.productRequests
   .filter(request => request.status === 'in-progress')
   .map(request => (
     <div key={request.id} className='Card--progress'>
+      <p className='card--category'> In-progress</p>
       <h3 className='card--title'>{request.title}</h3>
-      <p className='card--description'>{request.description}</p>
+      <p className='cards--description'>{request.description}</p>
       <span className='categories'>{request.category}</span>
       <br/>
       <span className='Numb--upvotes'> <img src={ArrowUp}  alt='^' className='upvotes--icon'/>  {request.upvotes}</span>
-      <div className=''>
+      <div className=' Roadmapcard--comments'>
         <img src={CommentsImg} alt='comments'/>
       </div>
       {/* Render additional information about the in-progress request */}
