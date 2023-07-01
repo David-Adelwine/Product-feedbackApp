@@ -6,7 +6,8 @@ import Feedbackedit from './pages/Feedbackedit';
 import Hompage from './pages/Hompage';
 import './App.css';
 import FeedbackDetail from './pages/FeedbackDetail';
-
+import ActiveFeedback from './pages/ActiveFeedback';
+import Roadmap from './pages/Roadmap';
 
 function App() {
   return (
@@ -17,6 +18,8 @@ function App() {
     <Route path='/Feedbackdetails' element={<Feedbackdatails/>}/>
     <Route path='/Feedbackedit' element={<Feedbackedit/>}/>
     <Route path='/FeedbackDetail' element={ <FeedbackDetail/>}/>
+    <Route path='/ActiveFeedback' element={ <ActiveFeedback/>}/>
+    <Route path='/Roadmap' element={ <Roadmap/>}/>
     </Routes>
     </BrowserRouter>
     </div>

@@ -1,8 +1,8 @@
 import React,{useState} from 'react'
 import { useDispatch , useSelector} from 'react-redux'
 import { FeedbackAdded } from './Addfeedback/AddfeedbackSlice'
-import FeedbackImg from '../Assets/shared/icon-new-feedback.svg'
-import '../Styles/Feedbackform.css'
+import FeedbackActiveImg from '../Assets/shared/icon-edit-feedback.svg'
+import '../Styles/FeedbackActive.css'
 import { selectAllCategory } from './Category/CategorySlice'
 
 const Addfeedbackform = () => {
@@ -44,9 +44,9 @@ const Addfeedbackform = () => {
   }
 
   return (
-    <div className='FeedbackContainer'>
-      <img src={FeedbackImg} alt=" + "  className='Feedbackimage' />
-      <h2 className='FeedbackHeader'>Create A New Feedback</h2>
+    <div className='FeedbackActive--Container'>
+      <img src={FeedbackActiveImg} alt=" + "  className='Feedbackimage' />
+      <h2 className='FeedbackHeader'>Editing 'Add a dark theme option'</h2>
        <form>
           <h3 className='Title'>Feedback Title</h3>
             <label htmlFor="" className='FeedbackDesc'>Add a short, descriptive headline</label>
@@ -58,8 +58,8 @@ const Addfeedbackform = () => {
             onChange={onTitleChanged}
             className='Title--input'
             />
-          <div className=''>
 
+          <div className=''>
           <h3 className='Title'>Category</h3>
 
             <label htmlFor="feedbackcategory" className='FeedbackDesc'>Choose a category for your feedback
@@ -67,6 +67,18 @@ const Addfeedbackform = () => {
             <br />
             <select id="PostCategory" value={categoryId} onChange={onCategoryChanged} className='Select--category'>
             <option value="">Feature</option>
+            {CategoryOptions}
+            </select>
+            </div>
+
+            <div className=''>
+          <h3 className='Title'>Update status</h3>
+
+            <label htmlFor="feedbackcategory" className='FeedbackDesc'>Change Feedback state 
+            </label>
+            <br />
+            <select id="PostCategory" value={categoryId} onChange={onCategoryChanged} className='Select--category'>
+            <option value="">Planned</option>
             {CategoryOptions}
             </select>
             </div>
@@ -85,6 +97,13 @@ const Addfeedbackform = () => {
               />
             <br/>
             <div className='Feedback--btns'>
+
+            <button
+            className=' Delete--btn '
+            onClick={onRemoveFeedback} 
+            type="button"  
+            >Delete</button>
+
             <button
             className='Removefeedbtn'
             onClick={onRemoveFeedback} 
@@ -100,6 +119,7 @@ const Addfeedbackform = () => {
               Add Feedback
               </button>
               </div>
+              
             
         </form>
       
