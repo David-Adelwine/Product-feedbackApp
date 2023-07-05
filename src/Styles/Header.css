@@ -10,6 +10,16 @@
  margin-top: 60px;
 
 }
+.card {
+  /* box-shadow: 0 4px 4px 0 rgba(0,0,0,0.2);
+  transition: 0.3s; */
+  width: 255px;
+  height: 137px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
 
 .card {
   /* box-shadow: 0 4px 4px 0 rgba(0,0,0,0.2);
@@ -192,6 +202,21 @@ text-decoration: none;
   }
 }
 
+
+.Header-btn{
+
+  cursor: pointer;
+  padding: 5px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+
+
+}
+
 .bullet-list {
   padding: 0;
 }
@@ -272,6 +297,11 @@ text-decoration: none;
 
 }
 
+.Header-btn{
+  visibility: hidden;
+  opacity: 0;
+}
+
 /* Responsive CSS for mobile devices */
 @media (max-width: 480px) {
   .grid--header {
@@ -283,14 +313,13 @@ text-decoration: none;
   }
 
   .card {
-    width: 375px;
-    height: 72px;
-    width: 100%;
-    height: 80px;
-    margin-bottom: 15px;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
     border-radius: 0;
+    width: 223px;
+    height: 178px;
+    flex-shrink: 0;
+
   }
   .top-card{
     background: url(../Assets/suggestions/mobile/background-header.png)no-repeat;
@@ -303,7 +332,41 @@ text-decoration: none;
   }
 
   .inner--cards{
-    display: none;
+    position: absolute;
+    top: 90px;
+    width: 271px;
+    height: 595px;
+    left: 115px;
+    flex-shrink: 0;
+    display: flex;
+   flex-direction: column;
+   justify-content: center;
+   gap: 1rem;
+   border-radius: 10px;
+   transition: 1s;
+   transform: translateX(100vh);
+   opacity: 1000;
+   z-index: 1000;
+   background: #F7F8FD;
+
+  }
+  .Responsive-Header{
+    transform: none;
+  }
+
+  .Header-btn{
+    visibility: visible;
+    opacity: 1;
+  }
+.Header-Openbtn{
+  position: absolute;
+  top: 3rem;
+  right: 1rem;
+}
+  .Header-closebtn{
+    position: absolute;
+    top: 3rem;
+    right: 1rem;
   }
   .toptext{
     position: absolute;
@@ -316,4 +379,6 @@ text-decoration: none;
     top: 45px;
 
   }
+
+  
 }

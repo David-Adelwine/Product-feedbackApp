@@ -1,6 +1,6 @@
 
 .Roadmap--Cards{
-  width: 1440px;
+width: 1440px;
 height: 1367px;
 margin: 0 -5px;
 margin-left: 165px;
@@ -28,7 +28,7 @@ margin-top: 65px;
 background: #FFF;
 margin: 23px;
 border-radius: 15px;
-border-top: 8px #4661E6 solid;
+border-top: 6px #62BCFA solid;
 
 }
 
@@ -62,7 +62,7 @@ margin-left: 30px;
 .section--heading{
   color: #3A4374;
   font-size: 18px;
-  font-family: Jost;
+  font-family: 'Jost';
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -72,7 +72,7 @@ margin-left: 30px;
 .header--content{
   color: #647196;
   font-size: 16px;
-  font-family: Jost;
+  font-family: 'Jost';
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -83,7 +83,7 @@ margin-left: 30px;
 .card--title{
   color: #3A4374;
 font-size: 18px;
-font-family: Jost;
+font-family: 'Jost';
 font-style: normal;
 font-weight: 700;
 line-height: normal;
@@ -132,16 +132,18 @@ left:27px
 .Numb--upvotes{
   background: #F2F4FF;
   border-radius: 10px;
-  padding: 5px;
+  padding: 6px;
   margin: 50px;
   width: 69px;
-  height: 40px;
+  height: 32px;
  flex-shrink: 0;
  margin-left: 43px;
 position: relative;
 top:65px;
 }
-
+.upvotes--icon{
+  margin: 10px;
+}
 .card--category{
   margin-left: 34px;
   font-family: 'jost' Arial, Helvetica, sans-serif;
@@ -169,10 +171,114 @@ margin-top: 42px;
 
 
 /* Responsive columns - one column layout (vertical) on small screens */
-@media screen and (max-width: 600px) {
+@media (max-width: 768px) {
+
+  .Roadmap--Cards{
+    width: 768px;
+    height: 1149px;
+    background: #F7F8FD;
+    margin: 20px;
+    margin-top: 65px;
+
+  }
+
+  .Card--live{
+width: 223px;
+height: 251px;
+flex-shrink: 0;
+border-radius: 5px;
+background: #FFF;
+margin: 0 120px ;
+
+
+  }
+
+  .Card--planned{
+    width: 223px;
+    height: 251px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: #FFF;
+
+
+  }
+  .Card--progress{
+    width: 223px;
+    height: 251px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: #FFF;
+    margin: 0 70px 20px;
+
+  }
+
+ .card--title{
+  color: #3A4374;
+  font-size: 13px;
+  font-family:' Jost';
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.181px;
+ }
+ .cards--description{
+  display: flex;
+width: 183px;
+flex-direction: column;
+flex-shrink: 0;
+color: #647196;
+font-size: 13px;
+font-family: Jost;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+ }
+  .categories{
+    position: relative;
+    top: 30px;
+    left:27px
+
+  }
+  .Numb--upvotes{
+    position: relative;
+    top:45px;
+  }
+.Roadmapcard--comments{
+  margin-left: 190px;
+  margin-top: 20px;
+
+}
+
+.section--headers{
+  width: 768px;
+  
+  }
+
+.section--heading{
+  color: #3A4374;
+font-size: 14px;
+font-family: 'Jost';
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: -0.194px;
+width: 100%;
+}
+
+.live--header{
+margin-left: 120px;
+
+}
+
+.inProgress--header{
+  margin-left: 80px;
+}
+
   .column {
     width: 100%;
     display: block;
     margin-bottom: 20px;
+    justify-content: space-around;
+    margin-right: 15px;
   }
 }

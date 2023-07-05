@@ -161,6 +161,10 @@ padding: 3px;
     top: 40%;
     bottom: 30%;
   }
+
+  .card--votes:hover{
+    background:none;
+  }
  
 }
 
@@ -209,6 +213,11 @@ padding: 3px;
     height: 32px;
    display: flex;
    flex-direction: row;
+  }
+
+
+  .card--votes:hover{
+    background: none;
   }
   .Upvotesbtn{
     position: relative;

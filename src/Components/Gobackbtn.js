@@ -13,7 +13,7 @@ const Gobackbtn = () => {
     <Container>
       <Navbar.Brand href="#home" className='Goback'> <Link to="../../Roadmap"><img src={Arrowleft} alt='<' className='Goback--icon'/> Go Back </Link></Navbar.Brand>  
         <Nav className="me-auto">
-        < Link  to="../../Feedbackdetails"><button className='Gobackbtn'>Edit Feedback</button> </Link>
+        < Link  to="../../ActiveFeedback"><button className='Gobackbtn'>Edit Feedback</button> </Link>
         </Nav>
     </Container>
   </Navbar>

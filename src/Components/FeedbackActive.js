@@ -28,7 +28,7 @@ const Addfeedbackform = () => {
     }
   }
 
-  const CanAddFeedback=Boolean(title) && Boolean(content) && Boolean(categoryId)
+  const CanAddFeedback = Boolean(title) && Boolean(content) && Boolean(categoryId)
 
   const CategoryOptions = categorys && categorys.map(preferredCategory=>(
     <option key={preferredCategory.id} value={preferredCategory.id}>
@@ -66,7 +66,7 @@ const Addfeedbackform = () => {
             </label>
             <br />
             <select id="PostCategory" value={categoryId} onChange={onCategoryChanged} className='Select--category'>
-            <option value="">Feature</option>
+            <option value="">Feature</option> 
             {CategoryOptions}
             </select>
             </div>

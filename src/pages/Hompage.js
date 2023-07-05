@@ -12,7 +12,7 @@ const Hompage = () => {
       <h3 className='homeheader'>There is no feedback yet</h3>
       <p className='hometext'>Got a suggestion? Found a bug that needs to be squashed?
         <br/> We love hearing about new ideas to improve our app.</p>
-     <Link to={'../Feedbackedit'}> <button className='homebtn'>+ Add Feedback</button> </Link>
+     <Link to={'../feedbackdetails'}> <button className='homebtn'>+ Add Feedback</button> </Link>
       </section>
       </div>
   )

@@ -78,7 +78,7 @@ const inProgressRequests = RoadmapData.data.productRequests
              {plannedRequests}
           </div>
           <div  className='Column' >
-              <div className='section--headers'>
+              <div className='section--headers inProgress--header'>
               <h3 className='section--heading'>In-Progress({countByStatus['in-progress']})</h3>
               <p className='header--content'>currently being developed</p>
               </div>
@@ -86,7 +86,7 @@ const inProgressRequests = RoadmapData.data.productRequests
           </div>
 
     <div  className='Column' >
-            <div className='section--headers' >
+            <div className='section--headers live--header' >
             <h3 className='section--heading'>Live ({countByStatus['live']})</h3>
             <p className='header--content'>released features</p>
             </div>

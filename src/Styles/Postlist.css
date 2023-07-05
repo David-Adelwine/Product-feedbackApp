@@ -77,6 +77,10 @@ font-size: 15px;
 line-height: 22px;
 color: #647196;
 margin-left: 70px;
+display: flex;
+flex-direction: column;
+flex-shrink: 0;
+
 }
 
 .Replies-comment{
@@ -148,7 +152,7 @@ margin-left: 70px;
   }
 
   .post--content {
-    display: block;
+    display: flex;
     width: 280px;
     flex-direction: column;
     color: #647196;
@@ -188,15 +192,15 @@ margin-left: 70px;
 
   .Replies-comment {
     display: flex;
-width: 256px;
-flex-direction: column;
-flex-shrink: 0;
-color: #AD1FEA;
-font-size: 13px;
-font-family: 'Jost';
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+    width: 256px;
+    flex-direction: column;
+    flex-shrink: 0;
+    color: #AD1FEA;
+    font-size: 13px;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
   }
 
   .commentLink {
@@ -207,7 +211,10 @@ line-height: normal;
     line-height: normal;
     text-decoration: none;
     position: relative;
+    
   }
+
+
 
   /* .new-post-content {
     width: 90%;

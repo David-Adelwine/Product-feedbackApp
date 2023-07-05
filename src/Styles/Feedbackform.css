@@ -1,7 +1,11 @@
+*{
+  box-sizing: border-box;
+}
+
+
 .FeedbackContainer{
 width: 540px;
 height: 657px;
-flex-shrink: 0;
 border-radius: 10px;
 background: #FFF;
 margin-left: 440px;
@@ -11,7 +15,6 @@ margin-top: 70px;
 .Feedbackimage{
 width: 56px;
 height: 56px;
-flex-shrink: 0;
 margin-left: 30px;
 margin-bottom: 15px;
 position: relative;
@@ -28,14 +31,12 @@ bottom: 30px;
   letter-spacing: -0.333px;
   margin-left: 40px;
   
-
-
 }
 
 .Title{
 color: #3A4374;
 font-size: 14px;
-font-family: Jost;
+font-family: 'Jost';
 font-style: normal;
 font-weight: 700;
 line-height: normal;
@@ -49,7 +50,7 @@ margin-top: 10px;
 .FeedbackDesc{
   color: #647196;
 font-size: 14px;
-font-family: Jost;
+font-family: 'Jost';
 font-style: normal;
 font-weight: 400;
 line-height: normal;
@@ -61,7 +62,6 @@ margin-top: 10px;
 .Title--input{
 width: 456px;
 height: 48px;
-flex-shrink: 0;
 border-radius: 5px;
 background: #F7F8FD;
 border: none;
@@ -74,7 +74,6 @@ margin-top: 10px;
 .Feedback--comment{
   width: 456px;
 height: 96px;
-flex-shrink: 0;
 border-radius: 5px;
 background: #F7F8FD;
 margin-left: 40px;
@@ -86,7 +85,6 @@ border: none;
 .Removefeedbtn{
   width: 93px;
   height: 44px;
-  flex-shrink: 0;
   border-radius: 10px;
   background: #3A4374;
   color: #FFF;
@@ -99,7 +97,6 @@ border: none;
 .AddFeedbackbtn{
 width: 144px;
 height: 44px;
-flex-shrink: 0;
 border-radius: 10px;
 background: #AD1FEA;
 color: #FFF;
@@ -120,7 +117,6 @@ margin-left: 230px;
 .Select--category{
   width: 456px;
 height: 48px;
-flex-shrink: 0;
 border-radius: 5px;
 background: #F7F8FD;
 margin-left: 40px;
@@ -161,4 +157,45 @@ background-size:
   1.5em 1.5em;
 background-repeat: no-repeat;
 
+}
+
+
+@media (max-width: 480px) {
+  .FeedbackContainer {
+    position: relative;
+    right: 420px;
+    width: 360px;
+    height: 708px;
+    
+  }
+
+
+  .Title--input{
+    width: 279px;
+  height: 48px;
+  resize: horizontal;
+  overflow: auto;
+  }
+
+  .Feedback--comment{
+    width: 279px;
+    height: 120px;
+
+  }
+  .Select--category{
+    width: 279px;
+  height: 48px;
+  flex-shrink: 0;
+  }
+
+}
+
+
+@media (max-width: 768px){
+
+  .FeedbackContainer {
+    position: relative;
+    right: 360px;
+    
+  }
 }

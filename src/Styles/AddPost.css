@@ -85,7 +85,7 @@ bottom: 37.4%;
 
 /* responsiveness for mobile */
 
-@media (max-width: 480px) {
+@media (max-width:480px) {
   .Form--elements{
     width: 327px;
     height: 234px;

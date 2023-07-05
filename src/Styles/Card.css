@@ -161,6 +161,10 @@ padding: 3px;
     top: 40%;
     bottom: 30%;
   }
+
+  .card--votes:hover{
+    background: none;
+  }
  
 }
 
@@ -224,4 +228,9 @@ left: 45%;
 bottom: 15px;
 background: none;
   }
+
+  .card--votes:hover{
+    background: none;
+  }
+ 
 }
