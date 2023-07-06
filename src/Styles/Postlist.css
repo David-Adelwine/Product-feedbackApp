@@ -140,12 +140,79 @@ flex-shrink: 0;
 /* All media queries for Postlist section */
 
 
+
+/* @media quries for tablets */
+
+@media (max-width: 768px){
+  .userData{
+    position: relative;
+   width: 689px;
+height: 967px;
+flex-shrink: 0;
+    margin-top: 130px;
+    left: 30px;
+    bottom: 35px;
+  }
+  
+  .post--content{
+      display: flex;
+    width: 553px;
+    flex-direction: column;
+    flex-shrink: 0;
+    color: #647196;
+    font-size: 13px;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  
+  }
+  
+  .commentLink{
+    color: #4661E6;
+  font-size: 13px;
+  font-family: 'Jost';
+  font-weight: 600;
+  position: absolute;
+  left: 550px;
+  }
+  .user--image{
+    width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 40px;
+  
+  }
+  
+  .name{
+    color: #3A4374;
+    font-size: 14px;
+    font-family: 'Jost';
+    font-weight: 700;
+    letter-spacing: -0.194px;
+  }
+  .userName{
+    color: #647196;
+    font-size: 14px;
+    font-family: 'Jost';
+  
+  }
+  /* .new-post-content{
+    width: 95%;
+    position: absolute;
+    left: 20px;
+  } */
+  
+  } 
+
+
+
 /* Responsive CSS for mobile devices */
 
 @media (max-width: 480px) {
   .userData {
     width: 327px;
-    height: 837px;
+    height: 977px;
     flex-shrink: 0;
     border-radius: 10px;
     background: #FFF;
@@ -213,7 +280,7 @@ flex-shrink: 0;
     line-height: normal;
     text-decoration: none;
     position: absolute;
-    left: 10px;
+    left: 270px;
   }
 
 
@@ -232,67 +299,3 @@ flex-shrink: 0;
     letter-spacing: -0.25px;
   }
 }
-
-
-/* @media quries for tablets */
-
-@media (max-width: 768px){
-  .userData{
-    position: relative;
-    width: 327px;
-    height: 977px;
-    margin-top: 130px;
-    left: 30px;
-    bottom: 35px;
-  }
-  
-  .post--content{
-    display: flex;
-    width: 280px;
-    flex-direction: column;
-    flex-shrink: 0;
-    color: #647196;
-    font-size: 13px;
-    font-family: 'Jost';
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-  
-  }
-  
-  .commentLink{
-    color: #4661E6;
-  font-size: 13px;
-  font-family: 'Jost';
-  font-weight: 600;
-  position: absolute;
-  left: 250px;
-  }
-  .user--image{
-    width: 40px;
-  height: 40px;
-  flex-shrink: 0;
-  border-radius: 40px;
-  
-  }
-  
-  .name{
-    color: #3A4374;
-    font-size: 14px;
-    font-family: 'Jost';
-    font-weight: 700;
-    letter-spacing: -0.194px;
-  }
-  .userName{
-    color: #647196;
-    font-size: 14px;
-    font-family: 'Jost';
-  
-  }
-  /* .new-post-content{
-    width: 95%;
-    position: absolute;
-    left: 20px;
-  } */
-  
-  } 
