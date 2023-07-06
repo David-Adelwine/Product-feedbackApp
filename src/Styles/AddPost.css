@@ -89,6 +89,7 @@ bottom: 37.4%;
   .Form--elements{
     width: 327px;
     height: 234px;
+    flex-shrink: 0;
     border-radius: 10px;
     background: #FFF;
 
@@ -96,8 +97,11 @@ bottom: 37.4%;
   .commentbtn{
     color: #F2F4FE;
     font-size: 13px;
-    font-family: Jost;
+    font-family: 'Jost';
     font-weight: 700;
+    width: 119px;
+  height: 40px;
+  flex-shrink: 0;
 
   }
 
@@ -113,7 +117,7 @@ bottom: 37.4%;
   }
 
 .comment--box{
-  width: 279px;
+  width: 179px;
   height: 80px;
   border-radius: 5px;
   background: #F7F8FD;

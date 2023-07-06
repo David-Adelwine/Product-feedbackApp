@@ -51,7 +51,7 @@ import HandburgerClose from '../Assets/shared/mobile/icon-close.svg'
                 </div>
                 <br/>
                 
-              <div className="card ">
+              <div className="card  lastcard-notresponsive">
                 <div className="container">
                     <div className="header">
                         <h2>Roadmap</h2>

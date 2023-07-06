@@ -162,11 +162,9 @@ background-repeat: no-repeat;
 
 @media (max-width: 480px) {
   .FeedbackContainer {
-    position: relative;
-    right: 420px;
     width: 360px;
     height: 708px;
-    
+    margin-left: 380px;
   }
 
 

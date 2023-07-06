@@ -315,10 +315,11 @@ text-decoration: none;
   .card {
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
-    border-radius: 0;
+    border-radius: 10px;
     width: 223px;
     height: 178px;
     flex-shrink: 0;
+    margin-bottom: 53px;
 
   }
   .top-card{
@@ -333,7 +334,7 @@ text-decoration: none;
 
   .inner--cards{
     position: absolute;
-    top: 90px;
+    top: 103px;
     width: 271px;
     height: 595px;
     left: 115px;
@@ -349,6 +350,13 @@ text-decoration: none;
    z-index: 1000;
    background: #F7F8FD;
 
+  }
+
+
+  .lastcard-notresponsive{
+    position: relative;
+    left: 0px;
+    bottom: 90px;
   }
   .Responsive-Header{
     transform: none;

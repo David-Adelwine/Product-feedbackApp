@@ -69,6 +69,7 @@ color: #647196;
 }
 
 .post--content{
+  display: flex;
   width: 594px;
 font-family: 'Jost';
 font-style: normal;
@@ -77,7 +78,6 @@ font-size: 15px;
 line-height: 22px;
 color: #647196;
 margin-left: 70px;
-display: flex;
 flex-direction: column;
 flex-shrink: 0;
 
@@ -150,7 +150,6 @@ flex-shrink: 0;
     border-radius: 10px;
     background: #FFF;
   }
-
   .post--content {
     display: flex;
     width: 280px;
@@ -161,7 +160,10 @@ flex-shrink: 0;
     font-weight: 400;
     line-height: normal;
     word-wrap: break-word;
+    margin-left: 0;
   }
+ 
+  
 
   .user--info {
     margin: 0;
@@ -210,8 +212,8 @@ flex-shrink: 0;
     font-weight: 600;
     line-height: normal;
     text-decoration: none;
-    position: relative;
-    
+    position: absolute;
+    left: 10px;
   }
 
 
@@ -237,7 +239,8 @@ flex-shrink: 0;
 @media (max-width: 768px){
   .userData{
     position: relative;
-    width: 95%;
+    width: 327px;
+    height: 977px;
     margin-top: 130px;
     left: 30px;
     bottom: 35px;
@@ -245,12 +248,15 @@ flex-shrink: 0;
   
   .post--content{
     display: flex;
-    width: 553px;
+    width: 280px;
     flex-direction: column;
     flex-shrink: 0;
     color: #647196;
-  font-size: 15px;
-  font-family: 'Jost';
+    font-size: 13px;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
   
   }
   
@@ -260,7 +266,7 @@ flex-shrink: 0;
   font-family: 'Jost';
   font-weight: 600;
   position: absolute;
-  left: 600px;
+  left: 250px;
   }
   .user--image{
     width: 40px;
