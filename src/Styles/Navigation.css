@@ -1,7 +1,7 @@
 
 
 .navbtn{
-  font-family: 'Jost' Tahoma, sans-serif;
+  font-family: 'Jost';
   font-weight: 600;
   background-color: #AD1FEA;
   border: none;
@@ -53,6 +53,37 @@ letter-spacing: -0.25px;
 }
 
 
+/* all media queries */
+
+@media (max-width: 1194px){
+
+  .Move--Links {
+    left: 200px;
+    bottom: 55px;
+  }
+
+  .Nav--Postion {
+    width: 95%;
+    left: 15px;
+    right: unset;
+    bottom: 750px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+  }
+
+  .navbtn{
+    font-size: 13px;
+  font-family: 'Jost' ;
+  font-weight: 700;
+  color: #fff;
+  line-height: 19px;
+  height: 44px;
+  }
+
+}
+
+
 /* Responsive CSS for tablet */
 @media (max-width: 768px) {
   .Move--Links {
@@ -71,7 +102,7 @@ letter-spacing: -0.25px;
   }
 .navbtn{
   font-size: 13px;
-font-family: 'Jost';
+font-family: 'Jost' ;
 font-weight: 700;
 color: #fff;
 line-height: 19px;
@@ -86,6 +117,7 @@ height: 44px;
     position: absolute;
     left: 60px;
     bottom: 80px;
+    z-index: 1000;
     
   }
 
@@ -93,10 +125,9 @@ height: 44px;
     position: relative;
     width: 375px;
     height: 56px; 
-    bottom: 60px;
     width: 100%;
     right: unset;
-    bottom: 115px;
+    bottom: 89px;
     padding: 0px;
     -webkit-border-radius: 0;
     -moz-border-radius: 0;
@@ -114,7 +145,7 @@ bottom: 130;
 left: 217px;
 padding: 12px 12px;
 font-size: 13px;
-font-family: 'Jost';
+font-family: 'Jost' ;
 font-weight: 700;
 color: #fff;
 line-height: 19px;

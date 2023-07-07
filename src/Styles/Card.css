@@ -6,7 +6,7 @@
   width: 825px;
   position: relative;
   left: 450px;
-  bottom: 300px;
+  bottom: 380px;
   border-radius: 13px;
   height:151px;
   margin: 20px;
@@ -120,6 +120,54 @@ padding: 3px;
 
 /* all cards media queries  */
 
+/* bigger tablets */
+@media(max-width: 1194px){
+  .Card--elements {
+    width: 689px;
+    height: 151px;   
+    left: 5%;
+    top: 100px;
+    bottom: 79px;
+    margin: 20px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+ 
+  }
+
+  .inner--card {
+    left: 90px;
+    bottom: 20px;
+  }
+
+  .card--header {
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .card--description {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .faintbg--header {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .Comments--icon {
+    left: 90%;
+    top: 40%;
+    bottom: 30%;
+  }
+
+  .card--votes:hover{
+    background: none;
+  }
+
+}
+
+
 
 /* Responsive CSS for tablet */
 @media (max-width: 768px) {
@@ -174,10 +222,10 @@ padding: 3px;
     position: relative;
     width: 327px;
     height: 200px;
-    left: 5%;
-    top: 5px;
+    left: 10px;
+    top: -90px;
     bottom: 30px;
-    margin: 15px;
+    margin: 12px;
     border-radius: 13px;
   }
 

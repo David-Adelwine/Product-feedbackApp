@@ -20,7 +20,7 @@
 .user--info{
   position: absolute;
   left: 100px;
-  font-family: 'jost' Arial, Helvetica, sans-serif;
+  font-family: 'Jost' ;
   font-size: 5px;
   line-height: 2px;
 }
@@ -33,7 +33,7 @@ padding: 20px ;
 .commentLink{
   position: relative;
   left: 500px;
-font-family: 'Jost';
+font-family: 'Jost' ;
 font-style: normal;
 font-weight: 600;
 font-size: 13px;
@@ -49,7 +49,7 @@ h5{
 }
 
 .name{
-  font-family: 'Jost';
+  font-family: 'Jost' ;
 font-style: normal;
 font-weight: 700;
 font-size: 14px;
@@ -60,7 +60,7 @@ letter-spacing: -0.194444px;
 }
 
 .userName{
-  font-family: 'Jost';
+  font-family: 'Jost' ;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -71,7 +71,7 @@ color: #647196;
 .post--content{
   display: flex;
   width: 594px;
-font-family: 'Jost';
+font-family: 'Jost' ;
 font-style: normal;
 font-weight: 400;
 font-size: 15px;
@@ -90,13 +90,13 @@ flex-shrink: 0;
   flex-shrink: 0;
   color: #AD1FEA;
  font-size: 15px;
-  font-family: 'Jost';
+  font-family: 'Jost' ;
  font-weight: 700;
  margin-left: 30px;
 }
 
 .Num--comment{
-  font-family: 'Jost';
+  font-family: 'Jost' ;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -139,6 +139,19 @@ flex-shrink: 0;
 
 /* All media queries for Postlist section */
 
+@media(max-width: 1194px){
+  .userData{
+    position: relative;
+   width: 720px;
+    height: 967px;
+    flex-shrink: 0;
+      margin-top: 130px;
+      left: 60px;
+      bottom: 35px;
+  }
+  
+
+}
 
 
 /* @media quries for tablets */
@@ -161,7 +174,7 @@ flex-shrink: 0;
     flex-shrink: 0;
     color: #647196;
     font-size: 13px;
-    font-family: 'Jost';
+    font-family: 'Jost' ;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -187,14 +200,14 @@ flex-shrink: 0;
   .name{
     color: #3A4374;
     font-size: 14px;
-    font-family: 'Jost';
+    font-family: 'Jost' ;
     font-weight: 700;
     letter-spacing: -0.194px;
   }
   .userName{
     color: #647196;
     font-size: 14px;
-    font-family: 'Jost';
+    font-family: 'Jost' ;
   
   }
   /* .new-post-content{
@@ -223,7 +236,7 @@ flex-shrink: 0;
     flex-direction: column;
     color: #647196;
     font-size: 13px;
-    font-family: 'Jost', Arial, Helvetica, sans-serif;
+    font-family: 'Jost';
     font-weight: 400;
     line-height: normal;
     word-wrap: break-word;
@@ -248,7 +261,7 @@ flex-shrink: 0;
   .name {
     color: #3A4374;
     font-size: 13px;
-    font-family: 'Jost', Arial, Helvetica, sans-serif;
+    font-family: 'Jost';
     font-weight: 700;
     letter-spacing: -0.181px;
   }
@@ -256,7 +269,7 @@ flex-shrink: 0;
   .userName {
     color: #647196;
     font-size: 13px;
-    font-family: 'Jost', Arial, Helvetica, sans-serif;
+    font-family: 'Jost';
   }
 
   .Replies-comment {
@@ -266,7 +279,7 @@ flex-shrink: 0;
     flex-shrink: 0;
     color: #AD1FEA;
     font-size: 13px;
-    font-family: 'Jost';
+    font-family: 'Jost' ;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
@@ -275,7 +288,7 @@ flex-shrink: 0;
   .commentLink {
     color: #4661E6;
     font-size: 13px;
-    font-family: 'Jost', Arial, Helvetica, sans-serif;
+    font-family: 'Jost';
     font-weight: 600;
     line-height: normal;
     text-decoration: none;
@@ -294,7 +307,7 @@ flex-shrink: 0;
   .Num--comment {
     color: #3A4374;
     font-size: 18px;
-    font-family: 'Jost', Arial, Helvetica, sans-serif;
+    font-family: 'Jost';
     font-weight: 700;
     letter-spacing: -0.25px;
   }

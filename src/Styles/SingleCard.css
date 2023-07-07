@@ -19,12 +19,12 @@
   padding: 10px; 
   position: absolute;
   left: 100px;
-  font-family: 'jost';
+  font-family: 'Jost' ;
 }
 
 .card--header {
   margin-bottom: 10px; 
-  font-family: 'Jost';
+  font-family: 'Jost' ;
 font-style: normal;
 font-weight: 700;
 font-size: 18px;
@@ -118,7 +118,24 @@ padding: 3px;
 
 
 /* all cards media queries  */
+/* bigger tablets */
 
+@media(max-width:1194px){
+  .SingleCard--elements {
+    width: 689px;
+    height: 151px;   
+    left: 8%;
+    top: 40px;
+    bottom: 79px;
+    margin: 10px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ 
+  }
+  
+}
 
 /* Responsive CSS for tablet */
 @media (max-width: 768px) {

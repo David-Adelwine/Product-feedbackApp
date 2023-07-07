@@ -24,7 +24,7 @@ bottom: 30px;
 .FeedbackHeader{
   color: #3A4374;
   font-size: 24px;
-  font-family: 'Jost';
+  font-family: 'Jost'  ;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -50,7 +50,7 @@ margin-top: 10px;
 .FeedbackDesc{
   color: #647196;
 font-size: 14px;
-font-family: 'Jost';
+font-family: 'Jost' ;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
@@ -88,7 +88,7 @@ border: none;
   border-radius: 10px;
   background: #3A4374;
   color: #FFF;
-  font-family: 'jost' Arial, Helvetica, sans-serif;
+  font-family: 'Jost';
   cursor: pointer;
   border: none;
 
@@ -100,7 +100,7 @@ height: 44px;
 border-radius: 10px;
 background: #AD1FEA;
 color: #FFF;
-font-family: 'jost' Arial, Helvetica, sans-serif;
+font-family: 'Jost';
 cursor: pointer;
 margin-left: 13px;
 border: none;
@@ -130,7 +130,7 @@ select {
   background-color: white;
   border-radius: 4px;
   display: inline-block;
-  font-family: 'jost';
+  font-family: 'Jost' ;
   line-height: 1.5em;
   padding: 0.5em 3.5em 0.5em 1em;
 
@@ -160,11 +160,40 @@ background-repeat: no-repeat;
 }
 
 
+/* all media queries  */
+
+/* bigger tablets */
+
+@media (max-width: 1194px){
+  .FeedbackContainer {
+    position: relative;
+    right: 300px;
+    
+  }
+
+}
+
+
+/* media queries for tablets */
+
+@media (max-width: 768px){
+
+  .FeedbackContainer {
+    position: relative;
+    right: 320px;
+    
+  }
+}
+
+/* media queries for mobile  */
+
+
 @media (max-width: 480px) {
   .FeedbackContainer {
     width: 360px;
     height: 708px;
-    margin-left: 380px;
+    margin-left: 330px;
+    margin-bottom: 20px;
   }
 
 
@@ -189,11 +218,3 @@ background-repeat: no-repeat;
 }
 
 
-@media (max-width: 768px){
-
-  .FeedbackContainer {
-    position: relative;
-    right: 360px;
-    
-  }
-}

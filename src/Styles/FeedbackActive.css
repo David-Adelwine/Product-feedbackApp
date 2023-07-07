@@ -35,7 +35,7 @@
   .Title{
   color: #3A4374;
   font-size: 14px;
-  font-family: Jost;
+  font-family: 'Jost' ;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -49,7 +49,7 @@
   .FeedbackDesc{
     color: #647196;
   font-size: 14px;
-  font-family: Jost;
+  font-family: 'Jost';
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -90,7 +90,7 @@
     border-radius: 10px;
     background: #3A4374;
     color: #FFF;
-    font-family: 'jost' Arial, Helvetica, sans-serif;
+    font-family: 'jost';
     cursor: pointer;
     border: none;
   
@@ -103,7 +103,7 @@
   border-radius: 10px;
   background: #AD1FEA;
   color: #FFF;
-  font-family: 'jost' Arial, Helvetica, sans-serif;
+  font-family: 'Jost';
   cursor: pointer;
   margin-left: 13px;
   border: none;
@@ -118,7 +118,7 @@
     border-radius: 10px;
     background: red;
     color: #FFF;
-    font-family: 'jost' Arial, Helvetica, sans-serif;
+    font-family: 'Jost' ;
     cursor: pointer;
     border: none;
     position: absolute;
@@ -148,7 +148,7 @@
     background-color: white;
     border-radius: 4px;
     display: inline-block;
-    font-family: 'jost';
+    font-family: 'Jost' ;
     line-height: 1.5em;
     padding: 0.5em 3.5em 0.5em 1em;
   
@@ -177,13 +177,27 @@
   
   } 
   
+/* all media quries goes here */
 
+@media(max-width:1194px){
+  .FeedbackActive--Container{
+    margin-left: 140px;
+    margin-bottom: 30px;
+  }
+
+  .Delete--btn{
+    position: absolute;
+   right:  490px;
+  }
+
+}
 
   /* media queries for tablets */
 
   @media(max-width: 768px){
     .FeedbackActive--Container{
-      margin-left: 100px;
+      margin-left: 120px;
+      margin-bottom: 30px;
     }
 
 

@@ -1,4 +1,4 @@
-import React,{useRef} from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import Navigation from './Navigation'
 import '../Styles/Header.css'
@@ -6,9 +6,8 @@ import data from '../data'
 import Handburger from '../Assets/shared/mobile/icon-hamburger.svg'
 import HandburgerClose from '../Assets/shared/mobile/icon-close.svg'
 
+const Homeheader = () => {
 
-
- const Header = () => {
   const HeaderRef = useRef();
   const ShowHeadermenu=()=>{
     HeaderRef.current.classList.toggle("Responsive-Header");
@@ -25,9 +24,8 @@ import HandburgerClose from '../Assets/shared/mobile/icon-close.svg'
     (item) => item.status === 'live'
   );
   return (
-      <div >
-
- <section className="grid--header">
+    <div>
+      <section className="grid--header">
             <div className="card top-card ">
                   <div className="container">
                     <h4 className='toptext' >Frontend Mentor</h4> 
@@ -36,7 +34,7 @@ import HandburgerClose from '../Assets/shared/mobile/icon-close.svg'
             </div>
             <br/>
                   <img  src={HandburgerClose} onClick={ShowHeadermenu} alt='' width='20px' className='Header-btn Header-closebtn'/>
-                 <img  src={Handburger} onClick={ShowHeadermenu} alt='' width='20px' className='Header-btn Header-Openbtn'/>
+ <img  src={Handburger} onClick={ShowHeadermenu} alt='' width='20px' className='Header-btn Header-Openbtn'/>
                   
             <div className='inner--cards' ref={HeaderRef}>
                 <div className="card ">
@@ -73,13 +71,8 @@ import HandburgerClose from '../Assets/shared/mobile/icon-close.svg'
             </div>
          </div>
        </section>
-       <Navigation/> 
-      </div>
-
+    </div>
   )
 }
-export default Header
 
-
-
-
+export default Homeheader

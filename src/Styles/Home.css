@@ -23,7 +23,7 @@ top: 80px;
 
 
 .homebtn{
-  font-family: 'Jost' Tahoma, sans-serif;
+  font-family: 'Jost' ;
   font-weight: 600;
   background-color: #AD1FEA;
   border: none;
@@ -57,7 +57,7 @@ bottom: 12px;
   letter-spacing: -0.333333px ;
   font-size: 24px;
   font-style: normal;
-  font-family: 'Jost';
+  font-family: 'Jost' ;
   margin-top: 70px;
   color:#3A4374
  
@@ -71,8 +71,35 @@ bottom: 12px;
   color:#647196;
 }
 
+
 /* All media queries for home section */
 
+/* bigger tablets */
+/* media queries for larger tablets */
+
+@media (max-width: 1194px) 
+  {
+    .homepage {
+      width: 100%;
+      left: 2%;
+      top: 310px;
+  
+    }
+
+    .home--content {
+      top: 40px;
+    }
+
+    .homeheader {
+      margin-top: 50px;
+      font-size: 20px;
+    }
+  
+    .hometext {
+      font-size: 14px;
+      line-height: 20px;
+    }
+}
 
 /* Responsive CSS for tablet */
 @media (max-width: 768px) {

@@ -1,5 +1,5 @@
 .Gobackbtn{
-  font-family: 'Jost' Tahoma, sans-serif;
+  font-family: 'Jost' ;
   font-weight: 600;
   background: #4661e6;
   border: none;
@@ -21,7 +21,7 @@
   left: 270px;
   color: #647196;
 font-size: 14px;
-font-family: 'Jost';
+font-family: 'Jost'   ;
 font-weight: 700;
   
 
@@ -34,12 +34,53 @@ font-weight: 700;
  .Goback--icon{
   color: #647196;
 font-size: 14px;
-font-family: Jost;
+font-family: 'Jost';
 font-style: normal;
 font-weight: 700;
 line-height: normal;
  }
 
+/* all media queries */
+
+/* bigger tablets */
+@media(max-width: 1194px){
+  .Goback{
+    position: relative;
+    left: 70px;
+    color: #647196;
+    top: 20px;
+   }
+
+   .Gobackbtn{
+    margin-right: 30px;
+    padding: 12px 20px;
+    font-family: 'Jost';
+   font-weight: 600;
+    
+     }
+
+}
+
+ /* responsive designs for tablets  */
+
+@media(max-width:768px){
+  .Goback{
+    position: relative;
+    left: 70px;
+    color: #647196;
+    top: 20px;
+   }
+  
+   .Gobackbtn{
+  margin-right: 30px;
+  padding: 12px 20px;
+  font-family: 'Jost';
+ font-weight: 600;
+  
+   }
+  
+
+}
 
 
  /* Responsive CSS for mobile devices */
@@ -53,7 +94,7 @@ line-height: normal;
  .Gobackbtn{
 margin-right: 20px;
 padding: 8px 15px;
-font-family: 'Jost' Tahoma, sans-serif;
+font-family: 'Jost' ;
   font-weight: 600;
 
  }
@@ -61,23 +102,3 @@ font-family: 'Jost' Tahoma, sans-serif;
 }
 
 
-/* responsive designs for tablets  */
-
-@media(max-width:768px){
-  .Goback{
-    position: relative;
-    left: 70px;
-    color: #647196;
-    top: 20px;
-   }
-  
-   .Gobackbtn{
-  margin-right: 30px;
-  padding: 12px 20px;
-  font-family: 'Jost' Tahoma, sans-serif;
- font-weight: 600;
-  
-   }
-  
-
-}

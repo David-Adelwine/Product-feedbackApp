@@ -41,6 +41,7 @@
 }
 .top-card{
   background-image:url(../Assets/suggestions/desktop/background-header.png);
+  margin-top: 30px;
   
   }
 
@@ -49,7 +50,7 @@
   letter-spacing: -0.25 px;
   top: 60px;
   color: #fff;
-  font-family: 'jost';
+  font-family: 'Jost' ;
 font-Weight:700;
 font-Size:20px;
 line-height: 28.9px
@@ -91,7 +92,7 @@ color: #fff;
   border-radius: 12px;
   text-align: center;
   font-weight: 700;
-  font-family: 'jost';
+  font-family: 'Jost' ;
  }
  .top-listed:hover{
   color: #fff;
@@ -106,7 +107,7 @@ height: 30px;
 border-radius: 10px;
 text-align: center;
 font-weight: 700;
-font-family: 'jost';
+font-family: 'Jost' ;
 color: #4661E6;
 
  }
@@ -145,20 +146,18 @@ color: #4661E6;
   padding: 10px; 
   position: absolute;
   left: 100px;
-  font-family: 'jost';
+  font-family: 'Jost'  ;
 }
 
 .card--header {
   margin-bottom: 10px; 
-  font-family: 'Jost';
-font-style: normal;
-font-weight: 700;
-font-size: 18px;
-line-height: 26px;
-
-letter-spacing: -0.25px;
-
-color: #3A4374;
+  font-family: 'Jost' ;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: -0.25px;
+  color: #3A4374;
 
 
 }
@@ -167,8 +166,8 @@ color: #3A4374;
   margin-bottom: 10px; 
   font-weight: 400;
   font-size: 16px;
-line-height: 23px;
-color: #647196;
+  line-height: 23px;
+  color: #647196;
 
 }
 
@@ -176,18 +175,37 @@ color: #647196;
   display: inline-block;
   padding: 5px 10px; 
   margin-left: 5px; 
-  font-family: 'Jost';
-font-style: normal;
-font-weight: 600;
-font-size: 13px;
-line-height: 19px;
-color: #4661E6;
-background: #F2F4FF;
-border-radius: 12px;
-text-decoration: none;
+  font-family: 'Jost' ;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 19px;
+  color: #4661E6;
+  background: #F2F4FF;
+  border-radius: 12px;
+  text-decoration: none;
 
 }
 
+.Go-Roadmap{
+  color: #4661E6;
+  font-family: 'Jost';
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration-line: underline;
+  opacity: 0.25;
+}
+.Roadmap--header{
+  color: #3A4374;
+  font-family: 'Jost';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.25px;
+}
 .container {
   display: flex;
   justify-content: space-between;
@@ -206,7 +224,7 @@ text-decoration: none;
 .Header-btn{
 
   cursor: pointer;
-  padding: 5px;
+  padding: 2px;
   background: transparent;
   border: none;
   outline: none;
@@ -218,9 +236,14 @@ text-decoration: none;
 }
 
 .bullet-list {
-  padding: 0;
+  color: #647196;
+  font-family: 'Jost';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
-
+/* 
 .bullet {
   margin-bottom: 5px;
 }
@@ -235,16 +258,78 @@ text-decoration: none;
 
 .green {
   color: green;
-}
+} */
 
 
 
 .number-list {
   list-style-type: none;
   padding: 0;
+  margin-left: 20px;
+  color: #647196;
+  font-family: 'Jost';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 /* All media queries */
+
+/* media queries for larger tablets */
+
+@media (max-width: 1194px) 
+  {
+
+    .grid--header {
+      width: 689px;
+      height: 178px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      margin-left: 10px;
+      padding: 10px;
+      margin-top: 45px;
+    }
+    .card {
+      width: 223px;
+      height: 178px;    
+      margin-bottom: 10px;
+      margin-left: 10px;
+      -webkit-border-radius: 0;
+      -moz-border-radius: 0;
+      border-radius: 13;
+      }
+    .top-card{
+      background: url(../Assets/suggestions/tablet/background-header.png)no-repeat;
+      background-position: cover;
+      margin-top: 3px;
+     
+  
+    }
+
+    .lastcard-notresponsive{
+      position: relative;
+      left: 235px;
+      bottom: 210px;
+    }
+    .toptext{
+      position: absolute;
+      left: 45px;
+      bottom: 20px;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 29px;
+      letter-spacing: -0.25px;
+    }
+    .bottomtext{
+      position: absolute;
+      bottom: 75px;
+      left: 35px;
+    }
+}
+
+
 
 /* Responsive CSS for tablet */
 @media (max-width: 768px) {
@@ -271,6 +356,7 @@ text-decoration: none;
   .top-card{
     background: url(../Assets/suggestions/tablet/background-header.png)no-repeat;
     background-position: cover;
+    margin-top: 3px;
    
 
   }
@@ -309,7 +395,7 @@ text-decoration: none;
     flex-direction: column;
     margin-left: 5px;
     padding: 5px;
-    margin-top: 25px;
+    margin-top: -30px;
   }
 
   .card {
@@ -326,15 +412,15 @@ text-decoration: none;
     background: url(../Assets/suggestions/mobile/background-header.png)no-repeat;
     background-size: cover;
     width: 100%;
-    width: 375px;
     height: 72px;
     position: relative;
     right: 8px;
+    margin-top: 28px;
   }
 
   .inner--cards{
     position: absolute;
-    top: 103px;
+    top: 74px;
     width: 271px;
     height: 595px;
     left: 115px;
@@ -368,12 +454,12 @@ text-decoration: none;
   }
 .Header-Openbtn{
   position: absolute;
-  top: 3rem;
+  top: 2rem;
   right: 1rem;
 }
   .Header-closebtn{
     position: absolute;
-    top: 3rem;
+    top: 2rem;
     right: 1rem;
   }
   .toptext{

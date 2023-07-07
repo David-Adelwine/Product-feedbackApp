@@ -25,10 +25,10 @@ margin-top: 65px;
   height: 272px;
   flex-shrink: 0;
   border-radius: 5px;
-background: #FFF;
-margin: 23px;
-border-radius: 15px;
-border-top: 6px #62BCFA solid;
+  background: #FFF;
+  margin: 23px;
+  border-radius: 15px;
+  border-top: 6px #62BCFA solid;
 
 }
 
@@ -48,21 +48,24 @@ border-top: 6px #62BCFA solid;
   height: 272px;
   flex-shrink: 0;
   border-radius: 5px;
-background: #FFF;
-margin: 19px;
-border-radius: 15px;
-border-top: 8px #AD1FEA solid;
+  background: #FFF;
+  margin: 19px;
+  border-radius: 15px;
+  border-top: 8px #AD1FEA solid;
 }
 
 .section--headers{
 margin-left: 30px;
 
 }
+.section--headers:hover{
+ cursor: pointer;
+}
 
 .section--heading{
   color: #3A4374;
   font-size: 18px;
-  font-family: 'Jost';
+  font-family: 'Jost' ;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -72,7 +75,7 @@ margin-left: 30px;
 .header--content{
   color: #647196;
   font-size: 16px;
-  font-family: 'Jost';
+  font-family: 'Jost' ;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -95,12 +98,12 @@ top: 30px;
 
 
 .cards--description{
- display: flex;
+display: flex;
 width: 286px;
 flex-direction: column;
 color: #647196;
 font-size: 16px;
-font-family: 'Jost' Arial, Helvetica, sans-serif;
+font-family: 'Jost' ;
 font-style: normal;
 font-weight: 400;
 line-height: normal;
@@ -115,17 +118,17 @@ top: 35px;
   padding: 5px 10px; 
   margin-left: 5px; 
   font-family: 'Jost';
-font-style: normal;
-font-weight: 600;
-font-size: 13px;
-line-height: 19px;
-color: #4661E6;
-background: #F2F4FF;
-border-radius: 12px;
-text-decoration: none;
-position: relative;
-top: 50px;
-left:27px
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 19px;
+  color: #4661E6;
+  background: #F2F4FF;
+  border-radius: 12px;
+  text-decoration: none;
+  position: relative;
+  top: 50px;
+  left:27px
 }
 
 
@@ -146,7 +149,7 @@ top:65px;
 }
 .card--category{
   margin-left: 34px;
-  font-family: 'jost' Arial, Helvetica, sans-serif;
+  font-family: 'Jost' ;
   color: #647196;
   font-size: 16px;
   font-style: normal;
@@ -169,8 +172,125 @@ margin-top: 42px;
 
 
 
+/* all media queries  */
+
+/* bigger tablet screens  */
+@media(max-width:1194px){
+  .Roadmap--Cards{
+    width: 768px;
+    height: 1149px;
+    background: #F7F8FD;
+    margin: 20px;
+    margin-top: 65px;
+
+  }
+
+  .Card--live{
+    width: 223px;
+    height: 251px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: #FFF;
+    margin: 0 120px ;
+    
+    
+      }
+    
+      .Card--planned{
+        width: 223px;
+        height: 251px;
+        flex-shrink: 0;
+        border-radius: 5px;
+        background: #FFF;
+    
+    
+      }
+      .Card--progress{
+        width: 223px;
+        height: 251px;
+        flex-shrink: 0;
+        border-radius: 5px;
+        background: #FFF;
+        margin: 0 70px 20px;
+    
+      }
+    
+     .card--title{
+      color: #3A4374;
+      font-size: 13px;
+      font-family:' Jost' ;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: -0.181px;
+     }
+     .cards--description{
+      display: flex;
+    width: 183px;
+    flex-direction: column;
+    flex-shrink: 0;
+    color: #647196;
+    font-size: 13px;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+     }
+      .categories{
+        position: relative;
+        top: 30px;
+        left:27px
+    
+      }
+      .Numb--upvotes{
+        position: relative;
+        top:45px;
+      }
+    .Roadmapcard--comments{
+      margin-left: 190px;
+      margin-top: 20px;
+    
+    }
+    
+    .section--headers{
+      width: 768px;
+      
+      }
+    
+    .section--heading{
+      color: #3A4374;
+    font-size: 14px;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.194px;
+    width: 100%;
+    }
+    
+    .live--header{
+    margin-left: 120px;
+    
+    }
+    
+    .inProgress--header{
+      margin-left: 80px;
+    }
+    
+      .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+        justify-content: space-around;
+        margin-right: 15px;
+      }
+
+}
+
 
 /* Responsive columns - one column layout (vertical) on small screens */
+
+
 @media (max-width: 768px) {
 
   .Roadmap--Cards{
@@ -215,7 +335,7 @@ margin: 0 120px ;
  .card--title{
   color: #3A4374;
   font-size: 13px;
-  font-family:' Jost';
+  font-family:' Jost' ;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -228,7 +348,7 @@ flex-direction: column;
 flex-shrink: 0;
 color: #647196;
 font-size: 13px;
-font-family: Jost;
+font-family: 'Jost';
 font-style: normal;
 font-weight: 400;
 line-height: normal;
@@ -281,4 +401,24 @@ margin-left: 120px;
     justify-content: space-around;
     margin-right: 15px;
   }
+}
+
+@media(max-width: 480px){
+
+
+  .section--heading{
+    width: 375px;
+    padding: 20px;
+    border-bottom: 1px #ccc solid;
+
+  }
+  .header--content{
+    display: none;
+  }
+  .section--heading:hover{
+    border-bottom: 2px #0a42db solid;
+    width: 100%;
+  }
+
+
 }

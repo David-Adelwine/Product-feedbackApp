@@ -7,6 +7,7 @@ import ArrowUp from '../Assets/shared/icon-arrow-up.svg'
 
 const RoadmapData = () => {
 
+ 
   const RoadmapData = useSelector(selectAllPosts);
 
   const countByStatus = RoadmapData.data.productRequests.reduce((counts, request) => {
@@ -92,7 +93,6 @@ const inProgressRequests = RoadmapData.data.productRequests
             </div>
          {liveRequests}
       </div>
-
     </div>
   )
 }
