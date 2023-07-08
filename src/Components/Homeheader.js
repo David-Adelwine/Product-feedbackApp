@@ -1,28 +1,29 @@
-import React from 'react'
+import React,{useRef}  from 'react'
 import { Link } from 'react-router-dom'
 import Navigation from './Navigation'
 import '../Styles/Header.css'
-import data from '../data'
+// import data from '../data'
 import Handburger from '../Assets/shared/mobile/icon-hamburger.svg'
 import HandburgerClose from '../Assets/shared/mobile/icon-close.svg'
 
 const Homeheader = () => {
 
   const HeaderRef = useRef();
+
   const ShowHeadermenu=()=>{
     HeaderRef.current.classList.toggle("Responsive-Header");
   }
 
-   // Filter the productRequests array based on the status property
-   const plannedItems = data.productRequests.filter(
-    (item) => item.status === 'planned'
-  );
-  const inProgressItems = data.productRequests.filter(
-    (item) => item.status === 'in-progress'
-  );
-  const liveItems = data.productRequests.filter(
-    (item) => item.status === 'live'
-  );
+  //  // Filter the productRequests array based on the status property
+  //  const plannedItems = data.productRequests.filter(
+  //   (item) => item.status === 'planned'
+  // );
+  // const inProgressItems = data.productRequests.filter(
+  //   (item) => item.status === 'in-progress'
+  // );
+  // const liveItems = data.productRequests.filter(
+  //   (item) => item.status === 'live'
+  // );
   return (
     <div>
       <section className="grid--header">
@@ -62,15 +63,17 @@ const Homeheader = () => {
                     <div className="header">
                             <Link to='/Roadmap'><h2 classname='Go-Roadmap'>Views</h2></Link>
                           <ol className="number-list">
-                            <li>{plannedItems.length}</li>
-                            <li>{inProgressItems.length}</li>
-                            <li>{liveItems.length}</li>
+                          <li>{0}</li>
+                            <li>{0}</li>
+                            <li>{0}</li>
                           </ol>
                     </div>
                </div>
             </div>
          </div>
        </section>
+       <Navigation/> 
+
     </div>
   )
 }

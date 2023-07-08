@@ -1,0 +1,155 @@
+
+
+.Roadmapnavbtn{
+  font-family: 'Jost';
+  font-weight: 600;
+  background-color: #AD1FEA;
+  border: none;
+  color: white;
+  padding: 9px 22px;
+  text-align: center;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 13px;
+  margin-top: 25px;
+  position: relative;
+  bottom: 12px;
+}
+
+
+.Roadmapnavbtn:hover{
+  background-color: #AD1FEA;
+  border: none;
+
+}
+
+
+
+.Nav--Roadmap{
+position: absolute;
+width: 1120px;
+height: 72px;
+right: 120px;
+bottom: 720px;
+border-radius: 15px;
+color: #fff;
+background-color: #373F68;
+
+}
+.RoadmapNav--text{
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  letter-spacing: -0.25px;
+  margin-right: 760px;
+  margin-top: 40px;
+
+}
+
+.RoadmapGoback{
+  position: relative;
+  left: 60px;
+  margin-bottom: 18px ;
+  font-size: 14px;
+  font-family: 'Jost'   ;
+  font-weight: 700;
+}
+
+
+/* all media queries */
+
+@media (max-width: 1194px){
+
+ 
+
+  .Nav--Roadmap {
+    width: 95%;
+    left: 15px;
+    right: unset;
+    bottom: 1000px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+  }
+
+  .Roadmapnavbtn{
+    font-size: 13px;
+  font-family: 'Jost' ;
+  font-weight: 700;
+  color: #fff;
+  line-height: 19px;
+  height: 44px;
+  margin-left: -370px;
+  }
+
+}
+
+
+/* Responsive CSS for tablet */
+@media (max-width: 768px) {
+ 
+  .Nav--Roadmap {
+    width: 95%;
+    left: 15px;
+    right: unset;
+    bottom: 840px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+  }
+.Roadmapnavbtn{
+  font-size: 13px;
+font-family: 'Jost' ;
+font-weight: 700;
+color: #fff;
+line-height: 19px;
+height: 44px;
+}
+ 
+}
+
+/* Responsive CSS for mobile devices */
+@media (max-width: 480px) {
+  .Nav--Roadmap {
+    position: relative;
+    width: 375px;
+    height: 100px;
+    right: unset;
+    bottom: 10px;
+    padding: 0px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+  }
+
+  .RoadmapNav--text {
+    display: none;
+  }
+  .Roadmapnavbtn{
+position: relative;
+width: 134px;
+height: 40px;
+bottom: 130;
+left: 200px;
+padding: 12px 12px;
+font-size: 13px;
+font-family: 'Jost' ;
+font-weight: 700;
+color: #fff;
+line-height: 19px;
+
+}
+.Roadmapnavbtn:hover{
+  background-color: #AD1FEA;
+  border: none;
+
+}
+
+
+
+}
+

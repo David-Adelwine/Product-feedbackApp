@@ -35,7 +35,7 @@ export default function FeedbackDetail(){
   //console.log(renderedElements); checking if the exact number can be retrieved on the dom
   return(
     <div>
-      <Header  />
+      <Header/>
       {renderedElements}
     </div>
   )

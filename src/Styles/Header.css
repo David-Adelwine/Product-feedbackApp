@@ -22,8 +22,8 @@
 
 
 .card {
-  /* box-shadow: 0 4px 4px 0 rgba(0,0,0,0.2);
-  transition: 0.3s; */
+  box-shadow: 0 4px 4px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
   width: 255px;
   height: 137px;
   border-radius: 12px;
@@ -32,7 +32,7 @@
 }
 
 .card:hover {
-  /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); */
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
   cursor: pointer;
 }
 
@@ -381,12 +381,13 @@ color: #4661E6;
     left: 35px;
   }
 
+  .Header-btn{
+    visibility: hidden;
+    opacity: 0;
+  }
 }
 
-.Header-btn{
-  visibility: hidden;
-  opacity: 0;
-}
+
 
 /* Responsive CSS for mobile devices */
 @media (max-width: 480px) {

@@ -4,7 +4,7 @@ width: 1440px;
 height: 1367px;
 margin: 0 -5px;
 margin-left: 165px;
-margin-top: 65px;
+margin-top: 95px;
 }
 
 .Roadmap--Cards::after{
@@ -13,6 +13,8 @@ margin-top: 65px;
   clear: both;
 
 }
+
+
 .Column {
   float: left;
   width: 25%;
@@ -172,6 +174,8 @@ margin-top: 42px;
 
 
 
+
+
 /* all media queries  */
 
 /* bigger tablet screens  */
@@ -181,7 +185,7 @@ margin-top: 42px;
     height: 1149px;
     background: #F7F8FD;
     margin: 20px;
-    margin-top: 65px;
+    margin-top: 95px;
 
   }
 
@@ -288,6 +292,7 @@ margin-top: 42px;
 }
 
 
+
 /* Responsive columns - one column layout (vertical) on small screens */
 
 
@@ -298,7 +303,7 @@ margin-top: 42px;
     height: 1149px;
     background: #F7F8FD;
     margin: 20px;
-    margin-top: 65px;
+    margin-top: 95px;
 
   }
 
@@ -403,15 +408,130 @@ margin-left: 120px;
   }
 }
 
+
+
+
 @media(max-width: 480px){
-
-
-  .section--heading{
+  .Roadmap--Cards{
     width: 375px;
-    padding: 20px;
-    border-bottom: 1px #ccc solid;
+    height: 1086px;
+    background: #F7F8FD;
+    margin: 20px;
+    margin-top: 95px;
 
   }
+
+ 
+
+  .Card--live{
+width: 223px;
+height: 233px;
+flex-shrink: 0;
+border-radius: 5px;
+background: #FFF;
+margin: 0 120px ;
+
+
+  }
+
+  .Card--planned{
+    width: 223px;
+    height: 233px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: #FFF;
+
+
+  }
+  .Card--progress{
+    width: 223px;
+    height: 233px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: #FFF;
+    margin: 0 70px 20px;
+
+  }
+
+ .card--title{
+  color: #3A4374;
+  font-size: 13px;
+  font-family:' Jost' ;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.181px;
+ }
+ .cards--description{
+  display: flex;
+width: 183px;
+flex-direction: column;
+flex-shrink: 0;
+color: #647196;
+font-size: 13px;
+font-family: 'Jost';
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+ }
+  .categories{
+    position: relative;
+    top: 30px;
+    left:27px
+
+  }
+  .Numb--upvotes{
+    position: relative;
+    top:45px;
+  }
+.Roadmapcard--comments{
+  margin-left: 190px;
+  margin-top: 20px;
+
+}
+
+.section--headers{
+  width: 768px;
+  
+  }
+
+.section--heading{
+  color: #3A4374;
+font-size: 14px;
+font-family: 'Jost';
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+letter-spacing: -0.194px;
+width: 100%;
+}
+
+.live--header{
+margin-left: 120px;
+
+}
+
+.inProgress--header{
+  margin-left: 80px;
+}
+
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    justify-content: space-around;
+    margin-right: 15px;
+  }
+  
+
+ 
+  .section--heading {
+  width: 375px;
+  padding: 20px;
+  border-bottom: 1px #ccc solid;
+  
+}
+
   .header--content{
     display: none;
   }

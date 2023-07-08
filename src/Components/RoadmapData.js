@@ -72,7 +72,7 @@ const inProgressRequests = RoadmapData.data.productRequests
   return (
     <div className='Roadmap--Cards'>
           <div className='Column' >
-                <div className='section--headers'>
+                <div className='section--headers planned--header'>
                 <h3 className='section--heading'>Planned ({countByStatus['planned']})</h3>
                 <p className='header--content'>ideas priotise for research</p>
                 </div>
@@ -98,3 +98,5 @@ const inProgressRequests = RoadmapData.data.productRequests
 }
 
 export default RoadmapData
+
+

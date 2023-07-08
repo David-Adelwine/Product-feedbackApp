@@ -1,10 +1,10 @@
 import React from 'react'
 import RoadmapData from '../Components/RoadmapData'
-import Goback from '../Components/Goback'
+import RoadmapNav from '../Components/RoadmapNav'
 const Roadmap = () => {
   return (
     <div>
-  <Goback/>
+   <RoadmapNav/>
  <RoadmapData/>
     </div>
   )
