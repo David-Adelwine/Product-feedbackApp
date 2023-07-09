@@ -7,6 +7,7 @@ import '../Styles/Postlist.css';
 
 const PostsList = () => {
 const commentData = useSelector(selectAllPosts);
+
 const commentElements = commentData.data.productRequests.flatMap((productRequest) => {
   if (productRequest.comments) {
     return productRequest.comments.map((comment) => {
@@ -53,12 +54,13 @@ const commentElements = commentData.data.productRequests.flatMap((productRequest
 
 
 
+
+
 // post allow for adding comments to the exist productRequest array 
 const posts = useSelector( selectAllPosts) 
 const renderFeedback = posts.data.productRequests.map(post =>(
 <article  key = {post.id}  className='new--post '>
-<p className="new-post-content">{ post.content}
-</p>
+<p className="new-post-content">{post.content}</p>
 </article> 
 ));
 

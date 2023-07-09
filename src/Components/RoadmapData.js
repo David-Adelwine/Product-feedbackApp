@@ -26,6 +26,7 @@ const RoadmapData = () => {
       <span className='Numb--upvotes'> <img src={ArrowUp}  alt='^' className='upvotes--icon'/> {request.upvotes}</span>
       <div className=' Roadmapcard--comments'>
         <img src={CommentsImg} alt='comments'/> 
+        <span className='Roadmap--comments'>{request.comments ? request.comments.length : 0}</span>
       </div>
 
       {/* Render additional information about the planned request */}
@@ -34,16 +35,17 @@ const RoadmapData = () => {
 
 const liveRequests = RoadmapData.data.productRequests
   .filter(request => request.status === 'live')
-  .map(request => (
-    <div key={request.id} className='Card--live'>
+  .map(Liverequest => (
+    <div key={Liverequest.id} className='Card--live'>
       <p className='card--category'>Live</p>
-      <h3 className='card--title'>{request.title}</h3>
-      <p className='cards--description'>{request.description}</p>
-      <span className='categories'>{request.category}</span>
+      <h3 className='card--title'>{Liverequest.title}</h3>
+      <p className='cards--description'>{Liverequest.description}</p>
+      <span className='categories'>{Liverequest.category}</span>
       <br/>
-      <span className='Numb--upvotes'> <img src={ArrowUp}  alt='^' className='upvotes--icon'/>  {request.upvotes}</span>
+      <span className='Numb--upvotes'> <img src={ArrowUp}  alt='^' className='upvotes--icon'/>  {Liverequest.upvotes}</span>
       <div className=' Roadmapcard--comments'>
       <img src={CommentsImg} alt='comments'/>
+      <span className='Roadmap--comments'>{Liverequest.comments ? Liverequest.comments.length : 0}</span>
       </div>
 
       {/* Render additional information about the live request */}
@@ -52,16 +54,18 @@ const liveRequests = RoadmapData.data.productRequests
 
 const inProgressRequests = RoadmapData.data.productRequests
   .filter(request => request.status === 'in-progress')
-  .map(request => (
-    <div key={request.id} className='Card--progress'>
+  .map(Progressrequest => (
+    <div key={Progressrequest.id} className='Card--progress'>
       <p className='card--category'> In-progress</p>
-      <h3 className='card--title'>{request.title}</h3>
-      <p className='cards--description'>{request.description}</p>
-      <span className='categories'>{request.category}</span>
+      <h3 className='card--title'>{Progressrequest.title}</h3>
+      <p className='cards--description'>{Progressrequest.description}</p>
+      <span className='categories'>{Progressrequest.category}</span>
       <br/>
-      <span className='Numb--upvotes'> <img src={ArrowUp}  alt='^' className='upvotes--icon'/>  {request.upvotes}</span>
+      <span className='Numb--upvotes'> <img src={ArrowUp}  alt='^' className='upvotes--icon'/>  {Progressrequest.upvotes}</span>
       <div className=' Roadmapcard--comments'>
         <img src={CommentsImg} alt='comments'/>
+        <span className='Roadmap--comments'>{Progressrequest.comments ? Progressrequest.comments.length : 0}</span>
+
       </div>
       {/* Render additional information about the in-progress request */}
     </div>
