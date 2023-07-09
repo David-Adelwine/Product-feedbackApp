@@ -81,7 +81,7 @@ Users should be able to:
 ![](./screenshots/Tablet-feedbackedit.png)
 ![](./screenshots/Tablet-roadmap.png)
 
--  [All Screenshots](./screenshots/)
+-  [All screenshots](./screenshots/)
 
 
 ## Author
