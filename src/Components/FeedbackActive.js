@@ -57,6 +57,7 @@ const Addfeedbackform = () => {
             value={title}
             onChange={onTitleChanged}
             className='Title--input'
+            placeholder='please add a dark theme option'
             />
 
           <div className=''>
@@ -90,7 +91,8 @@ const Addfeedbackform = () => {
               name="postContent" 
               rows={3} 
               cols={89}
-              placeholder='' 
+              placeholder='It would help people with light sensitivities and who prefer dark 
+              mode.' 
               value={content}
               id="postContent"
               onChange={onContentChanged}

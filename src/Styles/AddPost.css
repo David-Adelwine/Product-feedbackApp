@@ -37,7 +37,7 @@
   align-items: center;
   height: 246px;
   left: 455px;
-  top: 80px;
+  top: 40px;
   padding-top: 55px;
   border-radius: 15px;
   font-family: 'jost' sans-serif;
@@ -81,7 +81,16 @@ bottom: 37.4%;
 
 }
 
-/* all my responsive designs */
+::placeholder	{
+  color: #3A4374;
+  font-family: 'Jost';
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+    }
+
+/* all my responsive designs media queries  */
 
 /* bigger tablet screens  */
 
@@ -159,7 +168,7 @@ letter-spacing: -0.25px;
     flex-shrink: 0;
     border-radius: 10px;
     background: #FFF;
-    margin-top: -100px;
+    margin-top: -70px;
 
   }
   .commentbtn{

@@ -35,8 +35,7 @@ import HandburgerClose from '../Assets/shared/mobile/icon-close.svg'
                   </div>
             </div>
             <br/>
-                  <img  src={HandburgerClose} onClick={ShowHeadermenu} alt='' width='20px' className='Header-btn Header-closebtn'/>
-                 <img  src={Handburger} onClick={ShowHeadermenu} alt='' width='20px' className='Header-btn Header-Openbtn'/>
+        
                   
             <div className='inner--cards' ref={HeaderRef}>
                 <div className="card ">
@@ -51,7 +50,7 @@ import HandburgerClose from '../Assets/shared/mobile/icon-close.svg'
                 </div>
                 <br/>
                 
-              <div className="card  lastcard-notresponsive">
+               <div className="card  lastcard-notresponsive">
                 <div className="container">
                     <div className="header">
                         <h2 className='Roadmap--header'>Roadmap</h2>
@@ -69,9 +68,12 @@ import HandburgerClose from '../Assets/shared/mobile/icon-close.svg'
                             <li>{liveItems.length}</li>
                           </ol>
                     </div>
+                    
                </div>
+               <img  src={HandburgerClose} onClick={ShowHeadermenu} alt='' width='20px' className='Header-btn Header-closebtn'/>
             </div>
          </div>
+         <img  src={Handburger} onClick={ShowHeadermenu} alt='' width='20px' className='Header-btn Header-Openbtn'/>
        </section>
        <Navigation/> 
       </div>

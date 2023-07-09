@@ -28,7 +28,7 @@ const AddPost = () => {
            name="postContent" 
            rows={3} 
            cols={89}
-           placeholder='Type your comments here' 
+           placeholder = 'Type your comments here' 
            value={content}
            id="postContent"
            onChange={onContentChanged}

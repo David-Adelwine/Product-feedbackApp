@@ -7,7 +7,6 @@ import ArrowUp from '../Assets/shared/icon-arrow-up.svg'
 
 const RoadmapData = () => {
 
- 
   const RoadmapData = useSelector(selectAllPosts);
 
   const countByStatus = RoadmapData.data.productRequests.reduce((counts, request) => {
@@ -27,7 +26,6 @@ const RoadmapData = () => {
       <span className='Numb--upvotes'> <img src={ArrowUp}  alt='^' className='upvotes--icon'/> {request.upvotes}</span>
       <div className=' Roadmapcard--comments'>
         <img src={CommentsImg} alt='comments'/> 
-
       </div>
 
       {/* Render additional information about the planned request */}

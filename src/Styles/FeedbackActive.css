@@ -176,6 +176,14 @@
   background-repeat: no-repeat;
   
   } 
+  ::placeholder	{
+color: #3A4374;
+font-family: 'Jost' ;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+  }
   
 /* all media quries goes here */
 
