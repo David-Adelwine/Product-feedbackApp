@@ -1,15 +1,17 @@
 import React from "react"
 import Header from '../Components/Header'
-import data from "../data"
 import Cards from "../Components/Cards"
+import { useSelector } from "react-redux"
+import { selectAllPosts } from "../Components/Post/PostSlice"
 
 export default function FeedbackDetail(){
+  const FeedbackDetailData = useSelector(selectAllPosts)
    // Calculate the number of elements to be returned
-  const cardLength = Math.ceil(data.productRequests.length/2);
+  const cardLength = Math.ceil(FeedbackDetailData.data.productRequests.length/2);
 
  
   // Use Array.prototype.slice() to create a new array with half the elements
-  const cardElements = data.productRequests.slice(0,cardLength);
+  const cardElements = FeedbackDetailData.data.productRequests.slice(0,cardLength);
 // console.log(cardLength)
     // Map through the CardElements array and render each card
 

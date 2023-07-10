@@ -186,6 +186,16 @@ color: #4661E6;
   text-decoration: none;
 
 }
+.Roadmap--header{
+  color: #3A4374;
+  font-family: 'Jost';
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.25px;
+}
+
 
 .Go-Roadmap{
   color: #4661E6;
@@ -197,15 +207,7 @@ color: #4661E6;
   text-decoration-line: underline;
   opacity: 0.25;
 }
-.Roadmap--header{
-  color: #3A4374;
-  font-family: 'Jost';
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: normal;
-  letter-spacing: -0.25px;
-}
+
 .container {
   display: flex;
   justify-content: space-between;
@@ -243,22 +245,6 @@ color: #4661E6;
   font-weight: 400;
   line-height: normal;
 }
-/* 
-.bullet {
-  margin-bottom: 5px;
-}
-
-.red {
-  color: red;
-}
-
-.blue {
-  color: blue;
-}
-
-.green {
-  color: green;
-} */
 
 
 
@@ -273,6 +259,22 @@ color: #4661E6;
   font-weight: 700;
   line-height: normal;
 }
+
+ul li::marker {
+  color: #F49F85;
+   /* Set the color for the first bullet */
+}
+
+ul li:nth-child(2)::marker {
+  color: #AD1FEA;/* Set the color for the second bullet */
+}
+
+ul li:nth-child(3)::marker {
+  color: #62BCFA; /* Set the color for the third bullet */
+}
+
+
+
 
 /* All media queries */
 

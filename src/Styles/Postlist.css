@@ -129,7 +129,7 @@ flex-shrink: 0;
 /* .new-post-content{
   background: #fff;
   width: 730px;
-  position: absolute;
+  position: relative;
   left: 450px;
   border-radius: 13px;
   padding-top: 50px;

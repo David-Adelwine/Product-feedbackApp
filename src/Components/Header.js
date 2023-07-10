@@ -2,9 +2,11 @@ import React,{useRef} from 'react'
 import { Link } from 'react-router-dom'
 import Navigation from './Navigation'
 import '../Styles/Header.css'
-import data from '../data'
+// import data from '../data'
 import Handburger from '../Assets/shared/mobile/icon-hamburger.svg'
 import HandburgerClose from '../Assets/shared/mobile/icon-close.svg'
+import { useSelector } from "react-redux"
+import { selectAllPosts } from "../Components/Post/PostSlice"
 
 
 
@@ -14,14 +16,15 @@ import HandburgerClose from '../Assets/shared/mobile/icon-close.svg'
     HeaderRef.current.classList.toggle("Responsive-Header");
   }
 
+  const CardData=useSelector(selectAllPosts)
    // Filter the productRequests array based on the status property
-   const plannedItems = data.productRequests.filter(
+   const plannedItems = CardData.data.productRequests.filter(
     (item) => item.status === 'planned'
   );
-  const inProgressItems = data.productRequests.filter(
+  const inProgressItems = CardData.data.productRequests.filter(
     (item) => item.status === 'in-progress'
   );
-  const liveItems = data.productRequests.filter(
+  const liveItems = CardData.data.productRequests.filter(
     (item) => item.status === 'live'
   );
   return (
@@ -61,7 +64,7 @@ import HandburgerClose from '../Assets/shared/mobile/icon-close.svg'
                         </ul>
                     </div>
                     <div className="header">
-                            <Link to='/Roadmap'><h2 classname='Go-Roadmap'>Views</h2></Link>
+                            <Link to='/Roadmap'><h2 classname='Go-Roadmap'>View</h2></Link>
                           <ol className="number-list">
                             <li>{plannedItems.length}</li>
                             <li>{inProgressItems.length}</li>

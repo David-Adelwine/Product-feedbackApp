@@ -2,7 +2,8 @@ import React, { useState } from 'react';
 import arrowUp from '../Assets/shared/icon-arrow-up.svg';
 import CommentsImg from '../Assets/shared/icon-comments.svg';
 import '../Styles/SingleCard.css';
-import data from '../data';
+import { useSelector } from "react-redux"
+import { selectAllPosts } from "../Components/Post/PostSlice"
 
 const Onecard = (props) => {
   const { title, description, category, upvotes, totalComments } = props;
@@ -38,7 +39,8 @@ const Onecard = (props) => {
 };
 
 const SingleCard = () => {
-  const newData = data.productRequests[1];
+  const SingleCardData=useSelector(selectAllPosts)
+  const newData = SingleCardData.data.productRequests[1];
   const totalComments = newData.comments.length + getTotalReplyCount(newData.comments);
 
   // Recursive function to calculate the total number of replies

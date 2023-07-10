@@ -53,14 +53,11 @@ const commentElements = commentData.data.productRequests.flatMap((productRequest
 });
 
 
-
-
-
 // post allow for adding comments to the exist productRequest array 
 const posts = useSelector( selectAllPosts) 
 const renderFeedback = posts.data.productRequests.map(post =>(
 <article  key = {post.id}  className='new--post '>
-<p className="new-post-content">{post.content}</p>
+<p>{post.content}</p>
 </article> 
 ));
 
@@ -70,7 +67,7 @@ const renderFeedback = posts.data.productRequests.map(post =>(
       <p className='Num--comment'> 4 comments </p>
         {commentElements}
         </div>
-    <div >{renderFeedback}</div>     
+    <div  className="new-post-content">{renderFeedback}</div>     
     </div>
   )
 }
