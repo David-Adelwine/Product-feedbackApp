@@ -1,9 +1,8 @@
 import React,{useState} from 'react'
-import { useDispatch , useSelector} from 'react-redux'
+import { useDispatch } from 'react-redux'
 import { FeedbackAdded } from './Addfeedback/AddfeedbackSlice'
 import FeedbackImg from '../Assets/shared/icon-new-feedback.svg'
 import '../Styles/Feedbackform.css'
-import { selectAllCategory } from './Category/CategorySlice'
 
 const Addfeedbackform = () => {
   const dispatch=useDispatch()
@@ -11,7 +10,6 @@ const Addfeedbackform = () => {
   const [content, setContent ] = useState('')
   const [categoryId, setCategoryId] = useState('')
 
-  const categorys =useSelector(selectAllCategory)
 
   const onTitleChanged=e=>setTitle(e.target.value)
   const onContentChanged=e=>setContent(e.target.value)
@@ -30,11 +28,6 @@ const Addfeedbackform = () => {
 
   const CanAddFeedback=Boolean(title) && Boolean(content) && Boolean(categoryId)
 
-  const CategoryOptions = categorys && categorys.map(preferredCategory=>(
-    <option key={preferredCategory.id} value={preferredCategory.id}>
-      {preferredCategory.name}
-    </option>
-  ))
 
   const  onRemoveFeedback =()=>{
     if(title && content){
@@ -66,8 +59,15 @@ const Addfeedbackform = () => {
             </label>
             <br />
             <select id="PostCategory" value={categoryId} onChange={onCategoryChanged} className='Select--category'>
-            <option value="">Feature</option>
-            {CategoryOptions}
+            <option value="Feature">Feature</option> 
+            <hr/>
+            <option value="">UI</option> 
+            <hr/>
+            <option value="UI">UX</option> 
+            <hr/>
+            <option value="Enhancement">Enhancement</option> 
+            <hr/>
+            <option value="Bug">Bug</option> 
             </select>
             </div>
             
@@ -108,3 +108,4 @@ const Addfeedbackform = () => {
 }
 
 export default Addfeedbackform
+

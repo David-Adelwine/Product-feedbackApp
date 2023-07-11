@@ -159,6 +159,10 @@ background-repeat: no-repeat;
 
 }
 
+.Error {
+  border: 2px solid red;
+}
+
 
 /* all media queries  */
 

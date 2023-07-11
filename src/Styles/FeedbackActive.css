@@ -132,7 +132,7 @@
   
   
   .Select--category{
-    width: 456px;
+  width: 456px;
   height: 48px;
   flex-shrink: 0;
   border-radius: 5px;
@@ -176,6 +176,11 @@
   background-repeat: no-repeat;
   
   } 
+
+ 
+  
+  
+
   ::placeholder	{
 color: #3A4374;
 font-family: 'Jost' ;
@@ -184,6 +189,11 @@ font-style: normal;
 font-weight: 400;
 line-height: normal;
   }
+
+  .error {
+    border-color: red;
+  }
+  
   
 /* all media quries goes here */
 
