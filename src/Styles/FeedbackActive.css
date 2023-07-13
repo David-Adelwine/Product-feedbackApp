@@ -194,6 +194,15 @@ line-height: normal;
     border-color: red;
   }
   
+
+  .Error--msg{
+    font-family: "Jost";
+    font-size: 12px;
+    color: red;
+    font-weight: 600;
+    margin-left: 43px;
+    
+    }
   
 /* all media quries goes here */
 

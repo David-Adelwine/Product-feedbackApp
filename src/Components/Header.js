@@ -1,10 +1,8 @@
 import React,{useRef} from 'react'
 import { Link } from 'react-router-dom'
-import Navigation from './Navigation'
 import '../Styles/Header.css'
 // import data from '../data'
 import Handburger from '../Assets/shared/mobile/icon-hamburger.svg'
-import HandburgerClose from '../Assets/shared/mobile/icon-close.svg'
 import { useSelector } from "react-redux"
 import { selectAllPosts } from "../Components/Post/PostSlice"
 
@@ -73,12 +71,11 @@ import { selectAllPosts } from "../Components/Post/PostSlice"
                     </div>
                     
                </div>
-               <img  src={HandburgerClose} onClick={ShowHeadermenu} alt='' width='20px' className='Header-btn Header-closebtn'/>
+             
             </div>
          </div>
          <img  src={Handburger} onClick={ShowHeadermenu} alt='' width='20px' className='Header-btn Header-Openbtn'/>
        </section>
-       <Navigation/> 
       </div>
 
   )

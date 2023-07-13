@@ -31,3 +31,14 @@ const AddfeedbackSlice=createSlice({
 export const selectAllFeedbacks = state => state.posts;
 export  const {FeedbackAdded} = AddfeedbackSlice.actions
 export default AddfeedbackSlice.reducer
+
+
+
+
+
+
+
+
+
+
+

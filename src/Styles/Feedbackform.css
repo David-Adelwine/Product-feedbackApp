@@ -159,10 +159,16 @@ background-repeat: no-repeat;
 
 }
 
-.Error {
-  border: 2px solid red;
-}
 
+
+.Error--msg{
+font-family: "Jost";
+font-size: 12px;
+color: red;
+font-weight: 600;
+margin-left: 43px;
+
+}
 
 /* all media queries  */
 
