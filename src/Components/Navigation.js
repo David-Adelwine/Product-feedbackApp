@@ -13,16 +13,12 @@ import { useSelector } from "react-redux";
 import { selectAllPosts } from "../Components/Post/PostSlice";
 
 const Navigation = ({ onSortOptionClick, selectedSortOption }) => {
-
-
   const FeedbackDetailData = useSelector(selectAllPosts);
   const cardLength = Math.ceil(FeedbackDetailData.data.productRequests.length / 2);
 
   const handleSortOptionClick = (option) => {
     onSortOptionClick(option);
   };
-
-  
 
   return (
     <div>

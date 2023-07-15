@@ -435,8 +435,6 @@ ul li:nth-child(3)::marker {
 
   }
 
-
-
   .Header-btn{
     visibility: visible;
     opacity: 1;
@@ -455,15 +453,17 @@ ul li:nth-child(3)::marker {
     gap: 1rem;
     border-radius: 10px;
     transition: 1s;
-    transform: translateX(100vh);
+    transform: translateX(-100vh);
     opacity: 1;
     z-index: 1000;
     background: #F7F8FD;
 
   }
+
   .Responsive-Header{
     transform: none;
   }
+ 
 
 
   .lastcard-notresponsive{
