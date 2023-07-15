@@ -1,8 +1,8 @@
 import React,{useRef} from 'react'
 import { Link } from 'react-router-dom'
 import '../Styles/Header.css'
-// import data from '../data'
 import Handburger from '../Assets/shared/mobile/icon-hamburger.svg'
+import handburgerClose from '../Assets/shared/mobile/icon-close.svg'
 import { useSelector } from "react-redux"
 import { selectAllPosts } from "../Components/Post/PostSlice"
 
@@ -14,6 +14,7 @@ import { selectAllPosts } from "../Components/Post/PostSlice"
     HeaderRef.current.classList.toggle("Responsive-Header");
   }
 
+  
   const CardData=useSelector(selectAllPosts)
    // Filter the productRequests array based on the status property
    const plannedItems = CardData.data.productRequests.filter(
@@ -73,6 +74,7 @@ import { selectAllPosts } from "../Components/Post/PostSlice"
                </div>
              
             </div>
+            <img  src={handburgerClose} onClick={ShowHeadermenu} alt='' width='20px' className='Header-btn Header-Closebtn'/>
          </div>
          <img  src={Handburger} onClick={ShowHeadermenu} alt='' width='20px' className='Header-btn Header-Openbtn'/>
        </section>

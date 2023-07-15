@@ -44,7 +44,7 @@ const FeedbackDetail = () => {
   return (
     <div>
       <Header />
-      <Navigation onSortOptionClick={handleSortOptionClick} selectedSortOption={sortOption} />
+      <Navigation onSortOptionClick = {handleSortOptionClick} selectedSortOption={sortOption} />
       {sortedCardElements.map((card, index) => (
         <Cards
           key={index}

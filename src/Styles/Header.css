@@ -435,9 +435,16 @@ ul li:nth-child(3)::marker {
 
   }
 
+  .lastcard-notresponsive{
+    position: relative;
+    left: 0px;
+    bottom: 90px;
+  }
+
   .Header-btn{
     visibility: visible;
     opacity: 1;
+   
   }
 
   .inner--cards{
@@ -466,11 +473,6 @@ ul li:nth-child(3)::marker {
  
 
 
-  .lastcard-notresponsive{
-    position: relative;
-    left: 0px;
-    bottom: 90px;
-  }
  
   
   .Header-closebtn{
@@ -484,7 +486,5 @@ ul li:nth-child(3)::marker {
   right: 1rem;
 }
  
- 
 
-  
 }
