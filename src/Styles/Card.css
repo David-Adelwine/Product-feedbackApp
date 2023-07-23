@@ -43,8 +43,8 @@ color: #3A4374;
   margin-bottom: 10px; 
   font-weight: 400;
   font-size: 16px;
-line-height: 23px;
-color: #647196;
+  line-height: 23px;
+  color: #647196;
 
 }
 
@@ -53,14 +53,14 @@ color: #647196;
   padding: 5px 10px; 
   margin-left: 5px; 
   font-family: 'Jost';
-font-style: normal;
-font-weight: 600;
-font-size: 13px;
-line-height: 19px;
-color: #4661E6;
-background: #F2F4FF;
-border-radius: 12px;
-text-decoration: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 19px;
+  color: #4661E6;
+  background: #F2F4FF;
+  border-radius: 12px;
+  text-decoration: none;
 
 }
 .card--votes {
@@ -70,17 +70,16 @@ text-decoration: none;
 }
 
 .card--votes:hover{
-  background: #4661E6;
   cursor: pointer;
 }
 
 .Upvotesbtn {
   position: relative;
   z-index: 1;
-Width:30px;
-Height:30px;
-left: 3px
-}
+  Width:30px;
+  Height:30px;
+  left: 3px
+  }
 .Upvotesbtn:hover{
   cursor: pointer;
 }
@@ -90,20 +89,38 @@ left: 3px
 }
 
 
-.card--votes,
-.Upvotesbtn,
-.upvotes {
+.card--votes{
   background-color: #F2F4FF; 
-  color: #4661E6; 
-  padding: 7px; 
   border-radius: 15px;
   display: flex;
   flex-direction: column;
 }
+.Upvotesbtn,
+.upvotes {
+  padding: 7px; 
 
-.upvoted{
-  background: #4661E6;
 }
+
+.card--votes.upvoted {
+  background-color: #4661E6;
+  border: 3px dotted #ccc;
+  animation: borderAnimation 2s infinite;
+}
+
+
+.upvoted
+ {
+  color: #fff;
+}
+.Upvotesbtn{
+  color: #fff;
+
+}
+
+
+/* .upvoted{
+  background: #4661E6;
+} */
 
 
 .Comments--icon{
@@ -116,6 +133,11 @@ bottom: 37.89%;
 padding: 3px;
 }
 }
+
+.Card--elements:hover .card--header {
+  color: #4661E6;
+}
+
 
 
 /* all cards media queries  */
@@ -161,9 +183,7 @@ padding: 3px;
     bottom: 30%;
   }
 
-  .card--votes:hover{
-    background: none;
-  }
+ 
 
 }
 
@@ -210,9 +230,7 @@ padding: 3px;
     bottom: 30%;
   }
 
-  .card--votes:hover{
-    background: none;
-  }
+  
  
 }
 
@@ -277,8 +295,6 @@ bottom: 15px;
 background: none;
   }
 
-  .card--votes:hover{
-    background: none;
-  }
+  
  
 }

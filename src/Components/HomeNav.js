@@ -25,7 +25,7 @@ const HomeNav = () => {
      <Navbar  expand="sm" className='my-3  Nav--Postion' >
     <Container >
        <Navbar.Brand href="#" className='text-white Navigation--text'><img src={suggestion} alt='icon'/>  0 suggestions</Navbar.Brand>
-  
+
         <Nav 
            className="me-auto my-2 my-lg-0 d-flex Move--Links "
           style={{ maxHeight: '1px' }} >
@@ -51,7 +51,7 @@ const HomeNav = () => {
       </ NavDropdown>
       </Nav>
        <Form className="d-flex">
-        <Link to={'../Feedbackedit'}> <Button  className='navbtn'>+ Add Feedback</Button></Link> 
+        <Link to={'../feedbackdetails'}> <Button  className='navbtn'>+ Add Feedback</Button></Link> 
           </Form>
     </Container>
    </Navbar> 

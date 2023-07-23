@@ -16,7 +16,7 @@ const RoadmapNav = () => {
 
 <Navbar  expand="sm" className='my-3  Nav--Roadmap' >
     <Container >
-      <Link  to="../../Feedbackdetail" className='RoadmapGoback'><img src={Arrowleft} alt='<' className='RoadmapGoback--icon text-white' /><span className='text-white'>Go back</span></Link>
+      <Link  to="../../" className='RoadmapGoback'><img src={Arrowleft} alt='<' className='RoadmapGoback--icon text-white' /><span className='text-white'>Go back</span></Link>
        <h3  className='text-white  RoadmapNav--text'>Roadmap</h3>
   
         <Nav 

@@ -6,13 +6,32 @@ import { useSelector } from "react-redux"
 import { selectAllPosts } from "../Components/Post/PostSlice"
 
 const Onecard = (props) => {
-  const { title, description, category, upvotes, totalComments } = props;
+  const { title, description, category, totalComments } = props;
 
-  const [cardUpvotes, setCardUpvotes] = useState(upvotes);
+  const [upvotes, setUpvotes] = useState(props.upvotes);
+  const [isUpvoted, setIsUpvoted] = useState(false);
 
   const handleUpvote = () => {
-    setCardUpvotes(cardUpvotes + 1);
+    if (!isUpvoted) {
+      setUpvotes(upvotes + 1);
+      setIsUpvoted(true);
+    } else {
+      setUpvotes(upvotes - 1);
+      setIsUpvoted(false);
+    }
   };
+  
+
+  const cardVotesStyle = isUpvoted
+  ? {
+      backgroundColor: "#4661E6",
+      border: "3px dotted #ccc",
+      animation: "borderAnimation 2s infinite",
+    }
+  : { backgroundColor: "#F2F4FF" };
+
+  
+  const upvotesStyle = isUpvoted ? { color: "#fff " } : {color:"#4661E6"};
 
   return (
     <div className='SingleCard--elements'>
@@ -21,14 +40,16 @@ const Onecard = (props) => {
         <p className='card--description'>{description}</p>
         <span className='faintbg--header'>{category}</span>
       </section>
-      <div className='card--votes'>
+      <div className='card--votes'  style={cardVotesStyle}
+          onClick={handleUpvote}>
         <img
           className='Upvotesbtn'
+          style={upvotesStyle}
+
           src={arrowUp}
           alt='^'
-          onClick={handleUpvote}
         />
-        <span className='upvotes'>{cardUpvotes}</span>
+        <span className='upvotes'  style={upvotesStyle}>{upvotes}</span>
       </div>
       <div className='Comments--icon'>
         <img src={CommentsImg} alt='comments' />
@@ -68,3 +89,6 @@ const SingleCard = () => {
 };
 
 export default SingleCard;
+
+
+

@@ -10,6 +10,9 @@ const FeedbackDetail = () => {
   const FeedbackDetailData = useSelector(selectAllPosts);
   const [sortOption, setSortOption] = useState("Most Upvotes");
 
+
+
+
   // Calculate the number of elements to be returned
   const cardLength = Math.ceil(FeedbackDetailData.data.productRequests.length / 2);
 
@@ -44,10 +47,11 @@ const FeedbackDetail = () => {
   return (
     <div>
       <Header />
-      <Navigation onSortOptionClick = {handleSortOptionClick} selectedSortOption={sortOption} />
-      {sortedCardElements.map((card, index) => (
+      <Navigation onSortOptionClick={handleSortOptionClick} selectedSortOption={sortOption} />
+      {sortedCardElements.map((card) => (
         <Cards
-          key={index}
+          key={card.id}
+          id={card.id}
           title={card.title}
           description={card.description}
           category={card.category}

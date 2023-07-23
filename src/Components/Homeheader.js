@@ -30,9 +30,9 @@ const Homeheader = () => {
             <div className='inner--cards' ref={HeaderRef}>
                 <div className="card ">
                   <div className='listed'>
-                  <Link  to="/FeedbackDetail" className='card-items  top-listed' >All</Link>     
-                    <Link to="/" className ='card-items faintbg'>UI</Link> 
-                      <Link to="/" className='card-items faintbg'>UX</Link>
+                  <Link  to="/" className='card-items  top-listed' >All</Link>     
+                    <Link to="/Hompage" className ='card-items faintbg'>UI</Link> 
+                      <Link to="/Hompage" className='card-items faintbg'>UX</Link>
                       <span className='card-items faintbg'>Enhancement</span>
                       <span className='card-items faintbg'>Bug</span>
                       <span className='card-items faintbg feature'>Feature</span>

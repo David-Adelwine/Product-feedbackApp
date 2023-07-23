@@ -1,77 +1,43 @@
-// import React, { useState } from 'react';
-// import "../App.css";
-// import arrowUp from '../Assets/shared/icon-arrow-up.svg';
-// import CommentsImg from '../Assets/shared/icon-comments.svg';
-// import '../Styles/Card.css'
-
-
-
-// const Cards = (props) => {
-//  const [upvotes, setUpvotes] = useState(props.upvotes);
-//   const handleUpvote = () => {
-//     setUpvotes(upvotes + 1);
-//   };
-
-
-//   return (
-//     <div className='Card--elements'>
-//       <section className='inner--card'>
-//         <h3 className='card--header'>{props.title}</h3>
-//         <p className='card--description'>{props.description}</p>
-//         <span className='faintbg--header'>{props.category}</span>
-//       </section>
-//       <div className='card--votes'>
-//         <img   
-//           className='Upvotesbtn'
-//           src={arrowUp}
-//           alt='^'
-//           onClick={handleUpvote}
-//         />
-//         <span className='upvotes'>{upvotes}</span>
-//       </div>
-//       <div className='Comments--icon'>
-//         <img src={CommentsImg} alt='comments'/>
-//         <span>{props.comments}</span>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Cards;
-
-
-
-
-
-
-
-
-
-
-
-
-import React,{useState} from "react";
+import React, { useState } from "react";
 import "../App.css";
 import arrowUp from "../Assets/shared/icon-arrow-up.svg";
 import CommentsImg from "../Assets/shared/icon-comments.svg";
+import { Link } from "react-router-dom";
 import "../Styles/Card.css";
 
 const Cards = (props) => {
- const [upvotes, setUpvotes] = useState(props.upvotes);
+  const [upvotes, setUpvotes] = useState(props.upvotes);
+  const [isUpvoted, setIsUpvoted] = useState(false);
+
   const handleUpvote = () => {
-    setUpvotes(upvotes + 1);
+    if (!isUpvoted) {
+      setUpvotes(upvotes + 1);
+    } else {
+      setUpvotes(upvotes - 1);
+    }
+    setIsUpvoted(!isUpvoted);
   };
-  
+
   return (
     <div className="Card--elements">
-      <section className="inner--card">
-        <h3 className="card--header">{props.title}</h3>
-        <p className="card--description">{props.description}</p>
-        <span className="faintbg--header">{props.category}</span>
-      </section>
-      <div className="card--votes">
-        <img className="Upvotesbtn" src={arrowUp} alt="^" onClick={handleUpvote} />
-        <span className="upvotes">{props.upvotes}</span>
+      <Link to={"../Feedbackedit"}>
+        <section className="inner--card">
+          <h3 className="card--header">{props.title}</h3>
+          <p className="card--description">{props.description}</p>
+          <span className="faintbg--header">{props.category}</span>
+        </section>
+      </Link>
+
+      <div
+        className={`card--votes ${isUpvoted ? "upvoted" : ""}`}
+        onClick={handleUpvote}
+      >
+        <img
+          className={`Upvotesbtn ${isUpvoted ? "upvoted" : ""}`}
+          src={arrowUp}
+          alt="^"
+        />
+        <span className={`upvotes ${isUpvoted ? "upvoted" : ""}`}>{upvotes}</span>
       </div>
       <div className="Comments--icon">
         <img src={CommentsImg} alt="comments" />
@@ -82,3 +48,12 @@ const Cards = (props) => {
 };
 
 export default Cards;
+
+
+
+
+
+
+
+
+

@@ -15,10 +15,10 @@ function App() {
     <div className="App">
     <BrowserRouter>
     <Routes>
-    <Route path='/' element={<> <Homeheader/> <Hompage/></>}/>
+    <Route path='/' element={ <FeedbackDetail/>}/>
+    <Route path='/Hompage' element={<> <Homeheader/> <Hompage/></>}/>
     <Route path='/Feedbackdetails' element={<Feedbackdatails/>}/>
     <Route path='/Feedbackedit' element={<Feedbackedit/>}/>
-    <Route path='/FeedbackDetail' element={ <FeedbackDetail/>}/>
     <Route path='/ActiveFeedback' element={ <ActiveFeedback/>}/>
     <Route path='/Roadmap' element={ <Roadmap/>}/>
     </Routes>
@@ -28,6 +28,10 @@ function App() {
 }
 
 export default App;
+
+
+
+
 
 
 
