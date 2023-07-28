@@ -116,9 +116,9 @@
 import React, { useState } from 'react';
 import { useSelector } from 'react-redux'
 import { selectAllPosts } from './Post/PostSlice'
-import CommentsImg from '../Assets/shared/icon-comments.svg'
+import CommentsImg from '../assets/shared/icon-comments.svg'
 import '../Styles/Roadmap.css'
-import ArrowUp from '../Assets/shared/icon-arrow-up.svg'
+import ArrowUp from '../assets/shared/icon-arrow-up.svg'
 
 
 const RoadmapData = () => {

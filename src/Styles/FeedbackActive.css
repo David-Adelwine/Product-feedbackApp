@@ -164,7 +164,7 @@
   }
   
   select.Select--category{
-    background-image:url(../Assets/shared/icon-arrow-down.svg);
+    background-image:url(../assets/shared/icon-arrow-down.svg);
   background-position:
     calc(100% - 20px) calc(1em + 2px),
     calc(100% - 15px) calc(1em + 2px),

@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { FeedbackAdded } from './Addfeedback/AddfeedbackSlice';
-import FeedbackImg from '../Assets/shared/icon-new-feedback.svg';
+import FeedbackImg from '../assets/shared/icon-new-feedback.svg';
 import '../Styles/Feedbackform.css';
 import FormValidation from './FormValidation';
 

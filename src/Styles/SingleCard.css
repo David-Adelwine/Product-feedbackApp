@@ -29,12 +29,8 @@ font-style: normal;
 font-weight: 700;
 font-size: 18px;
 line-height: 26px;
-
 letter-spacing: -0.25px;
-
 color: #3A4374;
-
-
 }
 
 
@@ -98,9 +94,12 @@ text-decoration: none;
 .Upvotesbtn,
 .upvotes {
   padding: 17px; 
-
  
 }
+
+
+
+
 
 /* .upvoted{
   background: #4661E6;
@@ -116,6 +115,10 @@ bottom: 37.89%;
 & img,span{
 padding: 3px;
 }
+}
+
+.SingleCard--elements:hover .card--header {
+  color: #4661E6;
 }
 
 

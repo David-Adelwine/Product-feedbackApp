@@ -40,7 +40,7 @@
   padding: 2px 16px;
 }
 .top-card{
-  background-image:url(../Assets/suggestions/desktop/background-header.png);
+  background-image:url(../assets/suggestions/desktop/background-header.png);
   margin-top: 30px;
   
   }
@@ -303,7 +303,7 @@ ul li:nth-child(3)::marker {
       border-radius: 13;
       }
     .top-card{
-      background: url(../Assets/suggestions/tablet/background-header.png)no-repeat;
+      background: url(../assets/suggestions/tablet/background-header.png)no-repeat;
       background-position: cover;
       margin-top: 3px;
      
@@ -356,7 +356,7 @@ ul li:nth-child(3)::marker {
     border-radius: 13;
     }
   .top-card{
-    background: url(../Assets/suggestions/tablet/background-header.png)no-repeat;
+    background: url(../assets/suggestions/tablet/background-header.png)no-repeat;
     background-position: cover;
     margin-top: 3px;
    
@@ -412,7 +412,7 @@ ul li:nth-child(3)::marker {
 
   }
   .top-card{
-    background: url(../Assets/suggestions/mobile/background-header.png)no-repeat;
+    background: url(../assets//suggestions/mobile/background-header.png)no-repeat;
     background-size: cover;
     width: 100%;
     height: 72px;
@@ -488,3 +488,5 @@ ul li:nth-child(3)::marker {
  
 
 }
+
+

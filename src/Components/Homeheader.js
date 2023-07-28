@@ -1,7 +1,7 @@
 import React,{useRef}  from 'react'
 import { Link } from 'react-router-dom'
 import '../Styles/Header.css'
-import Handburger from '../Assets/shared/mobile/icon-hamburger.svg'
+import Handburger from '../assets/shared/mobile/icon-hamburger.svg'
 // import HandburgerClose from '../Assets/shared/mobile/icon-close.svg'
 import HomeNav from './HomeNav'
 

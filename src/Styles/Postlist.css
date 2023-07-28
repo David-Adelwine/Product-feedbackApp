@@ -1,12 +1,14 @@
 .userData{
   background: #fff;
-  width: 730px;
-  height: 947px;
+  max-width: 730px;
   position: relative;
   left: 450px;
   border-radius: 13px;
   padding-top: 50px;
   margin-top: 20px;
+  overflow: hidden;
+  width: 100%;
+  height: auto;
 }
 
 .user--image{
@@ -142,8 +144,10 @@ flex-shrink: 0;
 @media(max-width: 1194px){
   .userData{
     position: relative;
-   width: 720px;
-    height: 967px;
+   max-width: 720px;
+   width: 100%;
+   overflow: hidden;
+    height: auto;
     flex-shrink: 0;
       margin-top: 130px;
       left: 60px;
@@ -159,9 +163,11 @@ flex-shrink: 0;
 @media (max-width: 768px){
   .userData{
     position: relative;
-   width: 689px;
-height: 967px;
-flex-shrink: 0;
+   max-width: 689px;
+   overflow: hidden;
+  height: auto;
+  flex-shrink: 0;
+  width: 100%;
     margin-top: 130px;
     left: 30px;
     bottom: 35px;
@@ -224,8 +230,10 @@ flex-shrink: 0;
 
 @media (max-width: 480px) {
   .userData {
-    width: 327px;
-    height: 977px;
+    max-width: 327px;
+    width: 100%;
+    overflow: hidden;
+    height: auto;
     flex-shrink: 0;
     border-radius: 10px;
     background: #FFF;

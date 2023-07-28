@@ -7,7 +7,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Link } from 'react-router-dom';
-import suggestion from '../Assets/suggestions/icon-suggestions.svg'
+import suggestion from '../assets/suggestions/icon-suggestions.svg'
 import { useState } from 'react';
 import '../Styles/HomeNav.css'
 

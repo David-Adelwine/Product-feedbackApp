@@ -1,8 +1,8 @@
 import React,{useRef} from 'react'
 import { Link } from 'react-router-dom'
 import '../Styles/Header.css'
-import Handburger from '../Assets/shared/mobile/icon-hamburger.svg'
-import handburgerClose from '../Assets/shared/mobile/icon-close.svg'
+import Handburger from '../assets/shared/mobile/icon-hamburger.svg'
+import handburgerClose from '../assets/shared/mobile/icon-close.svg'
 import { useSelector } from "react-redux"
 import { selectAllPosts } from "../Components/Post/PostSlice"
 

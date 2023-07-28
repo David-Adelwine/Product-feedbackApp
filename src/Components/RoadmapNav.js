@@ -6,7 +6,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Link } from 'react-router-dom';
 import '../Styles/RoadmapNav.css'
-import Arrowleft from '../Assets/shared/icon-arrow-left.svg'
+import Arrowleft from '../assets/shared/icon-arrow-left.svg'
 
 
 

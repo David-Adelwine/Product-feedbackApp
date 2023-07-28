@@ -1,84 +1,68 @@
-import React from 'react'
+
+import React from 'react';
 import { useSelector } from 'react-redux';
 import { selectAllPosts } from '../Components/Post/PostSlice';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import '../Styles/Postlist.css';
 
-
 const PostsList = () => {
-const commentData = useSelector(selectAllPosts);
+  // Get the card ID from the URL
+  const { id } = useParams();
 
-const commentElements = commentData.data.productRequests.flatMap((productRequest) => {
-  if (productRequest.comments) {
-    return productRequest.comments.map((comment) => {
-      if (
-        comment.user.username === 'hexagon.bestagon' ||
-        comment.user.username === 'hummingbird1' ||
-        comment.user.username === 'annev1990' ||
-        // taking only the first of reply comment of Ryan Welles as per the design 
-        comment.user.username[0] === 'voyager.344'
-      ) {
-        const replies = comment.replies
-          ? comment.replies.map((reply) => (
-              <div key={reply.user.username}>
-                <img src={reply.user.image} alt='Person' className='user--image' />
-                <div className='user--info'>
-                  <h5 className='name'>{reply.user.name}</h5>
-                  <h5 className='userName'>@{reply.user.username}</h5>
-                </div>
-                <Link className='commentLink'>Reply</Link>
-                <p className='post--content'><span className='ReplyingTo'>@{reply.replyingTo}</span> {reply.content}</p>
-              </div>
-            ))
-          : null;
+  // Get all the posts from the data.js file
+  const allPosts = useSelector(selectAllPosts);
 
-        return (
-          <article key={comment.id} className='commentData'>
-            <img src={comment.user.image} alt='Person' className='user--image' />
-            <div className='user--info'>
-              <h5 className='name'>{comment.user.name}</h5>
-              <h5 className='userName'>@{comment.user.username}</h5>
-            </div>
-            <Link className='commentLink'>Reply</Link>
-            <p className='post--content'>{comment.content}</p>
-           <div className='Replies-comment'>{replies}</div> 
-            <hr />
-          </article>
-        );
-      }
-      return null;
-    });
+  // Find the selected card based on the ID
+  const selectedCard = allPosts.data.productRequests.find((card) => card.id === parseInt(id));
+
+  // Check if the selected card exists and has comments
+  if (!selectedCard || !selectedCard.comments) {
+    return <div>Card not found or no comments available</div>;
   }
-  return [];
-});
 
+  // Function to render comments and replies
+  const renderCommentsAndReplies = (comments) => {
+    return comments.map((comment) => {
+      const replies = comment.replies
+        ? comment.replies.map((reply) => (
+            <div key={reply.id}>
+              <img src={reply.user.image} alt='Person' className='user--image' />
+              <div className='user--info'>
+                <h5 className='name'>{reply.user.name}</h5>
+                <h5 className='userName'>@{reply.user.username}</h5>
+              </div>
+              <Link className='commentLink'>Reply</Link>
+              <p className='post--content'>
+                <span className='ReplyingTo'>@{reply.replyingTo}</span> {reply.content}
+              </p>
+            </div>
+          ))
+        : null;
 
-// post allow for adding comments to the exist productRequest array 
-const posts = useSelector( selectAllPosts) 
-const renderFeedback = posts.data.productRequests.map(post =>(
-<article  key = {post.id}  className='new--post '>
-<p>{post.content}</p>
-</article> 
-));
+      return (
+        <article key={comment.id} className='commentData'>
+          <img src={process.env.PUBLIC_URL + comment.user.image} alt='Person' className='user--image' />
+          <div className='user--info'>
+            <h5 className='name'>{comment.user.name}</h5>
+            <h5 className='userName'>@{comment.user.username}</h5>
+          </div>
+          <Link className='commentLink'>Reply</Link>
+          <p className='post--content'>{comment.content}</p>
+          <div className='Replies-comment'>{replies}</div>
+          <hr />
+        </article>
+      );
+    });
+  };
 
   return (
     <div>
       <div className='userData'>
-      <p className='Num--comment'> 4 comments </p>
-        {commentElements}
-        </div>
-    <div  className="new-post-content">{renderFeedback}</div>     
+        <p className='Num--comment'>{selectedCard.comments.length} comments</p>
+        {renderCommentsAndReplies(selectedCard.comments)}
+      </div>
     </div>
-  )
-}
+  );
+};
 
-export default PostsList
-
-
-
-
-
-
-
-
-
+export default PostsList;
