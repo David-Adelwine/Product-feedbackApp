@@ -110,8 +110,10 @@ color: #3A4374;
 
 .upvoted
  {
-  color: #fff;
+  color: #fff !important;
+  
 }
+
 .Upvotesbtn{
   color: #fff;
 

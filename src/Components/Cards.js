@@ -9,11 +9,12 @@ const Card = (props) => {
   const { id, title, description, category, upvotes, comments } = props;
 
     const [upvote, setUpvotes] = useState(props.upvotes);
-  const [isUpvoted, setIsUpvoted] = useState(false);
+    const [isUpvoted, setIsUpvoted] = useState(false);
 
   const handleUpvote = () => {
     if (!isUpvoted) {
       setUpvotes(upvote + 1);
+      
     } else {
       setUpvotes(upvote - 1);
     }
@@ -35,7 +36,8 @@ const Card = (props) => {
          onClick={handleUpvote}>
           <img  
           className={`Upvotesbtn ${isUpvoted ? "upvoted" : ""}`}
-           src={arrowUp} alt="^" />
+           src={arrowUp} 
+           alt="^" />
           <span
            className={`upvotes ${isUpvoted ? "upvoted" : ""}`}
            >

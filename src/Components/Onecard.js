@@ -1,11 +1,8 @@
 
-
 import React, { useState } from 'react';
 import arrowUp from '../assets/shared/icon-arrow-up.svg';
 import CommentsImg from '../assets/shared/icon-comments.svg';
 import '../Styles/SingleCard.css';
-
-import { Link } from 'react-router-dom';
 
 const Onecard = (props) => {
   const { title, description, category, totalComments } = props;
@@ -31,17 +28,15 @@ const Onecard = (props) => {
       }
     : { backgroundColor: '#F2F4FF' };
 
-  const upvotesStyle = isUpvoted ? { color: '#fff ' } : { color: '#4661E6' };
+  const upvotesStyle = isUpvoted ? { color: '#fff' } : { color: '#4661E6' };
 
   return (
     <div className='SingleCard--elements'>
-      <Link to='../../ActiveFeedback'>
-        <section className='inner--card'>
-          <h3 className='card--header'>{title}</h3>
-          <p className='card--description'>{description}</p>
-          <span className='faintbg--header'>{category}</span>
-        </section>
-      </Link>
+      <section className='inner--card'>
+        <h3 className='card--header'>{title}</h3>
+        <p className='card--description'>{description}</p>
+        <span className='faintbg--header'>{category}</span>
+      </section>
       <div className='card--votes' style={cardVotesStyle} onClick={handleUpvote}>
         <img className='Upvotesbtn' style={upvotesStyle} src={arrowUp} alt='^' />
         <span className='upvotes' style={upvotesStyle}>
