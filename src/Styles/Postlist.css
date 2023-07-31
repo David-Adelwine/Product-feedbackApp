@@ -223,7 +223,9 @@ flex-shrink: 0;
   } */
   
   } 
-
+  .hidden {
+    display: none;
+  }
 
 
 /* Responsive CSS for mobile devices */

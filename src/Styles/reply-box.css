@@ -1,0 +1,60 @@
+
+.reply-box {
+  display: flex;
+  justify-content: stretch;
+  align-items: flex-start;
+  margin-top: 24px;
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
+}
+
+.reply-box input {
+  flex-grow: 1;
+}
+
+.reply-box .Replybtn {
+  margin-left: 16px;
+  min-width: 120px;
+}
+.Replybtn {
+  background: none;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  text-align: center;
+  transition: background-color 0.2s ease-in-out;
+  padding: 12px 14px;
+  border-radius: 10px;
+  min-width: 160px;
+  font-size: 14px;
+}
+
+
+
+.Replybtn,
+.btn > * {
+  color: #f2f4ff;
+  font-weight: 700;
+}
+
+.btn-primary {
+  background-color:  #ad1fea;
+}
+
+.btn-primary:hover {
+  background-color: #c75af6;
+}
+
+.btn-primary:focus {
+  outline: #c75af6 dotted 2px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../styles/input.css';
+import '../Styles/input.css';
 
 export default function Input({
   value,
@@ -53,9 +53,9 @@ export default function Input({
           id={ID}
         />
       )}
-      {type === 'dropdown' && (
-        <div className='dropdown-outer'>
-          <button className='body-s dropdown-btn' onClick={(e) => toggleDropdown(e)}>
+      {type === 'Inputdropdown' && (
+        <div className='Inputdropdown-outer'>
+          <button className='body-s Inputdropdown-btn' onClick={(e) => toggleDropdown(e)}>
             {value || dropdownSelections[0]}
             <svg
               className={dropdownOpen ? 'active' : undefined}
@@ -72,7 +72,7 @@ export default function Input({
               />
             </svg>
           </button>
-          <ul className={`dropdown ${dropdownOpen ? 'active' : undefined}`} tabIndex='0'>
+          <ul className={`Inputdropdown ${dropdownOpen ? 'active' : undefined}`} tabIndex='0'>
             {dropdownSelections.map((selection) => {
               return (
                 <li key={selection}>

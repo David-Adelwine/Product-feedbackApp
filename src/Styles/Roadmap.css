@@ -191,6 +191,17 @@ margin-top: 42px;
   letter-spacing: -0.222px;
 }
 
+/* Add these styles for the upvote button when it is clicked */
+.Numb--upvotes.blue-bg {
+  background-color: #4661e6;
+  color: #fff;
+  border: 3px dotted #ccc;
+  animation: borderAnimation 2s infinite;
+}
+
+.Numb--upvotes.blue-bg .upvotes--icon {
+  color: #fff;
+}
 
 
 /* all media queries  */

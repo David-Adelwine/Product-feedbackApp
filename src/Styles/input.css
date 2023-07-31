@@ -1,0 +1,169 @@
+
+
+:root {
+  scroll-behavior: smooth;
+  font-size: 16px;
+
+  /* Primary */
+  --radial-gradient: radial-gradient(
+    128.88% 128.88% at 103.9% -10.39%,
+    #e84d70 0%,
+    #a337f6 53.09%,
+    #28a7ed 100%
+  );
+
+  --purple: #ad1fea;
+  --purple-hover: #c75af6;
+
+  --blue: #4661e6;
+  --blue-hover: #7c91f9;
+  --blue-light: #62bcfa;
+
+  --orange: #f49f85;
+
+  --red: #d73737;
+  --red-hover: #e98888;
+
+  /* Neutral */
+  --grey-darkest: #373f68;
+
+  --grey-darker: #3a4374;
+  --grey-darker-15: hsl(231, 33%, 34%, 0.15);
+
+  --grey-darker-hover: #656ea3;
+
+  --grey-dark: #647196;
+
+  --grey-hover: #cfd7ff;
+
+  --input-placeholder: #8c92b3;
+
+  --grey: #f2f4ff;
+  --grey-75: hsl(231, 100%, 97%, 0.75);
+
+  --grey-light: #f7f8fd;
+
+
+}
+
+
+
+
+
+.input {
+  background-color: var(--grey-light);
+  color: var(--grey-darker);
+  border: none;
+  resize: none;
+  border-radius: 5px;
+  padding: 16px 24px 20px 24px;
+  width: 100%;
+}
+
+.input.text {
+  padding: 13px 24px;
+}
+
+.input::placeholder {
+  color: var(--input-placeholder);
+}
+
+.input:focus {
+  outline: var(--blue) solid 1px;
+}
+
+.input.error {
+  outline: var(--red) solid 1px;
+}
+
+.Inputdropdown-outer {
+  position: relative;
+  width: 100%;
+}
+
+.Inputdropdown-btn svg.active {
+  transition: 0.1s ease-in-out;
+  transform: rotate(180deg);
+}
+
+.Inputdropdown-btn {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.2s ease-in-out;
+  background-color: var(--grey-light);
+  color: var(--grey-darker);
+  padding: 13px 24px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.Inputdropdown-btn:hover,
+.Inputdropdown-btn:focus-visible {
+  outline: var(--blue) solid 1px;
+}
+
+.Inputdropdown {
+  position: absolute;
+  overflow: hidden;
+  background-color: #fff;
+  transition: opacity 0.2s ease-in-out;
+  pointer-events: none;
+  box-shadow: 0 10px 40px -7px hsla(230, 31%, 31%, 0.35);
+  z-index: 2;
+  border-radius: 10px;
+  width: 100%;
+  opacity: 0;
+  top: 66px;
+  left: 0;
+}
+
+.Inputdropdown.active,
+.Inputdropdown:focus-within {
+  pointer-events: all;
+  opacity: 1;
+}
+
+.Inputdropdown:focus-visible {
+  outline: var(--grey-dark) dotted 2px;
+}
+
+.Inputdropdown li {
+  width: 100%;
+}
+
+.Inputdropdown li:not(:last-child) {
+  border-bottom: 1px solid var(--grey-darker-15);
+}
+
+.Inputdropdown button {
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--grey-dark);
+  width: 100%;
+  padding: 12px 24px;
+}
+
+.Inputdropdown button:hover,
+.Inputdropdown button:focus {
+  color: var(--purple);
+}
+
+.Inputdropdown button svg {
+  transition: opacity 0.2s ease-in-out;
+  opacity: 0;
+}
+
+.Inputdropdown button.active svg {
+  opacity: 1;
+}
+
+@media (max-width: 760px) {
+  .input {
+    padding: 16px 16px 27px 16px;
+  }
+}

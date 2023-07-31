@@ -1,0 +1,31 @@
+.input-group .label,
+.input-group .description,
+.input-group .error {
+  font-size: 0.875rem;
+  line-height: 20px;
+}
+
+.input-group .label {
+  color: var(--grey-darker);
+  letter-spacing: -0.19px;
+  font-weight: 700;
+}
+
+.input-group .description {
+  color: var(--grey-dark);
+  margin: 2px 0 16px 0;
+}
+
+.input-group .error {
+  color: var(--red);
+  margin-top: 4px;
+}
+
+@media (max-width: 760px) {
+  .input-group .label,
+  .input-group .description,
+  .input-group .error {
+    font-size: 0.8125rem;
+    line-height: 19px;
+  }
+}

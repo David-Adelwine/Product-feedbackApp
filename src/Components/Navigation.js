@@ -64,3 +64,9 @@ const Navigation = ({ onSortOptionClick, selectedSortOption }) => {
 };
 
 export default Navigation;
+
+
+
+
+
+

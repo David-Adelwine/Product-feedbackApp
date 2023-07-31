@@ -1,6 +1,6 @@
 import React from 'react';
 import Input from './Input';
-import '../styles/reply-box.css';
+import '../Styles/reply-box.css';
 
 export default function ReplyBox({ show, reply, setReply, postReply }) {
   return (
@@ -13,7 +13,7 @@ export default function ReplyBox({ show, reply, setReply, postReply }) {
           placeholderText='Type your reply here'
           type='textarea'
         />
-        <button className='btn btn-primary' onClick={postReply}>
+        <button className='Replybtn btn-primary' onClick={postReply}>
           Post Reply
         </button>
       </div>
