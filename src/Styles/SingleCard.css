@@ -59,15 +59,20 @@ border-radius: 12px;
 text-decoration: none;
 
 }
-.card--votes {
+
+.card--votes{
   position: absolute;
   left: 25px;
   bottom: 50px;
+  background-color: #F2F4FF; 
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
 }
 
-/* .card--votes:hover{
-  background: #4661E6;
-} */
+.card--votes:hover{
+  background: #CFD7FF;
+}
 
 .Upvotesbtn {
   position: relative;
@@ -85,12 +90,7 @@ text-decoration: none;
 }
 
 
-.card--votes{
-  background-color: #F2F4FF; 
-  border-radius: 15px;
-  display: flex;
-  flex-direction: column;
-}
+
 .Upvotesbtn,
 .upvotes {
   padding: 17px; 

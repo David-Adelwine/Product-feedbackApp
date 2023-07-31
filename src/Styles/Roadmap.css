@@ -14,6 +14,18 @@ margin-top: 95px;
 
 }
 
+.Card--live:hover .card--title{
+  color: #4661E6;
+}
+
+.Card--planned:hover .card--title{
+  color: #4661E6;
+}
+
+.Card--in-progress:hover .card--title{
+  color: #4661E6;
+}
+
 
 .Column {
   float: left;
@@ -145,6 +157,12 @@ top: 35px;
  margin-left: 43px;
 position: relative;
 top:65px;
+}
+
+
+.Numb--upvotes:hover{
+  cursor: pointer;
+  background: #CFD7FF;
 }
 .upvotes--icon{
   margin: 10px;

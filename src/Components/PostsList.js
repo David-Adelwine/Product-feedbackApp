@@ -171,30 +171,41 @@ const PostsList = () => {
         ))
       : null;
 
-    return (
-      <article key={comment.id} className='commentData'>
-        <img src={`../${comment.user.image}`} alt='Person' className='user--image' />
+  
+      return (
+        <article key={comment.id} className='commentData'>
+           <img src={`../${comment.user.image}`} alt='Person' className='user--image' />
         <div className='user--info'>
           <h5 className='name'>{comment.user.name}</h5>
           <h5 className='userName'>@{comment.user.username}</h5>
         </div>
-        <Link className='commentLink' onClick={() => setSelectedCommentId(comment.id)}>
-          Reply
-        </Link>
-       
-        <p className='post--content'>{comment.content}</p>
-        <div className='Replies-comment'>{replies}</div>
+          <Link
+            className={`commentLink ${isCommentSelected ? 'hidden' : ''}`} // Apply the 'hidden' class to hide the link when the comment is selected
+            onClick={() => {
+              if (isCommentSelected) {
+                setSelectedCommentId(null); // Hide the ReplyBox by setting selectedCommentId to null
+              } else {
+                setSelectedCommentId(comment.id);
+                setSelectedReplyId(null); // Hide any open reply when clicking a comment
+              }
+            }}
+          >
+            Reply
+          </Link>
+          <p className='post--content'>{comment.content}</p>
+          <div className='Replies-comment'>{replies}</div>
 
-         {/* Step 3: Show the ReplyBox component if the comment link is clicked */}
-         {isCommentSelected && (
-          <ReplyBox show={true} reply={""} setReply={() => {}} postReply={() => {}} />
-        )}
-       
-        <hr />
-      </article>
-    );
-  });
-};
+          {/* Step 3: Show the ReplyBox component if the comment link is clicked */}
+          {isCommentSelected && (
+            <ReplyBox show={true} reply={""} setReply={() => {}} postReply={() => {}} />
+          )}
+
+          <hr />
+        </article>
+      );
+    });
+  };
+
   return (
     <div>
       <div className='userData'>

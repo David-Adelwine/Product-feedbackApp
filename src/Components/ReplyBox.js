@@ -8,7 +8,7 @@ export default function ReplyBox({ show, reply, setReply, postReply }) {
       <div className='reply-box'>
         <Input
           value={reply}
-          setValue={setReply}
+          setValue={setReply} // Pass the setReply function to update the state
           maxLength={255}
           placeholderText='Type your reply here'
           type='textarea'
