@@ -5,6 +5,7 @@ import CommentsImg from "../assets/shared/icon-comments.svg";
 import "../Styles/Card.css";
 
 const Card = (props) => {
+  
   const { id, title, description, category, upvotes, comments } = props;
 
   const [upvote, setUpvote] = useState(upvotes);
@@ -34,7 +35,7 @@ const Card = (props) => {
         onClick={handleUpvote}
       >
         <img
-          className={`Upvotesbtn ${isUpvoted ? "upvoted" : ""}`}
+          className={`Upvotesbtn ${isUpvoted ? "upvoted" : "b "}`}
           src={arrowUp}
           alt="^"
         />

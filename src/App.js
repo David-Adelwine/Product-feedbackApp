@@ -7,15 +7,15 @@ import './App.css';
 import FeedbackDetail from './pages/FeedbackDetail';
 import ActiveFeedback from './pages/ActiveFeedback';
 import Roadmap from './pages/Roadmap';
-import Homeheader from './Components/Homeheader'
-
+// import Homeheader from './Components/Homeheader'
+import Header from './Components/Header';
 function App() {
   return (
     <div className="App">
     <BrowserRouter>
     <Routes>
     <Route path='/' element={ <FeedbackDetail/>}/>
-    <Route path='/Hompage' element={<> <Homeheader/> <Hompage/></>}/>
+    <Route path='/Hompage' element={<> <Header/> <Hompage/></>}/>
     <Route path='/Feedbackdetails' element={<Feedbackdatails/>}/>
     <Route path='/Feedbackedit/:id' element={<Feedbackedit/>}/>
     <Route path='/ActiveFeedback' element={ <ActiveFeedback/>}/>
